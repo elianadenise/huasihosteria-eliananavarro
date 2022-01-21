@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script scr="js/wow.min.js"></script>
+    <link rel="stylesheet" href="../CSS/huasiweb.css">
+    <title>Contactanos</title>
+</head>
+<body> 
+    
+    <header>
+        <a href="../index.html"><img src="../IMG/HuasiHosteriaLogored.png" alt="Huasi Hosteria" class="imgLogo"/></a>
+        <nav>
+            <ul id="ulnav">
+                <li class="linav">
+                    <a href="../index.html" class="linknav">INICIO</a>
+                </li>
+                <li class="linav">
+                    <a href="nosotros.html" class="linknav">NOSOTROS</a>
+                </li>
+                <li class="linav">
+                    <a href="habitaciones.html" class="linknav">HABITACIONES</a>
+                </li>
+                <li class="linav">
+                    <a href="servicios.html" class="linknav">SERVICIOS</a>
+                </li>
+                <li class="linav">
+                    <a href="contactanos.html" class="linknav" id="headerContactanos">CONTACTANOS</a>
+                </li>
+            </ul>
+    
+        </nav>
+    </header>
+    
+    <main>
+        <div id="gridcontactanos">
+
+            <h1 class="bannerContactanos">Contactanos</h1>
+
+            <form class="formulario">
+                <h3>Consultanos</h3>
+                <p>
+                    <label for="text" id="Nombre" class="textoChico">Nombre</label> 
+                    <input type="text" placeholder="Ingresá tu nombre" id="Nombre" class="fuenteCajaFormulario"> 
+                </p>  
+                <p>
+                    <label for="text" id="correo" class="textoChico">Correo Electrónico</label> 
+                    <input type="text" placeholder="Ingresá tu e-mail" id="correo" class="fuenteCajaFormulario"> 
+                </p> 
+                <p>
+                    <label for="text" id="correo" class="textoChico">Fecha estimada</label> 
+                    <input type="date" name="fecha" class="fuenteCajaFormulario">
+                </p> 
+                <p>
+                    <label for="Numero de pasajeros" id="numero" class="textoChico">Cantidad de huéspedes</label>
+                    <input type="number" id="numero" class="fuenteCajaFormulario">
+                </p> 
+                <p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </p>
+                <p>
+                    <input type="submit" class="textoChico"> 
+                </p>   
+            
+            </form>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10136.432922079275!2d-65.9845876612565!3d-26.073764643879727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941f311369c3a61b%3A0x540e61c61f3a5d0c!2sCafayate%2C%20Salta!5e0!3m2!1ses!2sar!4v1639177484420!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+            
+            <div class="datos">
+            <p class="textoChico">tel.: (+54) 2222 2222</p>
+            <p class="textoChico">hola@huasihosteria.com</p>
+            <p class="textoChico">Cafayate, Salta, Argentina.</p>
+            </div>
+                
+        </div>
+
+        <a href="contactanos.html"><img src="../IMG/reservar.png" alt="reservar" id="reservaAhora" class="animate__animated animate__headShake"></a>
+        
+        <script>
+            new WOW().init();
+        </script>
+    </main>
+
+    <footer>
+        <div id="divFooter1">
+            <a href="../index.html"><img src="../IMG/HuasiHosteriaLogoCrema.png" alt="Huasi Hosteria" srcset="" id="huasiLogoFooter"></a>
+            <p class="textoFooter">Sentite mejor que en casa</p>
+
+            <div class="divLinealFooter1"></div>
+
+            <div id="divFooter1div1" class="textoFooter2">
+                <p>Avenida Salta 123, Cafayate, Salta.</p>
+                <p>Tel.: 4444-2222 / 15 2345 2345</p>
+                <p>hola@huasihosteria.com</p>
+            </div>
+        </div>
+
+        <div id="divFooter2">
+            <a href="../index.html" class="textoFooter aFooter">INICIO</a>
+            <a href="nosotros.html" class="textoFooter aFooter">NOSOTROS</a>
+            <a href="habitaciones.html" class="textoFooter aFooter">HABITACIONES</a>
+            <a href="servicios.html" class="textoFooter aFooter">SERVICIOS</a>
+            <a href="contactanos.html" class="textoFooter aFooter">CONTACTANOS</a>
+       
+        </div>
+
+        <div id="divFooter3">
+            <p class="textoFooter">Suscribite para recibir descuentos exclusivos</p>
+            <form action="susbribir">
+                <input type="text" placeholder="Ingresá tu e-mail" class="fuenteCajaFormulario" class="cajaFormulario">
+                <input type="submit" class="texto fuenteCajaFormulario"> 
+            </form>
+            <div class="divLinealFooter2"></div>
+            <p class="textoFooter">Sigamos conectados</p>
+            <div id="divFooter2div1">
+            <a href="https://www.instagram.com/"><img src="../IMG/instagram.png" alt="Instagram" class="redesSocialesLogo"></a>
+            <a href="https://www.facebook.com"><img src="../IMG/facebook.png" alt="Facebook" class="redesSocialesLogo" id="facebookLogo"></a>
+            <a href="https://www.whatsapp.com/?lang=es"><img src="../IMG/wapp.png" alt="Whatsapp" class="redesSocialesLogo"></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
