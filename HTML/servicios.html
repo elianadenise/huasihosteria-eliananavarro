@@ -6,32 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script scr="js/wow.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/huasiweb.css">
     <title>Servicios</title>
-</head>
+</head> 
 <body>
 
     <header>
-        <a href="../index.html"><img src="../IMG/HuasiHosteriaLogored.png" alt="Huasi Hosteria" class="imgLogo"/></a>
-        <nav>
-            <ul id="ulnav">
-                <li class="linav">
-                    <a href="../index.html" class="linknav">INICIO</a>
-                </li>
-                <li class="linav">
-                    <a href="nosotros.html" class="linknav">NOSOTROS</a>
-                </li>
-                <li class="linav">
-                    <a href="habitaciones.html" class="linknav">HABITACIONES</a>
-                </li>
-                <li class="linav">
-                    <a href="servicios.html" class="linknav">SERVICIOS</a>
-                </li>
-                <li class="linav">
-                    <a href="contactanos.html" class="linknav" id="headerContactanos">CONTACTANOS</a>
-                </li>
-            </ul>
-    
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../IMG/HuasiHosteriaLogored.png" alt="Huasi Hosteria"
+                        class="imgLogo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ulnav">
+                        <li class="linav">
+                            <a href="../index.html" class="linknav">INICIO</a>
+                        </li>
+                        <li class="linav">
+                            <a href="nosotros.html" class="linknav">NOSOTROS</a>
+                        </li>
+                        <li class="linav">
+                            <a href="habitaciones.html" class="linknav">HABITACIONES</a>
+                        </li>
+                        <li class="linav">
+                            <a href="servicios.html" class="linknav">SERVICIOS</a>
+                        </li>
+                        <li class="linav">
+                            <a href="contactanos.html" class="linknav" id="headerContactanos">CONTACTANOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
@@ -43,8 +57,8 @@
 
             <div class="servicioCaja1">
                 <img src="../IMG/serv24hs.png" alt="Servicio a la habitación" class="servs">
-                <p class="textoChico">Servicio a la</p>
-                <p class="textoChico">habitación</p>
+                <p class="textoChico m-0">Servicio a la</p>
+                <p class="textoChico m-0">habitación</p>
             </div>
             <div class="servicioCaja2">
                 <img src="../IMG/servaire.png" alt="Calefacción" class="servs">
@@ -63,7 +77,7 @@
                 <img src="../IMG/acc.png" alt="Accesibilidad" class="logoServ">
                 <div>
                     <h3>¡Somos accesibles!</h3>
-                    <p class="textoChico">Nuestras instalaciones se encuentran totalmente diseñadas en base a la accesibilidad, eliminando todo tipo de barreras (fìsica, sensorial o de comunicación). </p>
+                    <p class="textoChico m-0">Nuestras instalaciones se encuentran totalmente diseñadas en base a la accesibilidad, eliminando todo tipo de barreras (física, sensorial o de comunicación). </p>
                 </div>
             </div>
         
@@ -71,7 +85,7 @@
                 <img src="../IMG/fotopets.png" alt="Pet Friendly" class="logoServ">
                 <div>
                     <h3>¡Somos Pet Friendly!</h3>
-                    <p class="textoChico">Podés traer a tu mascota para compartir la estadía</p>
+                    <p class="textoChico m-0">Podés traer a tu mascota para compartir la estadía</p>
                 </div>
             </div>
 
@@ -79,7 +93,7 @@
                 <img src="../IMG/sust.png" alt="Sustentabilidad" class="logoServ">
                 <div>
                     <h3>¡Somos sustentables!</h3>
-                    <p class="textoChico">Este proyecto formuló tomando las bases del turismo sostenible.</p>
+                    <p class="textoChico m-0">Este proyecto formuló tomando las bases del turismo sostenible.</p>
                 </div>
             </div>
 
@@ -87,7 +101,7 @@
                 <img src="../IMG/gastronomia.png" alt="Gastronomia" class="logoServ">
                 <div>
                     <h3>¡Nuestra gastronomia es 100% regional!</h3>
-                    <p class="textoChico">Todos los platos preparados en Huasi incorporan alimentos típicos de la región.</p>
+                    <p class="textoChico m-0">Todos los platos preparados en Huasi incorporan alimentos típicos de la región.</p>
                 </div>
             </div>
 
@@ -105,14 +119,14 @@
     <footer>        
         <div id="divFooter1">
             <a href="../index.html"><img src="../IMG/HuasiHosteriaLogoCrema.png" alt="Huasi Hosteria" srcset="" id="huasiLogoFooter"></a>
-            <p class="textoFooter">Sentite mejor que en casa</p>
+            <p class="textoFooter m-0">Sentite mejor que en casa</p>
 
             <div class="divLinealFooter1"></div>
 
             <div id="divFooter1div1" class="textoFooter2">
-                <p>Avenida Salta 123, Cafayate, Salta.</p>
-                <p>Tel.: 4444-2222 / 15 2345 2345</p>
-                <p>hola@huasihosteria.com</p>
+                <p class="m-0">Avenida Salta 123, Cafayate, Salta.</p>
+                <p class="m-0">Tel.: 4444-2222 / 15 2345 2345</p>
+                <p class="m-0">hola@huasihosteria.com</p>
             </div>
         </div>
 
@@ -126,13 +140,13 @@
         </div>
 
         <div id="divFooter3">
-            <p class="textoFooter">Suscribite para recibir descuentos exclusivos</p>
+            <p class="textoFooter m-0">Suscribite para recibir descuentos exclusivos</p>
             <form action="susbribir">
                 <input type="text" placeholder="Ingresá tu e-mail" class="fuenteCajaFormulario" class="cajaFormulario">
-                <input type="submit" class="texto fuenteCajaFormulario"> 
+                <input type="submit" class="textoChico fuenteCajaFormulario">
             </form>
             <div class="divLinealFooter2"></div>
-            <p class="textoFooter">Sigamos conectados</p>
+            <p class="textoFooter m-0">Sigamos conectados</p>
             <div id="divFooter2div1">
             <a href="https://www.instagram.com/"><img src="../IMG/instagram.png" alt="Instagram" class="redesSocialesLogo"></a>
             <a href="https://www.facebook.com"><img src="../IMG/facebook.png" alt="Facebook" class="redesSocialesLogo" id="facebookLogo"></a>
