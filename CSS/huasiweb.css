@@ -964,7 +964,7 @@ main{
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 210vh;
+    grid-template-rows: 30vh 220vh;
     grid-template-areas: "banner"
                          "habs";
 }
@@ -1045,7 +1045,7 @@ grid-template-areas: "banner banner"
 /*FOOTER*/
 
 footer{
-    height: 50vh;
+    height: 60vh;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
