@@ -217,9 +217,6 @@ main{
     filter: drop-shadow(0 0.2vh 0.5vh #2F2A26);
 }
 
-.container-sm{
-    height: 40vh;
-}
 
 /*HABITACIONES*/
 
@@ -774,6 +771,10 @@ main{
     height: 50vh;
 }
 
+.container-sm{
+    height: 40vh;
+}
+
 /*HABITACIONES*/
 
 #gridHabitaciones{
@@ -1058,6 +1059,10 @@ main{
     height: 30vh;
 }
 
+.container-sm{
+    height: 60vh;
+}
+
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
@@ -1312,6 +1317,10 @@ margin: 0 5vh;
 
 .bannerNosotros{
     height: 20vh;
+}
+
+.container-sm{
+    height: 60vh;
 }
 
 /*HABITACIONES*/
