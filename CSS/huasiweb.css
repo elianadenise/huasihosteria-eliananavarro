@@ -95,14 +95,28 @@ main{
     align-items: center;
 }
 
+.fotoacc{
+    grid-area: fotoacc;
+}
+
+.accesibilidad{
+    grid-area: accesible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .divLineal1{
     grid-area: l1;
-    width: 90%;
-    border-bottom:solid 0.3vh #DBC9B8;
     margin: auto;
     display: flex;
     align-self: center;
     justify-self: center;
+}
+
+.fotopet{
+    grid-area: fotopet;
 }
 
 .petFriendly{
@@ -113,18 +127,20 @@ main{
     align-items: center;
 }
 
-.fotoPet{
-    grid-area: fotopet;
+.servsIndex{
+    display: flex;
     align-self: center;
+    justify-self: center;
     display: inline-block;
     filter: drop-shadow(0 0.2vh 0.5vh #2F2A26);
 }
 
-.logoPet{
-    grid-area: logopet;
+.botonServ{
+    grid-area: botonserv;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
     align-self: center;
-    display: inline-block;
-    filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); 
 }
 
 .divLineal2{
@@ -193,11 +209,16 @@ main{
     display: flex;
     align-self: center;
     justify-self: center;
+    margin-bottom: 3rem;
     transition: 1s;
 }
 
 .galeriaNosotros:hover{
     filter: drop-shadow(0 0.2vh 0.5vh #2F2A26);
+}
+
+.container-sm{
+    height: 40vh;
 }
 
 /*HABITACIONES*/
@@ -223,14 +244,79 @@ main{
     background-size: cover;
 }
 
-.habs{
-    grid-area: habs;
+.descripcion{
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vh;
+}
+
+.habitacion1{
+    grid-area: hab1;
     background-color: #EFEEEA;
     padding: 1vh;
     margin:2vh;
+    border: 0.1vh solid #DBC9B8;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 1s;
+}
+
+.habitacion1:hover{
+    filter: drop-shadow(0 0.2vh 0.5vh #2F2A26);
+}
+
+.habitacion2{
+    grid-area: hab2;
+    background-color: #EFEEEA;
+    padding: 1vh;
+    margin: 2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.habitacion2:hover{
+    filter: drop-shadow(0 0.2vh 0.5vh #2F2A26);
+}
+
+.habitacion3{
+    grid-area: hab3;
+    background-color: #EFEEEA;
+    padding:1vh;
+    margin: 2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.habitacion3:hover{
+    filter: drop-shadow(0 0.2vh 0.5vh #2F2A26);
+}
+
+.imagenHabitaciones{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1vh;
+}
+
+.ulmainHabitacion{
+    list-style-type:circle;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
 }
 
 /*SERVICIOS*/
@@ -485,6 +571,7 @@ footer{
     margin: 0 1.5vw 0 1.5vw;
 }
 
+
 /*FUENTES*/
 h1{
     font-family: 'Montserrat Alternates', sans-serif;
@@ -510,6 +597,12 @@ h3{
     font-family: 'Montserrat Alternates', sans-serif; 
     color: #2F2A26;
     font-weight: 700;
+}
+
+h5{
+    text-shadow: #2F2A26 0.1em 0.1em 0.2em;
+    color: #EFEEEA;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .h5galeria{
@@ -635,12 +728,13 @@ main{
 
 /*INDEX*/
 #gridIndex{
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows:50vh 25vh 4vh 20vh 4vh 30vh;
+    grid-template-columns: 40% 10% 10% 40%;
+    grid-template-rows:50vh 40vh 10vh 20vh 10vh 4vh 30vh;
     grid-template-areas: "banner banner banner banner"
                          "bienvenida bienvenida bienvenida bienvenida"
-                         "l1 l1 l1 l1"
-                         "logopet pet pet fotopet"
+                         "fotoacc l1 l1 fotopet"
+                         "accesible l1 l1 pet"
+                         "botonserv botonserv botonserv botonserv"
                          "l2 l2 l2 l2"
                          "lista lista mapa mapa";
 }
@@ -650,15 +744,21 @@ main{
     margin: 0 20vw;
 }
 
-.fotoPet{
-    height: 7vw;
-    justify-self: start;
-
+.servsIndex{
+    width: 7vw;
 }
 
-.logoPet{
-    width: 7vw;
-    justify-self: end;
+.accesibilidad, .fotoacc{
+    margin-left: 7vh;
+}
+
+.petFriendly, .fotopet{
+    margin-right: 7vh;
+}
+
+.divLineal1{
+    height: 90%;
+    border-left:solid 0.3vh #DBC9B8;
 }
 
 .h3Index{
@@ -674,24 +774,33 @@ main{
     height: 50vh;
 }
 
-.textoNosotros{
-    margin: 6vw 10vw;
-}
-
 /*HABITACIONES*/
 
 #gridHabitaciones{
     background-color: #EFEEEA;
-    grid-template-columns: 100%;
-    grid-template-rows: 50vh 90vh;
-    grid-template-areas: "banner"
-                         "habs";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50vh 20vh 55vh;
+    grid-template-areas: "banner banner banner"
+                         "descripcion descripcion descripcion"
+                         "hab1 hab2 hab3";
 }
 
-.habs{
-    flex-direction: row;
-    flex-wrap: nowrap;
+.habitacion1{
+    padding: 3vh;
 }
+
+.habitacion2{
+    padding: 3vh;
+}
+
+.habitacion3{
+    padding: 3vh;
+}
+
+.imagenHabitaciones{
+    width: 10vw;
+}
+
 
 /*SERVICIOS*/
 
@@ -911,13 +1020,15 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 100%;
-    grid-template-rows:30vh 30vh 5vh 10vh 15vh 15vh 5vh 15vh 30vh;
+    grid-template-rows:30vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 20vh;
     grid-template-areas: "banner"
                          "bienvenida"
                          "l1"
-                         "logopet"
-                         "pet"
+                         "fotoacc"
+                         "accesible"
                          "fotopet"
+                         "pet"
+                         "botonserv"
                          "l2"
                          "lista"
                          "mapa";
@@ -927,53 +1038,40 @@ main{
     margin: 0 5vw;
 }
 
-.petFriendly{
-    grid-area: pet;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.divLineal1{
+    width: 90%;
+    border-bottom:solid 0.3vh #DBC9B8;
+    margin: auto;
 }
 
-.fotoPet{
-    justify-self:center;
-    width: 20vw;
-
+.accesibilidad{
+    margin: 0 5vh;
 }
 
-.logoPet{
-    height: 80%;
-    justify-self: center;
+.servsIndex{
+    width: 15vw;
 }
 
-.hrIndex1{
-    height: 20vh;
-}
 
 /*NOSOTROS*/
 .bannerNosotros{
     height: 30vh;
 }
 
-.textoNosotros{
-    margin: 6vw 10vw;
-}
-
-
-
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 220vh;
+    grid-template-rows: 30vh 20vh 40vh 40vh 40vh;
     grid-template-areas: "banner"
-                         "habs";
+                         "descripcion"
+                         "hab1"
+                         "hab2"
+                         "hab3";
 }
 
-.habs{
-    flex-direction: column;
-    flex-wrap: nowrap;
+.imagenHabitaciones{
+    width: 12vw;
 }
-
 
 /*SERVICIOS*/
 #gridServicios{
@@ -1045,7 +1143,7 @@ grid-template-areas: "banner banner"
 /*FOOTER*/
 
 footer{
-    height: 60vh;
+    height: 50vh;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -1177,38 +1275,38 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 100%;
-    grid-template-rows:25vh 30vh 5vh 10vh 15vh 15vh 5vh 15vh 30vh;
+    grid-template-rows:20vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 20vh;
     grid-template-areas: "banner"
                          "bienvenida"
                          "l1"
-                         "logopet"
-                         "pet"
+                         "fotoacc"
+                         "accesible"
                          "fotopet"
+                         "pet"
+                         "botonserv"
                          "l2"
                          "lista"
                          "mapa";
 }
+
 .bienvenidaHuasi{
 margin: 0 5vh;
 }
 
-.petFriendly{
-    grid-area: pet;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.divLineal1{
+    width: 90%;
+    border-bottom:solid 0.3vh #DBC9B8;
+    margin: auto;
 }
 
-.fotoPet{
-    justify-self:center;
-    height: 10vh;
+.accesibilidad, .petFriendly{
+    margin: 0 5vh;
 }
 
-.logoPet{
-    height: 80%;
-    justify-self: center;
+.servsIndex{
+    width: 15vw;
 }
+
 
 /*NOSOTROS*/
 
@@ -1216,23 +1314,21 @@ margin: 0 5vh;
     height: 20vh;
 }
 
-.textoNosotros{
-    margin: 6vw 10vw;
-}
-
-
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 280vh;
+    grid-template-rows: 20vh 20vh 40vh 40vh 40vh;
     grid-template-areas: "banner"
-                         "habs";
+                         "descripcion"
+                         "hab1"
+                         "hab2"
+                         "hab3";
 }
 
-.habs{
-    flex-direction: column;
-    flex-wrap: nowrap;
+.imagenHabitaciones{
+    width: 12vw;
 }
+
 
 
 /*SERVICIOS*/

@@ -12,6 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="CSS/huasiweb.css">
     <title>Huasi Hosteria</title>
 </head>
@@ -19,6 +21,7 @@
 <body>
 
     <header>
+        <!--navbar-->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <a href="index.html"><img src="IMG/HuasiHosteriaLogored.png" alt="Huasi Hosteria"
@@ -57,8 +60,8 @@
                 <p>Sentite mejor que en casa</p>
             </h1>
 
+            <!--presentacion-->
             <div class="bienvenidaHuasi">
-
                 <h2 class="animate__animated animate__zoomIn">¡Bienvenidos a Huasi!</h2>
                 <div class="animate__animated animate__zoomIn">
                     <p class="textoCentrado">Somos una hosteria que tiene como objetivo transmitir la calidez de un
@@ -70,20 +73,27 @@
                 </p>
             </div>
 
-
+            <!--servicios-->
+            <img src="IMG/acc.png" alt="Accesibilidad" class="fotoacc servsIndex" data-aos="fade-right">
+            <div class="accesibilidad">
+                <h3 class="h3main">¡Somos accesibles!</h3>
+                <p class="textoChicoCentrado">Nuestras instalaciones se encuentran totalmente diseñadas en base a la
+                    accesibilidad, eliminando todo tipo de barreras. </p>
+            </div>
 
             <div class="divLineal1"></div>
 
-            <img src="IMG/petfriendly.png" alt="" class="logoPet">
+            <img src="IMG/fotopets.png" alt="Pet Friendly" class="fotopet servsIndex" data-aos="fade-left">
             <div class="petFriendly">
                 <h3 class="h3main">¡Somos Pet Friendly!</h3>
                 <p class="textoChicoCentrado">Podés traer a tu mascota para compartir la estadía.</p>
-                <a href="HTML/servicios.html" class="botonLink">VER MÁS SERVICIOS</a>
             </div>
-            <img src="IMG/fotopet.png" class="fotoPet">
+
+            <a href="HTML/servicios.html" class="botonLink botonServ">VER MÁS SERVICIOS</a>
 
             <div class="divLineal2"></div>
 
+            <!--lista-->
             <div class="lista">
                 <h3 class="h3Index">Nos encontramos</h3>
                 <ul class="texto ulmainIndex">
@@ -92,12 +102,13 @@
                     <li class="limain">A 1 cuadra de Bodega Nanni</li>
                 </ul>
             </div>
-
+            <!--mapa-->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10136.432922079275!2d-65.9845876612565!3d-26.073764643879727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941f311369c3a61b%3A0x540e61c61f3a5d0c!2sCafayate%2C%20Salta!5e0!3m2!1ses!2sar!4v1639177484420!5m2!1ses!2sar"
                 style="border:0;" allowfullscreen="" loading="lazy" class="mapaIndex"></iframe>
         </div>
 
+        <!--reservaicono-->
         <a href="HTML/contactanos.html"><img src="IMG/reservar.png" alt="reservar" id="reservaAhora"
                 class="animate__animated animate__headShake"></a>
 
@@ -105,13 +116,14 @@
             new WOW().init();
         </script>
 
-
-
+        <script>
+            AOS.init();
+        </script>
 
     </main>
 
     <footer>
-
+        <!--seccion1-->
         <div id="divFooter1" class="m-0">
             <a href="index.html"><img src="IMG/HuasiHosteriaLogoCrema.png" alt="Huasi Hosteria" srcset=""
                     id="huasiLogoFooter"></a>
@@ -127,6 +139,7 @@
             </div>
         </div>
 
+        <!--seccion2-->
         <div id="divFooter2">
             <a href="index.html" class="textoFooter aFooter">INICIO</a>
             <a href="HTML/nosotros.html" class="textoFooter aFooter">NOSOTROS</a>
@@ -136,6 +149,7 @@
 
         </div>
 
+        <!--seccion3-->
         <div id="divFooter3">
             <p class="textoFooter m-0">Suscribite para recibir descuentos exclusivos</p>
             <form action="susbribir">
