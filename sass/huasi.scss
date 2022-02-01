@@ -1,0 +1,1521 @@
+$colorTextos: #2F2A26;
+$sombraImg: drop-shadow(0 0.2vh 0.5vh #2F2A26);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EFEEEA;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #EFEEEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    box-shadow: 0 0 0.7vh 0;
+    box-shadow: #2F2A26/20%;
+    z-index: 10;
+
+    .navbar{
+        width: 100%;
+
+        img{
+            display: flex;
+            padding-left: 7vw;
+        }        
+
+        .collapse{
+            flex-grow:0;
+        }
+
+        ul{
+            list-style-type: none;
+            font-family: 'Poppins', sans-serif;
+            height: 8vh;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-right: 7vw;
+
+            li{
+                display: flex;
+                text-decoration: none;
+
+                a{
+                    color: #C65425;
+                    text-decoration: none;
+                    background-color: transparent;
+                    border:0.1vh solid transparent;
+                    transition: 1s;
+                    &:hover{
+                        border: #DBC9B8;
+                        color: #C65425;
+                    
+                    }
+                } 
+            }
+        }
+    }
+}
+
+/*MAIN*/
+
+main{
+    background-color: #EFEEEA;
+}
+
+/*INDEX*/
+#gridIndex{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+    row-gap: 0vh;
+    justify-content: space-around;
+
+
+    .bannerindex{
+        grid-area: banner;
+        justify-content: center;
+        background-image: url(../IMG/capaindex.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bienvenidaHuasi{
+        grid-area: bienvenida;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fotoacc{
+        grid-area: fotoacc;
+    }
+    
+    .accesibilidad{
+        grid-area: accesible;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    
+    .divLineal1{
+        grid-area: l1;
+        margin: auto;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .fotopet{
+        grid-area: fotopet;
+    }
+    
+    .petFriendly{
+        grid-area: pet;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    
+    .servsIndex{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        display: inline-block;
+        filter: $sombraImg;
+
+        
+    }
+    
+    .botonServ{
+        grid-area: botonserv;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .divLineal2{
+        grid-area: l2;
+        width: 90%;
+        border-bottom:solid 0.3vh #DBC9B8;
+        margin: auto;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .lista{
+        grid-area: lista;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: transparent;
+
+        ul{
+            list-style-type:circle;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+    }
+    
+    
+    iframe{
+        grid-area: mapa;
+        justify-self: center;
+        align-self: center;
+        width: 60%;
+        height: 80%;
+        background-color: transparent;
+    }
+    
+    .h3Index{
+        margin: 0 0 1vh 0;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+    
+}
+
+
+/*NOSOTROS*/
+
+.bannerNosotros{
+    display: flex;
+    justify-content: center;
+    background-image: url(../IMG/capanosotros.png);                  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.textoNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriaNosotros{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 3rem;
+    transition: 1s;
+}
+
+.galeriaNosotros:hover{
+    filter: $sombraImg;
+}
+
+.container-sm{
+    height: 40vh;
+}
+
+/*HABITACIONES*/
+
+#gridHabitaciones{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+    row-gap: 0vh;
+    justify-content: space-around;
+}
+
+.bannerHabitaciones{
+    grid-area: banner;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../IMG/capahabitaciones.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.descripcion{
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vh;
+}
+
+.habitacion1{
+    grid-area: hab1;
+    background-color: #EFEEEA;
+    padding: 1vh;
+    margin:2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.habitacion1:hover{
+    filter: $sombraImg;
+}
+
+.habitacion2{
+    grid-area: hab2;
+    background-color: #EFEEEA;
+    padding: 1vh;
+    margin: 2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.habitacion2:hover{
+    filter: $sombraImg;
+}
+
+.habitacion3{
+    grid-area: hab3;
+    background-color: #EFEEEA;
+    padding:1vh;
+    margin: 2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.habitacion3:hover{
+    filter: $sombraImg;
+}
+
+.imagenHabitaciones{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1vh;
+}
+
+.ulmainHabitacion{
+    list-style-type:circle;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+}
+
+/*SERVICIOS*/
+#gridServicios{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+    row-gap: 0vh;
+    justify-content: space-around;
+}
+
+.bannerserv{
+    grid-area: banner;
+    width: 100%;
+    background-image: url(../IMG/capaservicios.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.divLinealServ{
+    grid-area: l;
+}
+
+.servicioCaja1{
+    grid-area: serv1;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh;
+    margin: 1vh;
+    background-color: transparent;
+    border:0.1vh solid transparent;
+    transition: 1s;
+}
+
+.servicioCaja1:hover{
+    border:0.1vh solid #DBC9B8;
+}
+
+.servicioCaja2{
+    grid-area: serv2;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh;
+    margin: 1vh;
+    background-color: transparent;
+    border:0.1vh solid transparent;
+    transition: 1s;
+}
+
+.servicioCaja2:hover{
+    border:0.1vh solid #DBC9B8;
+}
+.servicioCaja3{
+    grid-area: serv3;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh;
+    margin: 1vh;
+    background-color: transparent;
+    border:0.1vh solid transparent;
+    transition: 1s;
+}
+
+.servicioCaja3:hover{
+    border:0.1vh solid #DBC9B8;
+}
+
+.servicioCaja4{
+    grid-area: serv4;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh;
+    margin: 1vh;
+    background-color: transparent;
+    border:0.1vh solid transparent;
+    transition: 1s;
+}
+
+.servicioCaja4:hover{
+    border:0.1vh solid #DBC9B8;
+}
+
+.servs{
+    display: inline-block;
+    filter: $sombraImg;
+}
+
+.logoServ{
+    justify-self: center;
+    align-self: center;
+    margin-right: 2vw;
+    display: inline-block;
+    filter: $sombraImg; 
+}
+
+.textoServ1{
+    grid-area: acc;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-items: center;
+}
+
+.textoServ2{
+    grid-area: pets;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-items: center;
+    margin: 0 10vh;
+}
+
+.textoServ3{
+    grid-area: sust;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-items: center;
+    margin: 0 10vh;
+}
+
+.textoServ4{
+    grid-area: gast;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-items: center;
+    margin: 0 10vh;
+}
+
+/*CONTACTO*/
+
+#gridcontactanos{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.bannerContactanos{
+    grid-area: banner;
+    justify-content: center;
+    background-image: url(../IMG/capacontactanos.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mapa{
+    grid-area: mapa;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: 80%;
+}
+
+.datos{
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.formulario{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #2F2A26;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .divFooter1{
+        display: flex;
+        flex-direction: column;
+        .divLinealFooter1{
+            width: 100%;
+            border-bottom:solid 0.2vh #DBC9B8;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            height: 0.1vh;
+            margin-bottom: 0.5vh;
+        }
+        .divFooter1div1{
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+    .divFooter2{
+        display: flex;
+        flex-direction: column;
+        .aFooter{
+            transition: 1s;
+            text-decoration: none;
+            &:hover{
+                color: #EFEEEA;
+            }
+        }
+    }
+    .divFooter3{
+        display: flex;
+        flex-direction: column;
+        .divLinealFooter2{
+            width: 100%;
+            border-bottom:solid 0.2vh #DBC9B8;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            height: 0.1vh;
+            margin-top: 0.5vh;
+        }
+        .redesSocialesLogo{
+            height: 2vh;
+        }
+        .facebookLogo{
+            margin: 0 1.5vw 0 1.5vw;
+        }
+    }
+}
+
+/*FUENTES*/
+h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #EFEEEA;
+    line-height: 1,5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: #2F2A26 0.1em 0.1em 0.2em;
+    font-weight: 700;
+
+}
+
+h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: $colorTextos;
+    line-height: 1,5;
+    margin-bottom: 1vh;
+    font-weight: 700;
+}
+
+h3{
+    font-family: 'Montserrat Alternates', sans-serif; 
+    color: $colorTextos;
+    font-weight: 700;
+}
+
+h5{
+    text-shadow: #2F2A26 0.1em 0.1em 0.2em;
+    color: #EFEEEA;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.h5galeria{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #EFEEEA;
+    text-shadow: #2F2A26 0.1em 0.1em 0.2em;
+}
+
+.textoCentrado{
+    font-family: 'Poppins', sans-serif;
+    color: $colorTextos;
+    text-justify: center;
+    text-align: center;
+}
+
+.texto{
+    font-family: 'Poppins', sans-serif;
+    color: $colorTextos;
+    line-height: 1.5;
+}
+
+.fuenteCajaFormulario{
+    font-family: 'Poppins', sans-serif;
+    color: $colorTextos;
+    font-size: 0.8em;
+}
+
+.textoChico{
+    font-family: 'Poppins', sans-serif;
+    color: $colorTextos;
+    line-height: 1.5;
+}
+
+.textoChicoCentrado{
+    font-family: 'Poppins', sans-serif;
+    color: $colorTextos;
+    text-justify: center;
+    text-align: center;
+}
+
+.textoFooter{
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+    color: #C8B6A5; 
+}
+
+.textoFooter2{
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    color: #C8B6A5; 
+}
+
+.botonLink{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #EFEEEA;
+    background-color: #C65425 ;
+    transition: 1s;
+    display: flex;
+    border: 0.1vh solid #C65425;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonLink:hover{
+    background-color: transparent;
+    color: #2F2A26;
+}
+
+/*RESERVA*/
+#reservaAhora{
+    position: fixed;
+    display: inline-block;
+    filter: $sombraImg; 
+}
+
+
+/*DESKTOP*/
+
+@media screen and (min-width: 769px){
+    
+/*HEADER + NAV*/
+
+header{
+    height: 10vh; 
+    position: fixed;
+    flex-direction: row;
+
+    
+    .navbar{
+        width: 100%;
+
+        img{
+            height: 5vh;
+            justify-content: flex-start;
+        }
+        
+        .linknav{
+            padding:0.5vh 0.5vh;
+            font-size: 1em;
+
+            &:hover{
+                border:0.1vh solid #DBC9B8;
+            }
+        }
+
+        .botonContactanos{
+            background: #DBC9B8;
+            border:0.1vh solid #DBC9B8;
+            transition: 1s;
+        
+            &:hover{
+                background: #EFEEEA;
+            }
+            
+        }
+    }
+}
+
+
+/*MAIN*/
+
+main{
+    padding-top: 10vh;
+}
+
+/*INDEX*/
+#gridIndex{
+    grid-template-columns: 40% 10% 10% 40%;
+    grid-template-rows:50vh 40vh 10vh 15vh 10vh 4vh 30vh;
+    grid-template-areas: "banner banner banner banner"
+                         "bienvenida bienvenida bienvenida bienvenida"
+                         "fotoacc l1 l1 fotopet"
+                         "accesible l1 l1 pet"
+                         "botonserv botonserv botonserv botonserv"
+                         "l2 l2 l2 l2"
+                         "lista lista mapa mapa";
+
+
+                         .bienvenidaHuasi{
+                            line-height: 1.5;
+                            margin: 0 20vw;
+                        }
+                        
+                        .servsIndex{
+                            width: 7vw;
+                        }
+                        
+                        .accesibilidad, .fotoacc{
+                            margin-bottom: 1vh;
+                            margin-left: 7vh;
+                        }
+                        
+                        .petFriendly, .fotopet{
+                            margin-right: 7vh;
+                            margin-bottom: 1vh;
+                        }
+                        
+                        .divLineal1{
+                            height: 90%;
+                            border-left:solid 0.3vh #DBC9B8;
+                        }
+                        
+                        .h3Index{
+                            margin: 0 0 1vh 0;
+                            display: flex;
+                            justify-self: center;
+                            align-self: center;
+                        }
+
+
+}
+
+/*NOSOTROS*/
+
+.bannerNosotros{
+    height: 50vh;
+}
+
+/*HABITACIONES*/
+
+#gridHabitaciones{
+    background-color: #EFEEEA;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50vh 20vh 55vh;
+    grid-template-areas: "banner banner banner"
+                         "descripcion descripcion descripcion"
+                         "hab1 hab2 hab3";
+}
+
+.habitacion1{
+    padding: 3vh;
+}
+
+.habitacion2{
+    padding: 3vh;
+}
+
+.habitacion3{
+    padding: 3vh;
+}
+
+.imagenHabitaciones{
+    width: 10vw;
+}
+
+
+/*SERVICIOS*/
+
+#gridServicios{
+    grid-template-columns:28% 2% 70%;
+    grid-template-rows: 50vh 20vh 20vh 20vh 20vh;
+    grid-template-areas: "banner banner banner"
+                         "serv1 l acc"
+                         "serv2 l pets"
+                         "serv3 l sust"
+                         "serv4 l gast";
+}
+
+.divLinealServ{
+    height: 90%;
+    border-right: solid 0.3vh #DBC9B8;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.textoServ1{
+    margin: 0 6vh;
+}
+
+.textoServ2{
+    margin: 0 6vh;
+}
+
+.textoServ3{
+    margin: 0 6vh;
+}
+
+.textoServ4{
+    margin: 0 6vh;
+}
+
+.servs{
+    height: 8vh;
+}
+
+.logoServ{
+    height: 8vh;
+}
+
+
+/*CONTACTANOS*/
+
+#gridcontactanos{
+    background-color: #EFEEEA;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:50vh 25vh 25vh;
+    grid-template-areas: "banner banner"
+                         "formulario mapa"
+                         "formulario datos";
+}
+
+.formulario{
+    justify-items: start;
+}
+
+.datos{
+    margin-left: 10%;
+}
+
+/*FOOTER*/
+footer{
+    height: 20vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .divFooter1{
+        flex-direction: column;
+        justify-items: start;
+
+        .huasiLogoFooter{
+            height: 5vh;
+        }
+
+        .divFooter1div1{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+
+    
+    .divFooter2{
+        display: flex;
+        flex-direction: column;
+
+        
+        .aFooter{
+            transition: 1s;
+            text-decoration: none;
+
+            &:hover{
+                color: #EFEEEA;
+            }
+        }
+    }
+
+    
+    .divFooter3{
+        display: flex;
+        flex-direction: column;
+
+        .divFooter3div1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .redesSocialesLogo{
+                height: 2vh;
+            }
+            
+            #facebookLogo{
+                margin: 0 1.5vh 0 1.5vh;
+            }
+        }
+    }
+}
+
+
+/*FUENTES*/
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.4em;
+}
+
+.textoCentrado{
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.textoChicoIndex{
+    font-size:1.2em;
+    text-justify: center;
+    text-align: center;
+}
+
+.botonLink{
+    font-size: 1em;
+    margin-top: 2vh;
+    padding: 0.6vh;
+}
+
+/*RESERVA*/
+#reservaAhora{
+    right: 3vh;
+    bottom: 13vh;
+    height: 8vh;
+}
+
+}
+
+
+/*TABLETS*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+/*HEADER + NAV*/
+
+header{
+    position:relative;
+    flex-direction: column;
+    justify-items: center;
+    padding: 1rem;
+
+    .navbar{
+        width:100%;
+
+        img{
+            height: 5vh;
+            justify-content: center;
+            margin: 0.1vh 0;
+        }
+    
+        ul{
+            flex-direction: center;
+            justify-self: center;
+            height: 12vh;
+            line-height: 1em;
+    
+            
+            .linknav{
+                padding:0.5vh 0.5vh;
+                font-size: 1em;
+    
+                &:hover{
+                    border:0.1vh solid #DBC9B8;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+/*MAIN*/
+main{
+    padding-top: 0vh;
+}
+
+/*INDEX*/
+#gridIndex{
+    grid-template-columns: 100%;
+    grid-template-rows:30vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 20vh;
+    grid-template-areas: "banner"
+                         "bienvenida"
+                         "l1"
+                         "fotoacc"
+                         "accesible"
+                         "fotopet"
+                         "pet"
+                         "botonserv"
+                         "l2"
+                         "lista"
+                         "mapa";
+
+                         .bienvenidaHuasi{
+                            margin: 0 5vw;
+                        }
+                        
+                        .divLineal1{
+                            width: 90%;
+                            border-bottom:solid 0.3vh #DBC9B8;
+                            margin: auto;
+                        }
+
+                        .accesibilidad{
+                            margin: 0 5vh;
+                            justify-content: center;
+                        }
+                        
+                        .servsIndex{
+                            width: 15vw;
+                        }
+}
+
+
+
+
+/*NOSOTROS*/
+.bannerNosotros{
+    height: 30vh;
+}
+
+/*HABITACIONES*/
+#gridHabitaciones{
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 20vh 40vh 40vh 40vh;
+    grid-template-areas: "banner"
+                         "descripcion"
+                         "hab1"
+                         "hab2"
+                         "hab3";
+}
+
+.imagenHabitaciones{
+    width: 12vw;
+}
+
+/*SERVICIOS*/
+#gridServicios{
+grid-template-columns:50% 50%;
+grid-template-rows: 30vh 15vh 15vh 15vh 15vh 5vh 15vh 15vh;
+grid-template-areas: "banner banner"
+                     "acc acc"
+                     "pets pets"
+                     "sust sust"
+                     "gast gast"
+                     "l l"
+                     "serv1 serv2"
+                     "serv3 serv4";
+}
+
+.divLinealServ{
+    width: 90%;
+    border-bottom:solid 0.3vh #DBC9B8;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.servs{
+    height: 5vh;
+    margin-bottom: 1vh;
+}
+
+.logoServ{
+    height: 5vh;
+}
+
+.textoServ1{
+    margin: 0 8vh;
+}
+
+.textoServ2{
+    margin: 0 8vh;
+}
+
+.textoServ3{
+    margin: 0 8vh;
+}
+
+.textoServ4{
+    margin: 0 8vh;
+}
+
+
+/*CONTACTANOS*/
+#gridcontactanos{
+    grid-template-columns: 50% 50%;
+    grid-template-rows:30vh 25vh 25vh;
+    grid-template-areas: "banner banner"
+                         "formulario mapa"
+                         "formulario datos";
+}
+
+.formulario{
+    margin-left: 2vh;
+    justify-items: start;
+}
+
+.datos{
+    margin-left: 10%;
+}
+
+/*FOOTER*/
+
+footer{
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+
+    .divFooter1{
+        justify-items: space-around;
+        flex-direction: column;
+        justify-items: center;
+        align-items:center;
+        padding: 0 3%;
+
+        .huasiLogoFooter{
+            height: 6vh;
+        }
+
+        .divFooter1div1{
+            justify-items: center;
+            align-items:center;
+        }
+    }
+
+    .div2footer{
+        padding: 0 3%;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .afooter{
+            margin: 0.5vw;
+        } 
+    }
+    
+    .divFooter3{
+        justify-items: center;
+        align-items: center;
+        padding: 0 3%;
+    }
+
+}
+
+
+/*FUENTES*/
+h1{
+    font-size: 2.4em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1em;
+}
+
+.texto{
+    font-size: 1em;
+}
+
+.textoCentrado{
+    font-size: 1.1em;
+}
+
+.textoChico{
+    font-size: 0.9em;
+}
+
+.textoChicoCentrado{
+    font-size: 1em;
+}
+
+.textoFooter{
+    font-size: 0.9em;
+}
+
+.textoFooter2{
+    font-size: 0.9em;
+}
+
+.botonLink{
+    font-size: 0.9em;
+    margin-top: 2vh;
+    padding: 0.6vh;
+}
+
+/*RESERVA*/
+#reservaAhora{
+    right: 3vh;
+    bottom: 13vh;
+    height: 8vh;
+}
+
+}
+
+
+/*MOBILE*/
+
+@media screen and (min-width: 0px) and (max-width: 599px){
+
+/*HEADER + NAV*/
+
+header{
+    position:relative;
+    flex-direction: column;
+    padding: 1rem;
+
+    .navbar{
+        width: 100%;
+
+        img{
+            height: 5vh;
+            justify-content: center;
+        }
+
+        ul{
+            flex-direction: column;
+            margin-top: 1vh;
+            justify-content: center;
+            height: 12vh;
+
+            .linknav{
+                font-size: 1em;
+                padding: 0 0.3vh;
+
+                &:hover{
+                    border:0.1vh solid #DBC9B8;
+                }
+            }
+            
+        }
+        
+    }
+
+}
+
+
+/*MAIN*/
+main{
+    padding-top: 0vh;
+}
+
+/*INDEX*/
+#gridIndex{
+    grid-template-columns: 100%;
+    grid-template-rows:20vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 20vh;
+    grid-template-areas: "banner"
+                         "bienvenida"
+                         "l1"
+                         "fotoacc"
+                         "accesible"
+                         "fotopet"
+                         "pet"
+                         "botonserv"
+                         "l2"
+                         "lista"
+                         "mapa";
+                         
+                         .bienvenidaHuasi{
+                            margin: 0 5vh;
+                            }
+                            
+                        .divLineal1{
+                            width: 90%;
+                            border-bottom:solid 0.3vh #DBC9B8;
+                            margin: auto;
+                        }
+                            
+                        .accesibilidad, .petFriendly{
+                            margin: 0 5vh;
+                        }
+                            
+                        .servsIndex{
+                            width: 15vw;
+                        }
+
+}
+
+/*NOSOTROS*/
+
+.bannerNosotros{
+    height: 20vh;
+}
+
+/*HABITACIONES*/
+#gridHabitaciones{
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 20vh 40vh 40vh 40vh;
+    grid-template-areas: "banner"
+                         "descripcion"
+                         "hab1"
+                         "hab2"
+                         "hab3";
+}
+
+.imagenHabitaciones{
+    width: 12vw;
+}
+
+
+
+/*SERVICIOS*/
+#gridServicios{
+    grid-template-columns:50% 50%;
+    grid-template-rows: 20vh 15vh 15vh 15vh 15vh 5vh 15vh 15vh;
+    grid-template-areas: "banner banner"
+                         "acc acc"
+                         "pets pets"
+                         "sust sust"
+                         "gast gast"
+                         "l l"
+                         "serv1 serv2"
+                         "serv3 serv4";
+}
+    
+.divLinealServ{
+    width: 90%;
+    border-bottom:solid 0.3vh #DBC9B8;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.servs{
+    height: 5vh;
+    margin-bottom: 1vh;
+}
+    
+.logoServ{
+    height: 5vh;
+}
+
+.textoServ1{
+    margin: 0 5vh;
+}
+
+.textoServ2{
+    margin: 0 5vh;
+}
+
+.textoServ3{
+    margin: 0 5vh;
+}
+
+.textoServ4{
+    margin: 0 5vh;
+}
+
+
+/*CONTACTANOS*/
+
+#gridcontactanos{
+    grid-template-columns: 100%;
+    grid-template-rows:20vh 50vh 20vh 15vh;
+    grid-template-areas: "banner"
+                         "formulario"
+                         "mapa"
+                         "datos";
+}
+
+.formulario{
+    align-items: center;
+}
+
+.datos{
+    justify-self: center;
+    align-items: center;
+}
+
+/*FOOTER*/
+
+footer{
+    height:50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding:3vh 0;
+
+    .divFooter1{
+        flex-direction: column;
+        justify-items: space-between;
+        justify-items: center;
+        align-items: center;
+
+        .huasiLogoFooter{
+            height: 5vh;
+        }
+
+        
+        .divFooter1div1{
+            justify-items: space-around;
+            flex-direction: column;
+            justify-items: center;
+            align-items:center;
+        }
+    }
+
+    .divFooter2{
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+
+        .afooter{
+            display: flex;
+            margin: 0.9vh;
+        } 
+
+    }
+
+    .divFooter3{
+        justify-items: center;
+        align-items: center;
+        justify-items: space-between;
+    }
+
+}
+
+/*FUENTES*/
+h1{
+    font-size: 1.6em;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+h3{
+    font-size: 0.9em;
+}
+
+.texto{
+    font-size: 0.9em;
+}
+
+.textoCentrado{
+    font-size: 0.9em;
+}
+
+.textoChico{
+    font-size: 0.8em;
+}
+
+.textoChicoCentrado{
+    font-size:0.9em;
+}
+
+.textoFooter{
+    font-size: 0.8em;
+}
+
+.textoFooter2{
+    font-size: 0.8em;
+}
+
+.botonLink{
+    font-size: 0.8em;
+    margin-top: 2vh;
+    padding: 0.6vh;
+}
+
+/*RESERVA*/
+#reservaAhora{
+    right: 0vh;
+    bottom: 0vh;
+    height: 0vh;
+}
+
+}
