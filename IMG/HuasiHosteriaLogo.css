@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@font-face { font-family:"Poppins";font-variant:normal;font-weight:normal;src:url("#FontID1") format(svg)}
+@font-face { font-family:"Montserrat Alternates";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+.fil0 {fill:#C85223}
+.fil1 {fill:#C85223;fill-rule:nonzero}
+.fnt1 {font-weight:normal;font-size:784.79px;font-family:'Poppins'}
+.fnt0 {font-weight:bold;font-size:2506.51px;font-family:'Montserrat Alternates'}

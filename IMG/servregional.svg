@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100px" height="100px" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 42.54 42.54"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#EFEEEA;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#C8B6A5}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M21.27 0.35c11.56,0 20.93,9.37 20.93,20.92 0,11.56 -9.37,20.93 -20.93,20.93 -11.55,0 -20.92,-9.37 -20.92,-20.93 0,-11.55 9.37,-20.92 20.92,-20.92z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M21.27 0.35c11.56,0 20.93,9.37 20.93,20.92 0,11.56 -9.37,20.93 -20.93,20.93 -11.55,0 -20.92,-9.37 -20.92,-20.93 0,-11.55 9.37,-20.92 20.92,-20.92z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M21.27 0.35c11.56,0 20.93,9.37 20.93,20.92 0,11.56 -9.37,20.93 -20.93,20.93 -11.55,0 -20.92,-9.37 -20.92,-20.93 0,-11.55 9.37,-20.92 20.92,-20.92z"/>
+    </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M21.27 0.35c11.56,0 20.93,9.37 20.93,20.92 0,11.56 -9.37,20.93 -20.93,20.93 -11.55,0 -20.92,-9.37 -20.92,-20.93 0,-11.55 9.37,-20.92 20.92,-20.92z"/>
+  <g style="clip-path:url(#id0)">
+   <g id="_2723868910976">
+   </g>
+   <g style="clip-path:url(#id1)">
+    <image id="wom-creative-studio-verona-D8YWzfJ8d4w-unsplash.jpg" x="-43.68" y="-48.19" width="129.9" height="129.9" xlink:href="servregional_Images\servregional_ImgID1.png"/>
+   </g>
+   <g style="clip-path:url(#id2)">
+   </g>
+  </g>
+  <path class="fil1 str0" d="M21.27 0.35c11.56,0 20.93,9.37 20.93,20.92 0,11.56 -9.37,20.93 -20.93,20.93 -11.55,0 -20.92,-9.37 -20.92,-20.93 0,-11.55 9.37,-20.92 20.92,-20.92z"/>
+ </g>
+</svg>

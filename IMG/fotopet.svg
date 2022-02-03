@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100px" height="100px" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 33.34 33.34"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#EFEEEA;stroke-width:0.55;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#C8B6A5}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M16.67 0.27c9.06,0 16.4,7.34 16.4,16.4 0,9.06 -7.34,16.4 -16.4,16.4 -9.06,0 -16.4,-7.34 -16.4,-16.4 0,-9.06 7.34,-16.4 16.4,-16.4z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M16.67 0.27c9.06,0 16.4,7.34 16.4,16.4 0,9.06 -7.34,16.4 -16.4,16.4 -9.06,0 -16.4,-7.34 -16.4,-16.4 0,-9.06 7.34,-16.4 16.4,-16.4z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M16.67 0.27c9.06,0 16.4,7.34 16.4,16.4 0,9.06 -7.34,16.4 -16.4,16.4 -9.06,0 -16.4,-7.34 -16.4,-16.4 0,-9.06 7.34,-16.4 16.4,-16.4z"/>
+    </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M16.67 0.27c9.06,0 16.4,7.34 16.4,16.4 0,9.06 -7.34,16.4 -16.4,16.4 -9.06,0 -16.4,-7.34 -16.4,-16.4 0,-9.06 7.34,-16.4 16.4,-16.4z"/>
+  <g style="clip-path:url(#id0)">
+   <g id="_2723860792032">
+   </g>
+   <g style="clip-path:url(#id1)">
+    <image id="fotopet.png" x="-0.88" y="-11.62" width="67.89" height="56.57" xlink:href="fotopet_Images\fotopet_ImgID1.png"/>
+   </g>
+   <g style="clip-path:url(#id2)">
+   </g>
+  </g>
+  <path class="fil1 str0" d="M16.67 0.27c9.06,0 16.4,7.34 16.4,16.4 0,9.06 -7.34,16.4 -16.4,16.4 -9.06,0 -16.4,-7.34 -16.4,-16.4 0,-9.06 7.34,-16.4 16.4,-16.4z"/>
+ </g>
+</svg>
