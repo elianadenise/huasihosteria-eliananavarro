@@ -1,6 +1,8 @@
 $colorTextos: #2F2A26;
 $sombraImg: drop-shadow(0 0.2vh 0.5vh #2F2A26);
 $sombraTexto: #2F2A26 0.1em 0.1em 0.2em;
+$fuenteTitulos: 'Montserrat Alternates', sans-serif;
+$fuenteTextos: 'Poppins', sans-serif;
 
 @mixin banners($background){
     grid-area: banner;
@@ -9,6 +11,16 @@ $sombraTexto: #2F2A26 0.1em 0.1em 0.2em;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@mixin divLineal ($ancho, $alto, $border, $margin){
+    width: $ancho;
+    height: $alto;
+    border: $border;
+    margin: $margin;
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
 
 *{
@@ -102,6 +114,11 @@ main{
         justify-content: center;
         align-items: center;
     }
+
+    .flecha{
+        width: 5vh;
+        margin-top: 3vh;
+    }
     
     .fotoacc{
         grid-area: fotoacc;
@@ -143,8 +160,6 @@ main{
         justify-self: center;
         display: inline-block;
         filter: $sombraImg;
-
-        
     }
     
     .botonServ{
@@ -218,10 +233,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container-sm{
-    height: 40vh;
 }
 
 .galeriaNosotros{
@@ -477,13 +488,7 @@ footer{
         display: flex;
         flex-direction: column;
         .divLinealFooter1{
-            width: 100%;
-            border-bottom:solid 0.2vh #DBC9B8;
-            display: flex;
-            align-self: center;
-            justify-self: center;
-            height: 0.1vh;
-            margin-bottom: 0.5vh;
+            @include divLineal(100%, 0.1vh, solid 0 0 0 0.2vh #DBC9B8, 0 0 0 0.5vh);
         }
         .divFooter1div1{
             display: flex;
@@ -506,13 +511,7 @@ footer{
         display: flex;
         flex-direction: column;
         .divLinealFooter2{
-            width: 100%;
-            border-bottom:solid 0.2vh #DBC9B8;
-            display: flex;
-            align-self: center;
-            justify-self: center;
-            height: 0.1vh;
-            margin-top: 0.5vh;
+            @include divLineal(100%, 0.1vh, solid 0 0 0 0.2vh #DBC9B8, 0.5vh 0 0 0);
         }
         .redesSocialesLogo{
             height: 2vh;
@@ -525,7 +524,7 @@ footer{
 
 /*FUENTES*/
 h1{
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: $fuenteTitulos;
     color: #EFEEEA;
     line-height: 1,5;
     display: flex;
@@ -537,7 +536,7 @@ h1{
 }
 
 h2{
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: $fuenteTitulos;
     color: $colorTextos;
     line-height: 1,5;
     margin-bottom: 1vh;
@@ -545,15 +544,15 @@ h2{
 }
 
 h3{
-    font-family: 'Montserrat Alternates', sans-serif; 
+    font-family: $fuenteTitulos; 
     color: $colorTextos;
     font-weight: 700;
 }
 
 h4{
+    font-family: $fuenteTitulos;
     text-shadow: $sombraTexto;
     color: #EFEEEA;
-    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .textoCentrado{
@@ -576,13 +575,13 @@ h4{
 }
 
 .textoChico{
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     color: $colorTextos;
     line-height: 1.5;
 }
 
 .textoChicoCentrado{
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     color: $colorTextos;
     text-justify: center;
     text-align: center;
@@ -590,19 +589,19 @@ h4{
 
 .textoFooter{
     line-height: 1.8;
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     color: #C8B6A5; 
 }
 
 .textoFooter2{
     line-height: 1.4;
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     color: #C8B6A5; 
 }
 
 .botonLink{
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     color: #EFEEEA;
     background-color: #C65425 ;
     transition: 1s;
@@ -611,12 +610,14 @@ h4{
     border-radius: 0.3em;
     justify-content: center;
     align-items: center;
+
+    &:hover{
+        background-color: transparent;
+        color: #2F2A26;
+    }
 }
 
-.botonLink:hover{
-    background-color: transparent;
-    color: #2F2A26;
-}
+
 
 /*RESERVA*/
 #reservaAhora{
@@ -680,7 +681,7 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 40% 10% 10% 40%;
-    grid-template-rows:50vh 40vh 10vh 15vh 10vh 4vh 30vh;
+    grid-template-rows:50vh 50vh 10vh 15vh 10vh 4vh 30vh;
     grid-template-areas: "banner banner banner banner"
                          "bienvenida bienvenida bienvenida bienvenida"
                          "fotoacc l1 l1 fotopet"
@@ -730,32 +731,37 @@ main{
     height: 50vh;
 }
 
+.container-sm{
+    height: 60vh;
+}
+
 /*HABITACIONES*/
 
 #gridHabitaciones{
     background-color: #EFEEEA;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50vh 20vh 55vh;
+    grid-template-rows: 50vh 30vh 70vh;
     grid-template-areas: "banner banner banner"
                          "descripcion descripcion descripcion"
                          "hab1 hab2 hab3";
+                         
+                         .habitacion1{
+                            padding: 3vh;
+                        }
+
+                        .habitacion2{
+                            padding: 3vh;
+                        }
+                        
+                        .habitacion3{
+                            padding: 3vh;
+                        }
+                        
+                        .imagenHabitaciones{
+                            width: 10vw;
+                        }
 }
 
-.habitacion1{
-    padding: 3vh;
-}
-
-.habitacion2{
-    padding: 3vh;
-}
-
-.habitacion3{
-    padding: 3vh;
-}
-
-.imagenHabitaciones{
-    width: 10vw;
-}
 
 
 /*SERVICIOS*/
@@ -768,41 +774,42 @@ main{
                          "serv2 l pets"
                          "serv3 l sust"
                          "serv4 l gast";
-}
 
-.divLinealServ{
-    height: 90%;
-    border-right: solid 0.3vh #DBC9B8;
-    margin: auto;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-}
+                         .divLinealServ{
+                            height: 90%;
+                            border-right: solid 0.3vh #DBC9B8;
+                            margin: auto;
+                            display: flex;
+                            align-self: center;
+                            justify-self: center;
+                        }
+                        
+                        .textoServ1{
+                            margin: 0 6vh;
+                        }
+                        
+                        .textoServ2{
+                            margin: 0 6vh;
+                        }
+                        
+                        .textoServ3{
+                            margin: 0 6vh;
+                        }
+                        
+                        .textoServ4{
+                            margin: 0 6vh;
+                        }
+                        
+                        .servs{
+                            height: 8vh;
+                        }
+                        
+                        .logoServ{
+                            height: 8vh;
+                        }
+                        
 
-.textoServ1{
-    margin: 0 6vh;
 }
-
-.textoServ2{
-    margin: 0 6vh;
-}
-
-.textoServ3{
-    margin: 0 6vh;
-}
-
-.textoServ4{
-    margin: 0 6vh;
-}
-
-.servs{
-    height: 8vh;
-}
-
-.logoServ{
-    height: 8vh;
-}
-
 
 /*CONTACTANOS*/
 
@@ -813,19 +820,19 @@ main{
     grid-template-areas: "banner banner"
                          "formulario mapa"
                          "formulario datos";
-}
 
-.formulario{
-    justify-items: start;
-}
-
-.datos{
-    margin-left: 10%;
+                         .formulario{
+                            justify-items: start;
+                        }
+                        
+                        .datos{
+                            margin-left: 10%;
+                        }
 }
 
 /*FOOTER*/
 footer{
-    height: 20vh;
+    height: 30vh;
     flex-direction: row;
     justify-content: space-evenly;
 
@@ -988,6 +995,11 @@ main{
                          .bienvenidaHuasi{
                             margin: 0 5vw;
                         }
+
+                        .flecha{
+                            width: 0;
+                            margin-top: 0;
+                        }
                         
                         .divLineal1{
                             width: 90%;
@@ -1013,19 +1025,27 @@ main{
     height: 30vh;
 }
 
+.container-sm{
+    height: 60vh;
+}
+
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 20vh 40vh 40vh 40vh;
+    grid-template-rows: 30vh 30vh 70vh 70vh 70vh;
     grid-template-areas: "banner"
                          "descripcion"
                          "hab1"
                          "hab2"
                          "hab3";
+
+                         .imagenHabitaciones{
+                            width: 30vw;
+                        }
 }
 
 .imagenHabitaciones{
-    width: 12vw;
+    width: 30vw;
 }
 
 /*SERVICIOS*/
@@ -1040,40 +1060,41 @@ grid-template-areas: "banner banner"
                      "l l"
                      "serv1 serv2"
                      "serv3 serv4";
-}
 
-.divLinealServ{
-    width: 90%;
-    border-bottom:solid 0.3vh #DBC9B8;
-    margin: auto;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-}
-
-.servs{
-    height: 5vh;
-    margin-bottom: 1vh;
-}
-
-.logoServ{
-    height: 5vh;
-}
-
-.textoServ1{
-    margin: 0 8vh;
-}
-
-.textoServ2{
-    margin: 0 8vh;
-}
-
-.textoServ3{
-    margin: 0 8vh;
-}
-
-.textoServ4{
-    margin: 0 8vh;
+                     .divLinealServ{
+                        width: 90%;
+                        border-bottom:solid 0.3vh #DBC9B8;
+                        margin: auto;
+                        display: flex;
+                        align-self: center;
+                        justify-self: center;
+                    }
+                    
+                    .servs{
+                        height: 5vh;
+                        margin-bottom: 1vh;
+                    }
+                    
+                    .logoServ{
+                        height: 5vh;
+                    }
+                    
+                    .textoServ1{
+                        margin: 0 8vh;
+                    }
+                    
+                    .textoServ2{
+                        margin: 0 8vh;
+                    }
+                    
+                    .textoServ3{
+                        margin: 0 8vh;
+                    }
+                    
+                    .textoServ4{
+                        margin: 0 8vh;
+                    }
+                    
 }
 
 
@@ -1084,21 +1105,22 @@ grid-template-areas: "banner banner"
     grid-template-areas: "banner banner"
                          "formulario mapa"
                          "formulario datos";
+
+                         .formulario{
+                            margin-left: 2vh;
+                            justify-items: start;
+                        }
+                        
+                        .datos{
+                            margin-left: 10%;
+                        }
 }
 
-.formulario{
-    margin-left: 2vh;
-    justify-items: start;
-}
-
-.datos{
-    margin-left: 10%;
-}
 
 /*FOOTER*/
 
 footer{
-    height: 50vh;
+    height: 60vh;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -1242,7 +1264,7 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 100%;
-    grid-template-rows:20vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 20vh;
+    grid-template-rows:20vh 40vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 40vh;
     grid-template-areas: "banner"
                          "bienvenida"
                          "l1"
@@ -1257,7 +1279,12 @@ main{
                          
                          .bienvenidaHuasi{
                             margin: 0 5vh;
-                            }
+                        }
+
+                        .flecha{
+                            width: 0;
+                            margin-top: 0;
+                        }
                             
                         .divLineal1{
                             width: 90%;
@@ -1281,27 +1308,31 @@ main{
     height: 20vh;
 }
 
+.container-sm{
+    height: 60vh;
+}
+
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 20vh 40vh 40vh 40vh;
+    grid-template-rows: 20vh 30vh 50vh 50vh 50vh;
     grid-template-areas: "banner"
                          "descripcion"
                          "hab1"
                          "hab2"
                          "hab3";
-}
 
-.imagenHabitaciones{
-    width: 12vw;
+                         .imagenHabitaciones{
+                            width: 30vw;
+                        }
+                        
 }
-
 
 
 /*SERVICIOS*/
 #gridServicios{
     grid-template-columns:50% 50%;
-    grid-template-rows: 20vh 15vh 15vh 15vh 15vh 5vh 15vh 15vh;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 5vh 15vh 15vh;
     grid-template-areas: "banner banner"
                          "acc acc"
                          "pets pets"
@@ -1310,40 +1341,40 @@ main{
                          "l l"
                          "serv1 serv2"
                          "serv3 serv4";
-}
-    
-.divLinealServ{
-    width: 90%;
-    border-bottom:solid 0.3vh #DBC9B8;
-    margin: auto;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-}
 
-.servs{
-    height: 5vh;
-    margin-bottom: 1vh;
-}
-    
-.logoServ{
-    height: 5vh;
-}
-
-.textoServ1{
-    margin: 0 5vh;
-}
-
-.textoServ2{
-    margin: 0 5vh;
-}
-
-.textoServ3{
-    margin: 0 5vh;
-}
-
-.textoServ4{
-    margin: 0 5vh;
+                         .divLinealServ{
+                            width: 90%;
+                            border-bottom:solid 0.3vh #DBC9B8;
+                            margin: auto;
+                            display: flex;
+                            align-self: center;
+                            justify-self: center;
+                        }
+                        
+                        .servs{
+                            height: 5vh;
+                            margin-bottom: 1vh;
+                        }
+                            
+                        .logoServ{
+                            height: 5vh;
+                        }
+                        
+                        .textoServ1{
+                            margin: 0 5vh;
+                        }
+                        
+                        .textoServ2{
+                            margin: 0 5vh;
+                        }
+                        
+                        .textoServ3{
+                            margin: 0 5vh;
+                        }
+                        
+                        .textoServ4{
+                            margin: 0 5vh;
+                        }
 }
 
 
@@ -1356,21 +1387,21 @@ main{
                          "formulario"
                          "mapa"
                          "datos";
-}
 
-.formulario{
-    align-items: center;
-}
-
-.datos{
-    justify-self: center;
-    align-items: center;
+                         .formulario{
+                            align-items: center;
+                        }
+                        
+                        .datos{
+                            justify-self: center;
+                            align-items: center;
+                        }
 }
 
 /*FOOTER*/
 
 footer{
-    height:50vh;
+    height:60vh;
     flex-direction: column;
     justify-content: space-evenly;
     justify-items: center;
