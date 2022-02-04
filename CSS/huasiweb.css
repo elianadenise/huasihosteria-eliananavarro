@@ -126,7 +126,7 @@ main {
       flex-direction: column;
       justify-items: center;
       align-items: center; }
-  #gridIndex iframe {
+  #gridIndex .mapaIndex {
     grid-area: mapa;
     justify-self: center;
     align-self: center;
@@ -154,18 +154,17 @@ main {
   justify-content: center;
   align-items: center; }
 
+.container-sm {
+  height: 40vh; }
+
 .galeriaNosotros {
   display: flex;
   align-self: center;
   justify-self: center;
   margin-bottom: 3rem;
   transition: 1s; }
-
-.galeriaNosotros:hover {
-  filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
-
-.container-sm {
-  height: 40vh; }
+  .galeriaNosotros:hover {
+    filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
 
 /*HABITACIONES*/
 #gridHabitaciones {
@@ -175,83 +174,70 @@ main {
   background-color: #EFEEEA;
   row-gap: 0vh;
   justify-content: space-around; }
-
-.bannerHabitaciones {
-  grid-area: banner;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../IMG/capahabitaciones.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.descripcion {
-  grid-area: descripcion;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10vh; }
-
-.habitacion1 {
-  grid-area: hab1;
-  background-color: #EFEEEA;
-  padding: 1vh;
-  margin: 2vh;
-  border: 0.1vh solid #DBC9B8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 1s; }
-
-.habitacion1:hover {
-  filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
-
-.habitacion2 {
-  grid-area: hab2;
-  background-color: #EFEEEA;
-  padding: 1vh;
-  margin: 2vh;
-  border: 0.1vh solid #DBC9B8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 1s; }
-
-.habitacion2:hover {
-  filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
-
-.habitacion3 {
-  grid-area: hab3;
-  background-color: #EFEEEA;
-  padding: 1vh;
-  margin: 2vh;
-  border: 0.1vh solid #DBC9B8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 1s; }
-
-.habitacion3:hover {
-  filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
-
-.imagenHabitaciones {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 1vh; }
-
-.ulmainHabitacion {
-  list-style-type: circle;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: flex-start; }
+  #gridHabitaciones .bannerHabitaciones {
+    grid-area: banner;
+    justify-content: center;
+    background-image: url(../IMG/capahabitaciones.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  #gridHabitaciones .descripcion {
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vh; }
+  #gridHabitaciones .habitacion1 {
+    grid-area: hab1;
+    background-color: #EFEEEA;
+    padding: 1vh;
+    margin: 2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s; }
+    #gridHabitaciones .habitacion1:hover {
+      filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
+  #gridHabitaciones .habitacion2 {
+    grid-area: hab2;
+    background-color: #EFEEEA;
+    padding: 1vh;
+    margin: 2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s; }
+    #gridHabitaciones .habitacion2:hover {
+      filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
+  #gridHabitaciones .habitacion3 {
+    grid-area: hab3;
+    background-color: #EFEEEA;
+    padding: 1vh;
+    margin: 2vh;
+    border: 0.1vh solid #DBC9B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s; }
+    #gridHabitaciones .habitacion3:hover {
+      filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
+  #gridHabitaciones .imagenHabitaciones {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1vh; }
+  #gridHabitaciones .ulmainHabitacion {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start; }
 
 /*SERVICIOS*/
 #gridServicios {
@@ -261,162 +247,88 @@ main {
   background-color: #EFEEEA;
   row-gap: 0vh;
   justify-content: space-around; }
-
-.bannerserv {
-  grid-area: banner;
-  width: 100%;
-  background-image: url(../IMG/capaservicios.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.divLinealServ {
-  grid-area: l; }
-
-.servicioCaja1 {
-  grid-area: serv1;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2vh;
-  margin: 1vh;
-  background-color: transparent;
-  border: 0.1vh solid transparent;
-  transition: 1s; }
-
-.servicioCaja1:hover {
-  border: 0.1vh solid #DBC9B8; }
-
-.servicioCaja2 {
-  grid-area: serv2;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2vh;
-  margin: 1vh;
-  background-color: transparent;
-  border: 0.1vh solid transparent;
-  transition: 1s; }
-
-.servicioCaja2:hover {
-  border: 0.1vh solid #DBC9B8; }
-
-.servicioCaja3 {
-  grid-area: serv3;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2vh;
-  margin: 1vh;
-  background-color: transparent;
-  border: 0.1vh solid transparent;
-  transition: 1s; }
-
-.servicioCaja3:hover {
-  border: 0.1vh solid #DBC9B8; }
-
-.servicioCaja4 {
-  grid-area: serv4;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2vh;
-  margin: 1vh;
-  background-color: transparent;
-  border: 0.1vh solid transparent;
-  transition: 1s; }
-
-.servicioCaja4:hover {
-  border: 0.1vh solid #DBC9B8; }
-
-.servs {
-  display: inline-block;
-  filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
-
-.logoServ {
-  justify-self: center;
-  align-self: center;
-  margin-right: 2vw;
-  display: inline-block;
-  filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
-
-.textoServ1 {
-  grid-area: acc;
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-items: center; }
-
-.textoServ2 {
-  grid-area: pets;
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-items: center;
-  margin: 0 10vh; }
-
-.textoServ3 {
-  grid-area: sust;
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-items: center;
-  margin: 0 10vh; }
-
-.textoServ4 {
-  grid-area: gast;
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-items: center;
-  margin: 0 10vh; }
+  #gridServicios .bannerserv {
+    grid-area: banner;
+    justify-content: center;
+    background-image: url(../IMG/capaservicios.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  #gridServicios .divLinealServ {
+    grid-area: l; }
+  #gridServicios .servicioCaja1, #gridServicios .servicioCaja2, #gridServicios .servicioCaja3, #gridServicios .servicioCaja4 {
+    grid-area: serv1;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh;
+    margin: 1vh;
+    background-color: transparent;
+    border: 0.1vh solid transparent;
+    transition: 1s; }
+    #gridServicios .servicioCaja1:hover, #gridServicios .servicioCaja2:hover, #gridServicios .servicioCaja3:hover, #gridServicios .servicioCaja4:hover {
+      border: 0.1vh solid #DBC9B8;
+      border-radius: 0.3em; }
+  #gridServicios .servicioCaja2 {
+    grid-area: serv2; }
+  #gridServicios .servicioCaja3 {
+    grid-area: serv3; }
+  #gridServicios .servicioCaja4 {
+    grid-area: serv4; }
+  #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
+    grid-area: acc;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-items: center; }
+  #gridServicios .textoServ2 {
+    grid-area: pets; }
+  #gridServicios .textoServ3 {
+    grid-area: sust; }
+  #gridServicios .textoServ4 {
+    grid-area: gast; }
+  #gridServicios .servs {
+    display: inline-block;
+    filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
+  #gridServicios .logoServ {
+    justify-self: center;
+    align-self: center;
+    margin-right: 2vw;
+    display: inline-block;
+    filter: drop-shadow(0 0.2vh 0.5vh #2F2A26); }
 
 /*CONTACTO*/
 #gridcontactanos {
   display: grid;
   height: 100%;
   width: 100%; }
-
-.bannerContactanos {
-  grid-area: banner;
-  justify-content: center;
-  background-image: url(../IMG/capacontactanos.png);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.mapa {
-  grid-area: mapa;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  width: 80%;
-  height: 80%; }
-
-.datos {
-  grid-area: datos;
-  display: flex;
-  flex-direction: column;
-  align-self: center; }
-
-.formulario {
-  grid-area: formulario;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-self: center; }
+  #gridcontactanos .bannerContactanos {
+    grid-area: banner;
+    justify-content: center;
+    background-image: url(../IMG/capacontactanos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  #gridcontactanos .mapa {
+    grid-area: mapa;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: 80%; }
+  #gridcontactanos .datos {
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    align-self: center; }
+  #gridcontactanos .formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center; }
 
 /*FOOTER*/
 footer {
@@ -485,15 +397,10 @@ h3 {
   color: #2F2A26;
   font-weight: 700; }
 
-h5 {
+h4 {
   text-shadow: #2F2A26 0.1em 0.1em 0.2em;
   color: #EFEEEA;
   font-family: 'Montserrat Alternates', sans-serif; }
-
-.h5galeria {
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: #EFEEEA;
-  text-shadow: #2F2A26 0.1em 0.1em 0.2em; }
 
 .textoCentrado {
   font-family: 'Poppins', sans-serif;
@@ -540,6 +447,7 @@ h5 {
   transition: 1s;
   display: flex;
   border: 0.1vh solid #C65425;
+  border-radius: 0.3em;
   justify-content: center;
   align-items: center; }
 
@@ -569,11 +477,13 @@ h5 {
         padding: 0.5vh 0.5vh;
         font-size: 1em; }
         header .navbar .linknav:hover {
-          border: 0.1vh solid #DBC9B8; }
+          border: 0.1vh solid #DBC9B8;
+          border-radius: 0.3em; }
       header .navbar .botonContactanos {
         background: #DBC9B8;
         border: 0.1vh solid #DBC9B8;
-        transition: 1s; }
+        transition: 1s;
+        border-radius: 0.3em; }
         header .navbar .botonContactanos:hover {
           background: #EFEEEA; }
   /*MAIN*/
@@ -632,7 +542,7 @@ h5 {
     display: flex;
     align-self: center;
     justify-self: center; }
-  .textoServ1 {
+  .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
     margin: 0 6vh; }
   .textoServ2 {
     margin: 0 6vh; }
@@ -780,7 +690,7 @@ h5 {
     margin-bottom: 1vh; }
   .logoServ {
     height: 5vh; }
-  .textoServ1 {
+  .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
     margin: 0 8vh; }
   .textoServ2 {
     margin: 0 8vh; }
@@ -922,7 +832,7 @@ h5 {
     margin-bottom: 1vh; }
   .logoServ {
     height: 5vh; }
-  .textoServ1 {
+  .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
     margin: 0 5vh; }
   .textoServ2 {
     margin: 0 5vh; }
