@@ -1,6 +1,6 @@
 Optimización y SEO
-- Se agregó meta description
 - Se agregó meta keywords
+- Se agregó meta description
 - Se optimizó logo e íconos vectoriales a svg
 - Se comprimió imágenes png y svg
 - Se definieron títulos
