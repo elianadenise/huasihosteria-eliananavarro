@@ -6,21 +6,12 @@ $fuenteTextos: 'Poppins', sans-serif;
 
 @mixin banners($background){
     grid-area: banner;
+    display: flex;
     justify-content: center;
     background-image: $background;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-@mixin divLineal ($ancho, $alto, $border, $margin){
-    width: $ancho;
-    height: $alto;
-    border: $border;
-    margin: $margin;
-    display: flex;
-    align-self: center;
-    justify-self: center;
 }
 
 *{
@@ -122,6 +113,11 @@ main{
     
     .fotoacc{
         grid-area: fotoacc;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        display: inline-block;
+        filter: $sombraImg;
     }
     
     .accesibilidad{
@@ -143,23 +139,12 @@ main{
     
     .fotopet{
         grid-area: fotopet;
+        @extend .fotoacc;
     }
     
     .petFriendly{
         grid-area: pet;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        margin-top: 2vh;
-    }
-    
-    .servsIndex{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        display: inline-block;
-        filter: $sombraImg;
+        @extend .accesibilidad;
     }
     
     .botonServ{
@@ -553,20 +538,14 @@ h4{
 }
 
 .textoCentrado{
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     color: $colorTextos;
     text-justify: center;
     text-align: center;
 }
 
-.texto{
-    font-family: 'Poppins', sans-serif;
-    color: $colorTextos;
-    line-height: 1.5;
-}
-
 .fuenteCajaFormulario{
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     color: $colorTextos;
     font-size: 0.8em;
 }
@@ -577,24 +556,12 @@ h4{
     line-height: 1.5;
 }
 
-.textoChicoCentrado{
-    font-family: $fuenteTextos;
-    color: $colorTextos;
-    text-justify: center;
-    text-align: center;
-}
-
 .textoFooter{
-    line-height: 1.8;
+    line-height: 1.6;
     font-family: $fuenteTextos;
     color: #C8B6A5; 
 }
 
-.textoFooter2{
-    line-height: 1.4;
-    font-family: $fuenteTextos;
-    color: #C8B6A5; 
-}
 
 .botonLink{
     text-decoration: none;
@@ -694,17 +661,27 @@ main{
                         }
                         
                         .servsIndex{
-                            width: 7vw;
+                            height: 12vh;
                         }
                         
-                        .accesibilidad, .fotoacc{
-                            margin-bottom: 1vh;
+                        .fotoacc{
+                            margin-left: 7vh;
+                            margin-bottom: 3vh;
+                            height: 12vh
+                        }
+
+                        .accesibilidad{
                             margin-left: 7vh;
                         }
                         
-                        .petFriendly, .fotopet{
+                        .fotopet{
                             margin-right: 7vh;
-                            margin-bottom: 1vh;
+                            margin-bottom: 3vh;
+                            height: 12vh
+                        }
+
+                        .petFriendly{
+                            margin-right: 7vh;
                         }
                         
                         .divLineal1{
@@ -729,7 +706,7 @@ main{
 }
 
 .container-sm{
-    height: 60vh;
+    height: 50vh;
 }
 
 /*HABITACIONES*/
@@ -976,7 +953,7 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 100%;
-    grid-template-rows:30vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 20vh;
+    grid-template-rows:30vh 40vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 30vh;
     grid-template-areas: "banner"
                          "bienvenida"
                          "l1"
@@ -1004,13 +981,13 @@ main{
                             margin: auto;
                         }
 
+                        .fotoacc, .fotopet{
+                            height: 10vh;
+                        }
+
                         .accesibilidad{
                             margin: 0 5vh;
                             justify-content: center;
-                        }
-                        
-                        .servsIndex{
-                            width: 15vw;
                         }
 }
 
@@ -1036,13 +1013,9 @@ main{
                          "hab2"
                          "hab3";
 
-                         .imagenHabitaciones{
+                        .imagenHabitaciones{
                             width: 30vw;
                         }
-}
-
-.imagenHabitaciones{
-    width: 30vw;
 }
 
 /*SERVICIOS*/
@@ -1058,7 +1031,7 @@ grid-template-areas: "banner banner"
                      "serv1 serv2"
                      "serv3 serv4";
 
-                     .divLinealServ{
+                    .divLinealServ{
                         width: 90%;
                         border-bottom:solid 0.3vh #DBC9B8;
                         margin: auto;
@@ -1117,7 +1090,7 @@ grid-template-areas: "banner banner"
 /*FOOTER*/
 
 footer{
-    height: 60vh;
+    height: 50vh;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -1172,10 +1145,6 @@ h3{
     font-size: 1em;
 }
 
-.texto{
-    font-size: 1em;
-}
-
 .textoCentrado{
     font-size: 1.1em;
 }
@@ -1184,15 +1153,7 @@ h3{
     font-size: 0.9em;
 }
 
-.textoChicoCentrado{
-    font-size: 1em;
-}
-
 .textoFooter{
-    font-size: 0.9em;
-}
-
-.textoFooter2{
     font-size: 0.9em;
 }
 
@@ -1288,13 +1249,15 @@ main{
                             border-bottom:solid 0.3vh #DBC9B8;
                             margin: auto;
                         }
+
+                        .fotoacc, .fotopet{
+                            height: 10vh;
+                        }
                             
                         .accesibilidad, .petFriendly{
                             margin: 0 5vh;
-                        }
-                            
-                        .servsIndex{
-                            width: 15vw;
+                            justify-content: center;
+                            align-items: center;
                         }
 
 }
@@ -1456,10 +1419,6 @@ h3{
     font-size: 0.9em;
 }
 
-.texto{
-    font-size: 0.9em;
-}
-
 .textoCentrado{
     font-size: 0.9em;
 }
@@ -1468,17 +1427,10 @@ h3{
     font-size: 0.8em;
 }
 
-.textoChicoCentrado{
-    font-size:0.9em;
-}
-
 .textoFooter{
     font-size: 0.8em;
 }
 
-.textoFooter2{
-    font-size: 0.8em;
-}
 
 .botonLink{
     font-size: 0.8em;
