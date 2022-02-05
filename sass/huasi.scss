@@ -1,5 +1,5 @@
 $colorTextos: #2F2A26;
-$sombraImg: drop-shadow(0 0.2vh 0.5vh #2F2A26);
+$sombraImg: drop-shadow(0 0.2vh 0.3vh #2F2A26);
 $sombraTexto: #2F2A26 0.1em 0.1em 0.2em;
 $fuenteTitulos: 'Montserrat Alternates', sans-serif;
 $fuenteTextos: 'Poppins', sans-serif;
@@ -202,7 +202,7 @@ main{
         grid-area: mapa;
         justify-self: center;
         align-self: center;
-        width: 60%;
+        width: 80%;
         height: 80%;
         background-color: transparent;
     }
@@ -276,6 +276,7 @@ main{
         padding: 1vh;
         margin:2vh;
         border: 0.1vh solid #DBC9B8;
+        border-radius: 0.3em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -289,35 +290,19 @@ main{
 
     .habitacion2{
         grid-area: hab2;
-        background-color: #EFEEEA;
-        padding: 1vh;
-        margin: 2vh;
-        border: 0.1vh solid #DBC9B8;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 1s;
+        @extend .habitacion1;
 
         &:hover{
-            filter: $sombraImg;
+            @extend .habitacion1.habitacion1:hover;
         }
     }
 
     .habitacion3{
         grid-area: hab3;
-        background-color: #EFEEEA;
-        padding:1vh;
-        margin: 2vh;
-        border: 0.1vh solid #DBC9B8;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 1s;
+        @extend .habitacion1;
 
         &:hover{
-            filter: $sombraImg;
+            @extend .habitacion1.habitacion1:hover;
         }
     }
 
@@ -488,7 +473,13 @@ footer{
         display: flex;
         flex-direction: column;
         .divLinealFooter1{
-            @include divLineal(100%, 0.1vh, solid 0 0 0 0.2vh #DBC9B8, 0 0 0 0.5vh);
+            width: 100%;
+            border-bottom: solid 0.2vh #DBC9B8;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            height: 0.1vh;
+            margin-bottom: 0.5vh;
         }
         .divFooter1div1{
             display: flex;
@@ -511,7 +502,13 @@ footer{
         display: flex;
         flex-direction: column;
         .divLinealFooter2{
-            @include divLineal(100%, 0.1vh, solid 0 0 0 0.2vh #DBC9B8, 0.5vh 0 0 0);
+            width: 100%;
+            border-bottom: solid 0.2vh #DBC9B8;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            height: 0.1vh;
+            margin-top: 0.5vh;
         }
         .redesSocialesLogo{
             height: 2vh;
@@ -681,7 +678,7 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 40% 10% 10% 40%;
-    grid-template-rows:50vh 50vh 10vh 15vh 10vh 4vh 30vh;
+    grid-template-rows:50vh 50vh 10vh 15vh 10vh 4vh 40vh;
     grid-template-areas: "banner banner banner banner"
                          "bienvenida bienvenida bienvenida bienvenida"
                          "fotoacc l1 l1 fotopet"
@@ -1032,7 +1029,7 @@ main{
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 30vh 70vh 70vh 70vh;
+    grid-template-rows: 30vh 30vh 60vh 60vh 60vh;
     grid-template-areas: "banner"
                          "descripcion"
                          "hab1"
@@ -1101,7 +1098,7 @@ grid-template-areas: "banner banner"
 /*CONTACTANOS*/
 #gridcontactanos{
     grid-template-columns: 50% 50%;
-    grid-template-rows:30vh 25vh 25vh;
+    grid-template-rows:30vh 30vh 30vh;
     grid-template-areas: "banner banner"
                          "formulario mapa"
                          "formulario datos";
@@ -1264,7 +1261,7 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 100%;
-    grid-template-rows:20vh 40vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 40vh;
+    grid-template-rows:20vh 45vh 5vh 10vh 20vh 10vh 15vh 5vh 5vh 20vh 40vh;
     grid-template-areas: "banner"
                          "bienvenida"
                          "l1"
@@ -1309,13 +1306,13 @@ main{
 }
 
 .container-sm{
-    height: 60vh;
+    height: 72vh;
 }
 
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 30vh 50vh 50vh 50vh;
+    grid-template-rows: 20vh 45vh 55vh 55vh 55vh;
     grid-template-areas: "banner"
                          "descripcion"
                          "hab1"
@@ -1332,7 +1329,7 @@ main{
 /*SERVICIOS*/
 #gridServicios{
     grid-template-columns:50% 50%;
-    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 5vh 15vh 15vh;
+    grid-template-rows: 20vh 30vh 20vh 20vh 25vh 5vh 15vh 15vh;
     grid-template-areas: "banner banner"
                          "acc acc"
                          "pets pets"
@@ -1382,7 +1379,7 @@ main{
 
 #gridcontactanos{
     grid-template-columns: 100%;
-    grid-template-rows:20vh 50vh 20vh 15vh;
+    grid-template-rows:20vh 70vh 30vh 20vh;
     grid-template-areas: "banner"
                          "formulario"
                          "mapa"
@@ -1401,7 +1398,7 @@ main{
 /*FOOTER*/
 
 footer{
-    height:60vh;
+    height:70vh;
     flex-direction: column;
     justify-content: space-evenly;
     justify-items: center;
