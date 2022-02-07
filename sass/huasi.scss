@@ -14,6 +14,21 @@ $fuenteTextos: 'Poppins', sans-serif;
     background-size: cover;
 }
 
+@mixin divLineal ($ancho, $alto, $borderTop, $borderLeft, $margin){
+    width: $ancho;
+    height: $alto;
+    border-top: $borderTop;
+    border-left: $borderLeft;
+    border-bottom: 0;
+    border-right: 0;
+    margin: $margin;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-color: #DBC9B8;
+    border-style: solid;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -131,10 +146,6 @@ main{
     
     .divLineal1{
         grid-area: l1;
-        margin: auto;
-        display: flex;
-        align-self: center;
-        justify-self: center;
     }
     
     .fotopet{
@@ -157,12 +168,7 @@ main{
     
     .divLineal2{
         grid-area: l2;
-        width: 90%;
-        border-bottom:solid 0.3vh #DBC9B8;
-        margin: auto;
-        display: flex;
-        align-self: center;
-        justify-self: center;
+        @include divLineal(90%,0.1vh, 0.3vh, 0, auto);
     }
     
     .lista{
@@ -422,13 +428,13 @@ main{
     .bannerContactanos{
         @include banners(url(../IMG/capacontactanos.png));
     }
-    .mapa{
-        grid-area: mapa;
+
+    .formulario{
+        grid-area: formulario;
         display: flex;
+        flex-direction: column;
         justify-self: center;
         align-self: center;
-        width: 80%;
-        height: 80%;
     }
     
     .datos{
@@ -436,14 +442,28 @@ main{
         display: flex;
         flex-direction: column;
         align-self: center;
+        justify-self: center;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            img{
+                margin-right: 1vh;
+                height: 1.7vh;
+            }
+        }
     }
-    
-    .formulario{
-        grid-area: formulario;
+
+    .mapa{
+        grid-area: mapa;
         display: flex;
-        flex-direction: column;
         justify-self: center;
         align-self: center;
+        width: 80%;
+        height: 80%;
     }
     
 }
@@ -457,14 +477,9 @@ footer{
     .divFooter1{
         display: flex;
         flex-direction: column;
+
         .divLinealFooter1{
-            width: 100%;
-            border-bottom: solid 0.2vh #DBC9B8;
-            display: flex;
-            align-self: center;
-            justify-self: center;
-            height: 0.1vh;
-            margin-bottom: 0.5vh;
+            @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0);
         }
         .divFooter1div1{
             display: flex;
@@ -487,13 +502,7 @@ footer{
         display: flex;
         flex-direction: column;
         .divLinealFooter2{
-            width: 100%;
-            border-bottom: solid 0.2vh #DBC9B8;
-            display: flex;
-            align-self: center;
-            justify-self: center;
-            height: 0.1vh;
-            margin-top: 0.5vh;
+            @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0 0 0)
         }
         .redesSocialesLogo{
             height: 2vh;
@@ -523,6 +532,7 @@ h2{
     line-height: 1,5;
     margin-bottom: 1vh;
     font-weight: 700;
+    font-size: 10vh;
 }
 
 h3{
@@ -562,7 +572,6 @@ h4{
     color: #C8B6A5; 
 }
 
-
 .botonLink{
     text-decoration: none;
     font-family: $fuenteTextos;
@@ -580,8 +589,6 @@ h4{
         color: #2F2A26;
     }
 }
-
-
 
 /*RESERVA*/
 #reservaAhora{
@@ -685,8 +692,7 @@ main{
                         }
                         
                         .divLineal1{
-                            height: 90%;
-                            border-left:solid 0.3vh #DBC9B8;
+                            @include divLineal(0.1vw, 90%, 0, 0.3vh, 0)
                         }
                         
                         .h3Index{
@@ -749,13 +755,8 @@ main{
                          "serv3 l sust"
                          "serv4 l gast";
 
-                         .divLinealServ{
-                            height: 90%;
-                            border-right: solid 0.3vh #DBC9B8;
-                            margin: auto;
-                            display: flex;
-                            align-self: center;
-                            justify-self: center;
+                        .divLinealServ{
+                            @include divLineal(0.1vw, 90%, 0, 0.3vh, auto);
                         }
                         
                         .textoServ1{
@@ -790,18 +791,15 @@ main{
 #gridcontactanos{
     background-color: #EFEEEA;
     grid-template-columns: 50% 50%;
-    grid-template-rows:50vh 35vh 35vh;
+    grid-template-rows:50vh 25vh 45vh;
     grid-template-areas: "banner banner"
-                         "formulario mapa"
-                         "formulario datos";
+                         "formulario datos"
+                         "formulario mapa";
 
-                         .formulario{
+                        .formulario{
                             justify-items: start;
                         }
                         
-                        .datos{
-                            margin-left: 10%;
-                        }
 }
 
 /*FOOTER*/
@@ -976,9 +974,7 @@ main{
                         }
                         
                         .divLineal1{
-                            width: 90%;
-                            border-bottom:solid 0.3vh #DBC9B8;
-                            margin: auto;
+                            @include divLineal(90%, 0.1vh, 0.3vh, 0, auto);
                         }
 
                         .fotoacc, .fotopet{
@@ -1032,12 +1028,7 @@ grid-template-areas: "banner banner"
                      "serv3 serv4";
 
                     .divLinealServ{
-                        width: 90%;
-                        border-bottom:solid 0.3vh #DBC9B8;
-                        margin: auto;
-                        display: flex;
-                        align-self: center;
-                        justify-self: center;
+                        @include divLineal(90%, 0.1vh, 0.3vh, 0, auto)
                     }
                     
                     .servs{
@@ -1073,16 +1064,12 @@ grid-template-areas: "banner banner"
     grid-template-columns: 50% 50%;
     grid-template-rows:30vh 30vh 30vh;
     grid-template-areas: "banner banner"
-                         "formulario mapa"
-                         "formulario datos";
+                         "formulario datos"
+                         "formulario mapa";
 
                          .formulario{
                             margin-left: 2vh;
                             justify-items: start;
-                        }
-                        
-                        .datos{
-                            margin-left: 10%;
                         }
 }
 
@@ -1245,9 +1232,7 @@ main{
                         }
                             
                         .divLineal1{
-                            width: 90%;
-                            border-bottom:solid 0.3vh #DBC9B8;
-                            margin: auto;
+                            @include divLineal(90%, 0.1vh, 0.3vh, 0, auto)
                         }
 
                         .fotoacc, .fotopet{
@@ -1303,12 +1288,7 @@ main{
                          "serv3 serv4";
 
                          .divLinealServ{
-                            width: 90%;
-                            border-bottom:solid 0.3vh #DBC9B8;
-                            margin: auto;
-                            display: flex;
-                            align-self: center;
-                            justify-self: center;
+                            @include divLineal(90%, 0.1vh, 0.3vh, 0, auto)
                         }
                         
                         .servs{
@@ -1342,18 +1322,13 @@ main{
 
 #gridcontactanos{
     grid-template-columns: 100%;
-    grid-template-rows:20vh 70vh 30vh 20vh;
+    grid-template-rows:20vh 50vh 25vh 40vh;
     grid-template-areas: "banner"
                          "formulario"
-                         "mapa"
-                         "datos";
+                         "datos"
+                         "mapa";
 
-                         .formulario{
-                            align-items: center;
-                        }
-                        
-                        .datos{
-                            justify-self: center;
+                        .formulario{
                             align-items: center;
                         }
 }

@@ -88,11 +88,7 @@ main {
     align-items: center;
     margin-top: 2vh; }
   #gridIndex .divLineal1 {
-    grid-area: l1;
-    margin: auto;
-    display: flex;
-    align-self: center;
-    justify-self: center; }
+    grid-area: l1; }
   #gridIndex .fotopet {
     grid-area: fotopet; }
   #gridIndex .petFriendly {
@@ -106,11 +102,17 @@ main {
   #gridIndex .divLineal2 {
     grid-area: l2;
     width: 90%;
-    border-bottom: solid 0.3vh #DBC9B8;
+    height: 0.1vh;
+    border-top: 0.3vh;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
     margin: auto;
     display: flex;
     align-self: center;
-    justify-self: center; }
+    justify-self: center;
+    border-color: #DBC9B8;
+    border-style: solid; }
   #gridIndex .lista {
     grid-area: lista;
     display: flex;
@@ -288,6 +290,26 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
+  #gridcontactanos .formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center; }
+  #gridcontactanos .datos {
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center; }
+    #gridcontactanos .datos div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap; }
+      #gridcontactanos .datos div img {
+        margin-right: 1vh;
+        height: 1.7vh; }
   #gridcontactanos .mapa {
     grid-area: mapa;
     display: flex;
@@ -295,17 +317,6 @@ main {
     align-self: center;
     width: 80%;
     height: 80%; }
-  #gridcontactanos .datos {
-    grid-area: datos;
-    display: flex;
-    flex-direction: column;
-    align-self: center; }
-  #gridcontactanos .formulario {
-    grid-area: formulario;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center; }
 
 /*FOOTER*/
 footer {
@@ -318,12 +329,17 @@ footer {
     flex-direction: column; }
     footer .divFooter1 .divLinealFooter1 {
       width: 100%;
-      border-bottom: solid 0.2vh #DBC9B8;
+      height: 0;
+      border-top: 0.1vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      margin: 0.5vh 0;
       display: flex;
       align-self: center;
       justify-self: center;
-      height: 0.1vh;
-      margin-bottom: 0.5vh; }
+      border-color: #DBC9B8;
+      border-style: solid; }
     footer .divFooter1 .divFooter1div1 {
       display: flex;
       flex-direction: column; }
@@ -340,12 +356,17 @@ footer {
     flex-direction: column; }
     footer .divFooter3 .divLinealFooter2 {
       width: 100%;
-      border-bottom: solid 0.2vh #DBC9B8;
+      height: 0;
+      border-top: 0.1vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      margin: 0.5vh 0 0 0;
       display: flex;
       align-self: center;
       justify-self: center;
-      height: 0.1vh;
-      margin-top: 0.5vh; }
+      border-color: #DBC9B8;
+      border-style: solid; }
     footer .divFooter3 .redesSocialesLogo {
       height: 2vh; }
     footer .divFooter3 .facebookLogo {
@@ -367,7 +388,8 @@ h2 {
   color: #2F2A26;
   line-height: 1,5;
   margin-bottom: 1vh;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 10vh; }
 
 h3 {
   font-family: "Montserrat Alternates", sans-serif;
@@ -472,8 +494,18 @@ h4 {
     #gridIndex .petFriendly {
       margin-right: 7vh; }
     #gridIndex .divLineal1 {
+      width: 0.1vw;
       height: 90%;
-      border-left: solid 0.3vh #DBC9B8; }
+      border-top: 0;
+      border-left: 0.3vh;
+      border-bottom: 0;
+      border-right: 0;
+      margin: 0;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      border-color: #DBC9B8;
+      border-style: solid; }
     #gridIndex .h3Index {
       margin: 0 0 1vh 0;
       display: flex;
@@ -504,12 +536,18 @@ h4 {
     grid-template-rows: 50vh 20vh 20vh 20vh 20vh;
     grid-template-areas: "banner banner banner" "serv1 l acc" "serv2 l pets" "serv3 l sust" "serv4 l gast"; }
     #gridServicios .divLinealServ {
+      width: 0.1vw;
       height: 90%;
-      border-right: solid 0.3vh #DBC9B8;
+      border-top: 0;
+      border-left: 0.3vh;
+      border-bottom: 0;
+      border-right: 0;
       margin: auto;
       display: flex;
       align-self: center;
-      justify-self: center; }
+      justify-self: center;
+      border-color: #DBC9B8;
+      border-style: solid; }
     #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
       margin: 0 6vh; }
     #gridServicios .textoServ2 {
@@ -526,12 +564,10 @@ h4 {
   #gridcontactanos {
     background-color: #EFEEEA;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50vh 35vh 35vh;
-    grid-template-areas: "banner banner" "formulario mapa" "formulario datos"; }
+    grid-template-rows: 50vh 25vh 45vh;
+    grid-template-areas: "banner banner" "formulario datos" "formulario mapa"; }
     #gridcontactanos .formulario {
       justify-items: start; }
-    #gridcontactanos .datos {
-      margin-left: 10%; }
   /*FOOTER*/
   footer {
     height: 30vh;
@@ -627,8 +663,17 @@ h4 {
       margin-top: 0; }
     #gridIndex .divLineal1 {
       width: 90%;
-      border-bottom: solid 0.3vh #DBC9B8;
-      margin: auto; }
+      height: 0.1vh;
+      border-top: 0.3vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      margin: auto;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      border-color: #DBC9B8;
+      border-style: solid; }
     #gridIndex .fotoacc, #gridIndex .fotopet, #gridIndex .fotopet {
       height: 10vh; }
     #gridIndex .accesibilidad, #gridIndex .petFriendly {
@@ -653,11 +698,17 @@ h4 {
     grid-template-areas: "banner banner" "acc acc" "pets pets" "sust sust" "gast gast" "l l" "serv1 serv2" "serv3 serv4"; }
     #gridServicios .divLinealServ {
       width: 90%;
-      border-bottom: solid 0.3vh #DBC9B8;
+      height: 0.1vh;
+      border-top: 0.3vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
       margin: auto;
       display: flex;
       align-self: center;
-      justify-self: center; }
+      justify-self: center;
+      border-color: #DBC9B8;
+      border-style: solid; }
     #gridServicios .servs {
       height: 5vh;
       margin-bottom: 1vh; }
@@ -675,12 +726,10 @@ h4 {
   #gridcontactanos {
     grid-template-columns: 50% 50%;
     grid-template-rows: 30vh 30vh 30vh;
-    grid-template-areas: "banner banner" "formulario mapa" "formulario datos"; }
+    grid-template-areas: "banner banner" "formulario datos" "formulario mapa"; }
     #gridcontactanos .formulario {
       margin-left: 2vh;
       justify-items: start; }
-    #gridcontactanos .datos {
-      margin-left: 10%; }
   /*FOOTER*/
   footer {
     height: 50vh;
@@ -769,8 +818,17 @@ h4 {
       margin-top: 0; }
     #gridIndex .divLineal1 {
       width: 90%;
-      border-bottom: solid 0.3vh #DBC9B8;
-      margin: auto; }
+      height: 0.1vh;
+      border-top: 0.3vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      margin: auto;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      border-color: #DBC9B8;
+      border-style: solid; }
     #gridIndex .fotoacc, #gridIndex .fotopet, #gridIndex .fotopet {
       height: 10vh; }
     #gridIndex .accesibilidad, #gridIndex .petFriendly, #gridIndex .petFriendly {
@@ -796,11 +854,17 @@ h4 {
     grid-template-areas: "banner banner" "acc acc" "pets pets" "sust sust" "gast gast" "l l" "serv1 serv2" "serv3 serv4"; }
     #gridServicios .divLinealServ {
       width: 90%;
-      border-bottom: solid 0.3vh #DBC9B8;
+      height: 0.1vh;
+      border-top: 0.3vh;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
       margin: auto;
       display: flex;
       align-self: center;
-      justify-self: center; }
+      justify-self: center;
+      border-color: #DBC9B8;
+      border-style: solid; }
     #gridServicios .servs {
       height: 5vh;
       margin-bottom: 1vh; }
@@ -817,12 +881,9 @@ h4 {
   /*CONTACTANOS*/
   #gridcontactanos {
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 70vh 30vh 20vh;
-    grid-template-areas: "banner" "formulario" "mapa" "datos"; }
+    grid-template-rows: 20vh 50vh 25vh 40vh;
+    grid-template-areas: "banner" "formulario" "datos" "mapa"; }
     #gridcontactanos .formulario {
-      align-items: center; }
-    #gridcontactanos .datos {
-      justify-self: center;
       align-items: center; }
   /*FOOTER*/
   footer {
