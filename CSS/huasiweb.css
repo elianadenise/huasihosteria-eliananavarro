@@ -73,6 +73,26 @@ main {
   #gridIndex .flecha {
     width: 5vh;
     margin-top: 3vh; }
+  #gridIndex .desc {
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center; }
+  #gridIndex .galeriaHabs {
+    grid-area: hab;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 3rem;
+    transition: 1s; }
+    #gridIndex .galeriaHabs .container {
+      height: 45vh; }
+    #gridIndex .galeriaHabs #carouselExampleCaptions {
+      display: inline-block;
+      width: 400px; }
+    #gridIndex .galeriaHabs:hover {
+      filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
   #gridIndex .fotoacc, #gridIndex .fotopet {
     grid-area: fotoacc;
     display: flex;
@@ -483,12 +503,6 @@ h4 {
     #gridIndex .bienvenidaHuasi {
       line-height: 1.5;
       margin: 0 20vw; }
-    #gridIndex .desc {
-      grid-area: desc; }
-    #gridIndex .galeriaHabs {
-      grid-area: hab; }
-      #gridIndex .galeriaHabs .container {
-        height: 50vh; }
     #gridIndex .fotoacc, #gridIndex .fotopet {
       margin-left: 7vh;
       margin-bottom: 3vh;
@@ -662,8 +676,8 @@ h4 {
   /*INDEX*/
   #gridIndex {
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 40vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 30vh;
-    grid-template-areas: "banner" "bienvenida" "l1" "fotoacc" "accesible" "fotopet" "pet" "botonserv" "l2" "lista" "mapa"; }
+    grid-template-rows: 30vh 40vh 15vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 30vh;
+    grid-template-areas: "banner" "bienvenida" "desc" "hab" "l1" "fotoacc" "accesible" "fotopet" "pet" "botonserv" "l2" "lista" "mapa"; }
     #gridIndex .bienvenidaHuasi {
       margin: 0 5vw; }
     #gridIndex .flecha {
@@ -817,8 +831,8 @@ h4 {
   /*INDEX*/
   #gridIndex {
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 45vh 5vh 10vh 20vh 10vh 15vh 5vh 5vh 20vh 40vh;
-    grid-template-areas: "banner" "bienvenida" "l1" "fotoacc" "accesible" "fotopet" "pet" "botonserv" "l2" "lista" "mapa"; }
+    grid-template-rows: 20vh 45vh 30vh 20vh 5vh 10vh 20vh 10vh 15vh 5vh 5vh 20vh 40vh;
+    grid-template-areas: "banner" "bienvenida" "desc" "hab" "l1" "fotoacc" "accesible" "fotopet" "pet" "botonserv" "l2" "lista" "mapa"; }
     #gridIndex .bienvenidaHuasi {
       margin: 0 5vh; }
     #gridIndex .flecha {
