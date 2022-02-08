@@ -501,6 +501,15 @@ footer{
     .divFooter3{
         display: flex;
         flex-direction: column;
+
+        input{
+            border: 0 0 3vh 0;
+
+            &:focus {
+                border: 3px solid #DBC9B8;
+            }
+        }
+
         .divLinealFooter2{
             @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0 0 0)
         }
@@ -581,8 +590,8 @@ h4{
     display: flex;
     border: 0.1vh solid #C65425;
     border-radius: 0.3em;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
 
     &:hover{
         background-color: transparent;
@@ -652,9 +661,10 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 40% 10% 10% 40%;
-    grid-template-rows:50vh 50vh 10vh 15vh 10vh 4vh 40vh;
+    grid-template-rows:50vh 50vh 50vh 15vh 15vh 10vh 4vh 40vh;
     grid-template-areas: "banner banner banner banner"
                          "bienvenida bienvenida bienvenida bienvenida"
+                         " desc desc hab hab"
                          "fotoacc l1 l1 fotopet"
                          "accesible l1 l1 pet"
                          "botonserv botonserv botonserv botonserv"
@@ -666,10 +676,21 @@ main{
                             line-height: 1.5;
                             margin: 0 20vw;
                         }
-                        
-                        .servsIndex{
-                            height: 12vh;
+
+                        .desc{
+                            grid-area: desc;
+
                         }
+
+                        .galeriaHabs{
+                            grid-area: hab;
+
+                            .container{
+                                height: 50vh;
+                            }
+                        }
+
+                        
                         
                         .fotoacc{
                             margin-left: 7vh;
