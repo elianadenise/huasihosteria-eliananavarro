@@ -78,7 +78,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    margin: 5vh; }
   #gridIndex .galeriaHabs {
     grid-area: hab;
     display: flex;
@@ -93,6 +94,20 @@ main {
       width: 400px; }
     #gridIndex .galeriaHabs:hover {
       filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
+  #gridIndex .divLineal1 {
+    grid-area: l1;
+    width: 90%;
+    height: 0.1vh;
+    border-top: 0.3vh;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-color: #DBC9B8;
+    border-style: solid; }
   #gridIndex .fotoacc, #gridIndex .fotopet {
     grid-area: fotoacc;
     display: flex;
@@ -107,8 +122,6 @@ main {
     justify-content: start;
     align-items: center;
     margin-top: 2vh; }
-  #gridIndex .divLineal1 {
-    grid-area: l1; }
   #gridIndex .fotopet {
     grid-area: fotopet; }
   #gridIndex .petFriendly {
@@ -204,8 +217,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0 10vh; }
+    align-items: center; }
   #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
     grid-area: hab1;
     background-color: #EFEEEA;
@@ -418,7 +430,10 @@ h2 {
 h3 {
   font-family: "Montserrat Alternates", sans-serif;
   color: #2F2A26;
-  font-weight: 700; }
+  font-weight: 700;
+  display: flex;
+  text-justify: center;
+  text-align: center; }
 
 h4 {
   font-family: "Montserrat Alternates", sans-serif;
@@ -498,8 +513,8 @@ h4 {
   /*INDEX*/
   #gridIndex {
     grid-template-columns: 40% 10% 10% 40%;
-    grid-template-rows: 50vh 50vh 50vh 15vh 15vh 10vh 4vh 40vh;
-    grid-template-areas: "banner banner banner banner" "bienvenida bienvenida bienvenida bienvenida" " desc desc hab hab" "fotoacc l1 l1 fotopet" "accesible l1 l1 pet" "botonserv botonserv botonserv botonserv" "l2 l2 l2 l2" "lista lista mapa mapa"; }
+    grid-template-rows: 50vh 50vh 50vh 10vh 15vh 15vh 10vh 4vh 40vh;
+    grid-template-areas: "banner banner banner banner" "bienvenida bienvenida bienvenida bienvenida" "desc desc hab hab" "l1 l1 l1 l1" "fotoacc lh lh fotopet" "accesible lh lh pet" "botonserv botonserv botonserv botonserv" "l2 l2 l2 l2" "lista lista mapa mapa"; }
     #gridIndex .bienvenidaHuasi {
       line-height: 1.5;
       margin: 0 20vw; }
@@ -509,13 +524,8 @@ h4 {
       height: 12vh; }
     #gridIndex .accesibilidad, #gridIndex .petFriendly {
       margin-left: 7vh; }
-    #gridIndex .fotopet {
-      margin-right: 7vh;
-      margin-bottom: 3vh;
-      height: 12vh; }
-    #gridIndex .petFriendly {
-      margin-right: 7vh; }
-    #gridIndex .divLineal1 {
+    #gridIndex .divLinealHorizontal {
+      grid-area: lh;
       width: 0.1vw;
       height: 90%;
       border-top: 0;
@@ -528,6 +538,12 @@ h4 {
       justify-self: center;
       border-color: #DBC9B8;
       border-style: solid; }
+    #gridIndex .fotopet {
+      margin-right: 7vh;
+      margin-bottom: 3vh;
+      height: 12vh; }
+    #gridIndex .petFriendly {
+      margin-right: 7vh; }
     #gridIndex .h3Index {
       margin: 0 0 1vh 0;
       display: flex;
@@ -544,6 +560,8 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50vh 30vh 70vh;
     grid-template-areas: "banner banner banner" "descripcion descripcion descripcion" "hab1 hab2 hab3"; }
+    #gridHabitaciones .descripcion {
+      margin: 0 10vh; }
     #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
       padding: 3vh; }
     #gridHabitaciones .habitacion2 {
@@ -709,8 +727,10 @@ h4 {
   /*HABITACIONES*/
   #gridHabitaciones {
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 30vh 60vh 60vh 60vh;
+    grid-template-rows: 30vh 20vh 60vh 60vh 60vh;
     grid-template-areas: "banner" "descripcion" "hab1" "hab2" "hab3"; }
+    #gridHabitaciones .descripcion {
+      margin: 0 5vh; }
     #gridHabitaciones .imagenHabitaciones {
       width: 30vw; }
   /*SERVICIOS*/
@@ -867,6 +887,8 @@ h4 {
     grid-template-columns: 100%;
     grid-template-rows: 20vh 45vh 55vh 55vh 55vh;
     grid-template-areas: "banner" "descripcion" "hab1" "hab2" "hab3"; }
+    #gridHabitaciones .descripcion {
+      margin: 0 3vh; }
     #gridHabitaciones .imagenHabitaciones {
       width: 30vw; }
   /*SERVICIOS*/
@@ -949,7 +971,9 @@ h4 {
   .textoChico {
     font-size: 0.8em; }
   .textoFooter {
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    text-justify: center;
+    text-align: center; }
   .botonLink {
     font-size: 0.8em;
     margin-top: 2vh;

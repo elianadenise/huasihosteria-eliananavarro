@@ -126,12 +126,15 @@ main{
         margin-top: 3vh;
     }
     
+    
+
     .desc{
         grid-area: desc;
         display: flex;
         flex-direction: column;
         justify-self: center;
         align-self: center;
+        margin: 5vh;
     }
 
     .galeriaHabs{
@@ -153,7 +156,11 @@ main{
         &:hover{
             filter: $sombraImg;
         }
+    }
 
+    .divLineal1{
+        grid-area: l1;
+        @include divLineal(90%,0.1vh, 0.3vh, 0, auto);
     }
 
     .fotoacc{
@@ -172,10 +179,6 @@ main{
         justify-content: start;
         align-items: center;
         margin-top: 2vh;
-    }
-    
-    .divLineal1{
-        grid-area: l1;
     }
     
     .fotopet{
@@ -288,7 +291,6 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 10vh;
     }
 
     .habitacion1{
@@ -578,6 +580,9 @@ h3{
     font-family: $fuenteTitulos; 
     color: $colorTextos;
     font-weight: 700;
+    display: flex;
+    text-justify: center;
+    text-align: center;
 }
 
 h4{
@@ -691,12 +696,13 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 40% 10% 10% 40%;
-    grid-template-rows:50vh 50vh 50vh 15vh 15vh 10vh 4vh 40vh;
+    grid-template-rows:50vh 50vh 50vh 10vh 15vh 15vh 10vh 4vh 40vh;
     grid-template-areas: "banner banner banner banner"
                          "bienvenida bienvenida bienvenida bienvenida"
-                         " desc desc hab hab"
-                         "fotoacc l1 l1 fotopet"
-                         "accesible l1 l1 pet"
+                         "desc desc hab hab"
+                         "l1 l1 l1 l1"
+                         "fotoacc lh lh fotopet"
+                         "accesible lh lh pet"
                          "botonserv botonserv botonserv botonserv"
                          "l2 l2 l2 l2"
                          "lista lista mapa mapa";
@@ -716,6 +722,11 @@ main{
                         .accesibilidad{
                             margin-left: 7vh;
                         }
+
+                        .divLinealHorizontal{
+                            grid-area: lh;
+                            @include divLineal(0.1vw, 90%, 0, 0.3vh, 0)
+                        }
                         
                         .fotopet{
                             margin-right: 7vh;
@@ -725,10 +736,6 @@ main{
 
                         .petFriendly{
                             margin-right: 7vh;
-                        }
-                        
-                        .divLineal1{
-                            @include divLineal(0.1vw, 90%, 0, 0.3vh, 0)
                         }
                         
                         .h3Index{
@@ -760,6 +767,10 @@ main{
     grid-template-areas: "banner banner banner"
                          "descripcion descripcion descripcion"
                          "hab1 hab2 hab3";
+
+                        .descripcion{
+                            margin: 0 10vh;
+                        }
                          
                          .habitacion1{
                             padding: 3vh;
@@ -1040,12 +1051,16 @@ main{
 /*HABITACIONES*/
 #gridHabitaciones{
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 30vh 60vh 60vh 60vh;
+    grid-template-rows: 30vh 20vh 60vh 60vh 60vh;
     grid-template-areas: "banner"
                          "descripcion"
                          "hab1"
                          "hab2"
                          "hab3";
+
+                        .descripcion{
+                            margin: 0 5vh;
+                        }
 
                         .imagenHabitaciones{
                             width: 30vw;
@@ -1307,6 +1322,10 @@ main{
                          "hab2"
                          "hab3";
 
+                         .descripcion{
+                            margin: 0 3vh;
+                        }
+
                          .imagenHabitaciones{
                             width: 30vw;
                         }
@@ -1444,6 +1463,8 @@ h3{
 
 .textoFooter{
     font-size: 0.8em;
+    text-justify: center;
+    text-align: center;
 }
 
 
