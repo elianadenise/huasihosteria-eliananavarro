@@ -483,7 +483,8 @@ h4 {
   font-family: "Poppins", sans-serif;
   color: #2F2A26;
   text-justify: center;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.5; }
 
 .fuenteCajaFormulario {
   font-family: "Poppins", sans-serif;
