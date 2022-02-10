@@ -475,6 +475,8 @@ main{
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            text-justify: center;
+            text-align: center;
 
             img{
                 margin-right: 1vh;
@@ -541,6 +543,7 @@ footer{
                 background-color: #2F2A26;
                 color: #DBC9B8;
                 width: 80%;
+                height: 2.5vh;
     
                 &:focus{
                     outline-color: #DBC9B8;
@@ -550,6 +553,7 @@ footer{
             .botonFooter{
                 text-decoration: none;
                 font-family: $fuenteTextos;
+                font-size: 0.9em;
                 color: #2F2A26;
                 background-color: #DBC9B8;
                 transition: 1s;
@@ -558,6 +562,7 @@ footer{
                 border-radius: 0.3em;
                 justify-self: center;
                 align-self: center;
+                padding: 0 0.5vh;
                 
                 &:hover{
                     background-color: transparent;
@@ -604,7 +609,10 @@ h3{
     font-family: $fuenteTitulos; 
     color: $colorTextos;
     font-weight: 700;
-    text-justify: center;
+}
+
+.h3Centrado{
+    @extend h3;
     text-align: center;
 }
 
@@ -868,7 +876,7 @@ main{
 #gridcontactanos{
     background-color: #EFEEEA;
     grid-template-columns: 50% 50%;
-    grid-template-rows:50vh 80vh 45vh;
+    grid-template-rows:50vh 100vh 45vh;
     grid-template-areas: "banner banner"
                          "formulario formulario"
                          "datos mapa";
@@ -1001,8 +1009,8 @@ header{
     
         ul{
             flex-direction: center;
-            justify-self: center;
-            height: 12vh;
+            align-items: center;
+            height: 15vh;
             line-height: 1em;
     
             
@@ -1272,7 +1280,7 @@ header{
             flex-direction: column;
             margin-top: 1vh;
             justify-content: center;
-            height: 12vh;
+            height: 15vh;
 
             .linknav{
                 font-size: 1em;
@@ -1424,7 +1432,7 @@ main{
 
 #gridcontactanos{
     grid-template-columns: 100%;
-    grid-template-rows:20vh 80vh 25vh 40vh;
+    grid-template-rows:20vh 100vh 25vh 40vh;
     grid-template-areas: "banner"
                          "formulario"
                          "datos"

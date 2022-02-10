@@ -349,7 +349,9 @@ main {
     #gridcontactanos .datos div {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+      text-justify: center;
+      text-align: center; }
       #gridcontactanos .datos div img {
         margin-right: 1vh;
         height: 1.7vh; }
@@ -407,12 +409,14 @@ footer {
         border-radius: 0.3em;
         background-color: #2F2A26;
         color: #DBC9B8;
-        width: 80%; }
+        width: 80%;
+        height: 2.5vh; }
         footer .divFooter3 form .formFooter:focus {
           outline-color: #DBC9B8; }
       footer .divFooter3 form .botonFooter {
         text-decoration: none;
         font-family: "Poppins", sans-serif;
+        font-size: 0.9em;
         color: #2F2A26;
         background-color: #DBC9B8;
         transition: 1s;
@@ -420,7 +424,8 @@ footer {
         border: 0.2vh solid #DBC9B8;
         border-radius: 0.3em;
         justify-self: center;
-        align-self: center; }
+        align-self: center;
+        padding: 0 0.5vh; }
         footer .divFooter3 form .botonFooter:hover {
           background-color: transparent;
           color: #DBC9B8; }
@@ -461,11 +466,12 @@ h2 {
   font-weight: 700;
   font-size: 10vh; }
 
-h3 {
+h3, .h3Centrado {
   font-family: "Montserrat Alternates", sans-serif;
   color: #2F2A26;
-  font-weight: 700;
-  text-justify: center;
+  font-weight: 700; }
+
+.h3Centrado {
   text-align: center; }
 
 h4 {
@@ -640,7 +646,7 @@ h4 {
   #gridcontactanos {
     background-color: #EFEEEA;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50vh 80vh 45vh;
+    grid-template-rows: 50vh 100vh 45vh;
     grid-template-areas: "banner banner" "formulario formulario" "datos mapa"; }
     #gridcontactanos .formulario {
       justify-items: start; }
@@ -681,7 +687,7 @@ h4 {
     font-size: 3em; }
   h2 {
     font-size: 2em; }
-  h3 {
+  h3, .h3Centrado {
     font-size: 1.4em; }
   .textoCentrado {
     font-size: 1.1em;
@@ -716,8 +722,8 @@ h4 {
         margin: 0.1vh 0; }
       header .navbar ul {
         flex-direction: center;
-        justify-self: center;
-        height: 12vh;
+        align-items: center;
+        height: 15vh;
         line-height: 1em; }
         header .navbar ul .linknav {
           padding: 0.5vh 0.5vh;
@@ -844,7 +850,7 @@ h4 {
     font-size: 2.4em; }
   h2 {
     font-size: 1.5em; }
-  h3 {
+  h3, .h3Centrado {
     font-size: 1em; }
   .textoCentrado {
     font-size: 1.1em; }
@@ -878,7 +884,7 @@ h4 {
         flex-direction: column;
         margin-top: 1vh;
         justify-content: center;
-        height: 12vh; }
+        height: 15vh; }
         header .navbar ul .linknav {
           font-size: 1em;
           padding: 0 0.3vh; }
@@ -968,7 +974,7 @@ h4 {
   /*CONTACTANOS*/
   #gridcontactanos {
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 80vh 25vh 40vh;
+    grid-template-rows: 20vh 100vh 25vh 40vh;
     grid-template-areas: "banner" "formulario" "datos" "mapa"; }
     #gridcontactanos .formulario {
       margin: 0 5vh; }
@@ -1007,7 +1013,7 @@ h4 {
     font-size: 1.6em; }
   h2 {
     font-size: 1.2em; }
-  h3 {
+  h3, .h3Centrado {
     font-size: 0.9em; }
   .textoCentrado {
     font-size: 0.9em; }
