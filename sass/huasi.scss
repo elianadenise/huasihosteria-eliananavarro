@@ -117,7 +117,6 @@ main{
         grid-area: bienvenida;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
@@ -126,13 +125,12 @@ main{
         margin-top: 3vh;
     }
     
-    
-
     .desc{
         grid-area: desc;
         display: flex;
         flex-direction: column;
-        justify-self: center;
+        text-justify: center;
+        text-align: center;
         align-self: center;
         margin: 5vh;
     }
@@ -144,18 +142,6 @@ main{
         justify-self: center;
         margin-bottom: 3rem;
         transition: 1s;
-
-        .container{
-            height: 45vh;
-        }
-        #carouselExampleCaptions{
-            display: inline-block;
-            width: 400px;
-        }
-
-        &:hover{
-            filter: $sombraImg;
-        }
     }
 
     .divLineal1{
@@ -181,6 +167,11 @@ main{
         margin-top: 2vh;
     }
     
+    .divLineal2{
+        grid-area: l2;
+    }
+    
+
     .fotopet{
         grid-area: fotopet;
         @extend .fotoacc;
@@ -199,8 +190,8 @@ main{
         align-self: center;
     }
     
-    .divLineal2{
-        grid-area: l2;
+    .divLineal3{
+        grid-area: l3;
         @include divLineal(90%,0.1vh, 0.3vh, 0, auto);
     }
     
@@ -701,17 +692,25 @@ main{
                          "bienvenida bienvenida bienvenida bienvenida"
                          "desc desc hab hab"
                          "l1 l1 l1 l1"
-                         "fotoacc lh lh fotopet"
-                         "accesible lh lh pet"
+                         "fotoacc l2 l2 fotopet"
+                         "accesible l2 l2 pet"
                          "botonserv botonserv botonserv botonserv"
-                         "l2 l2 l2 l2"
+                         "l3 l3 l3 l3"
                          "lista lista mapa mapa";
 
 
                          .bienvenidaHuasi{
                             line-height: 1.5;
-                            margin: 0 20vw;
+                            margin: 3vw 20vw 0 20vw;
                         }                        
+
+                        .galeriaHabs{
+                            width: 45vw;
+
+                            &:hover{
+                                filter: $sombraImg;
+                            }
+                        }
                         
                         .fotoacc{
                             margin-left: 7vh;
@@ -723,8 +722,7 @@ main{
                             margin-left: 7vh;
                         }
 
-                        .divLinealHorizontal{
-                            grid-area: lh;
+                        .divLineal2{
                             @include divLineal(0.1vw, 90%, 0, 0.3vh, 0)
                         }
                         
@@ -998,31 +996,37 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 100%;
-    grid-template-rows:30vh 40vh 15vh 30vh 5vh 10vh 15vh 10vh 15vh 5vh 5vh 15vh 30vh;
+    grid-template-rows:30vh 30vh 5vh 25vh 40vh 5vh 10vh 20vh 10vh 15vh 5vh 5vh 15vh 30vh;
     grid-template-areas: "banner"
                          "bienvenida"
+                         "l1"
                          "desc"
                          "hab"
-                         "l1"
+                         "l2"
                          "fotoacc"
                          "accesible"
                          "fotopet"
                          "pet"
                          "botonserv"
-                         "l2"
+                         "l3"
                          "lista"
                          "mapa";
 
                          .bienvenidaHuasi{
-                            margin: 0 5vw;
+                            margin: 3vw 5vw 0 5vw;
                         }
 
                         .flecha{
                             width: 0;
                             margin-top: 0;
                         }
+
+                        .galeriaHabs{
+                            width: 80vw;
+                            filter: $sombraImg;
+                        }
                         
-                        .divLineal1{
+                        .divLineal2{
                             @include divLineal(90%, 0.1vh, 0.3vh, 0, auto);
                         }
 
@@ -1262,31 +1266,38 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 100%;
-    grid-template-rows:20vh 45vh 30vh 20vh 5vh 10vh 20vh 10vh 15vh 5vh 5vh 20vh 40vh;
+    grid-template-rows:20vh 40vh 5vh 25vh 30vh 5vh 10vh 20vh 10vh 15vh 5vh 5vh 20vh 40vh;
     grid-template-areas: "banner"
                          "bienvenida"
+                         "l1"
                          "desc"
                          "hab"
-                         "l1"
+                         "l2"
                          "fotoacc"
                          "accesible"
                          "fotopet"
                          "pet"
                          "botonserv"
-                         "l2"
+                         "l3"
                          "lista"
                          "mapa";
                          
                          .bienvenidaHuasi{
-                            margin: 0 5vh;
+                            justify-content: center;
+                            margin: 5vw 5vw 0 5vw;
                         }
 
                         .flecha{
                             width: 0;
                             margin-top: 0;
                         }
+
+                        .galeriaHabs{
+                            width: 80vw;
+                            filter: $sombraImg;
+                        }
                             
-                        .divLineal1{
+                        .divLineal2{
                             @include divLineal(90%, 0.1vh, 0.3vh, 0, auto)
                         }
 
