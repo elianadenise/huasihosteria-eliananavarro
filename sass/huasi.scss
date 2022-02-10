@@ -430,7 +430,7 @@ main{
         justify-self: center;
         align-self: center;
 
-        .form, textarea, select{
+        textarea{
             border: none;
             border-bottom: 2px solid #DBC9B8;
             background-color: #EFEEEA;
@@ -442,10 +442,25 @@ main{
             } 
         }
 
-        .form-check-input:checked {
-            background-color: #DBC9B8;
-            border-color: #DBC9B8;
+        .form, select{
+            @extend textarea;
+            height: 3.5vh;
+
+
+            &:focus{
+                @extend textarea:focus;
+            } 
         }
+
+        .radios{
+            display: flex;
+            flex-direction: column;
+
+            .form-check-input:checked {
+                background-color: #DBC9B8;
+                border-color: #DBC9B8;
+            }
+        } 
     }
     
     .datos{
@@ -548,7 +563,6 @@ footer{
                     background-color: transparent;
                     color: #DBC9B8;
                 }
-                
             }
         }
 
@@ -1137,13 +1151,13 @@ grid-template-areas: "banner banner"
 /*CONTACTANOS*/
 #gridcontactanos{
     grid-template-columns: 50% 50%;
-    grid-template-rows:30vh 70vh 30vh;
+    grid-template-rows:30vh 85vh 40vh;
     grid-template-areas: "banner banner"
                          "formulario formulario"
                          "datos mapa";
 
                          .formulario{
-                            margin-left: 2vh;
+                            margin: 0 5vh;
                             justify-items: start;
                         }
 }
@@ -1410,11 +1424,16 @@ main{
 
 #gridcontactanos{
     grid-template-columns: 100%;
-    grid-template-rows:20vh 70vh 25vh 40vh;
+    grid-template-rows:20vh 80vh 25vh 40vh;
     grid-template-areas: "banner"
                          "formulario"
                          "datos"
                          "mapa";
+
+                        .formulario{
+                            margin: 0 5vh;
+                        }
+                        
 
                         
 }

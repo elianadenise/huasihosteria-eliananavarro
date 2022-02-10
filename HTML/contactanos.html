@@ -61,7 +61,7 @@
 
             <!--formulario-->
             <form class="formulario">
-                <h3>Solicitud de Reserva</h3>
+                <h3 class="mb-5">Solicitud de Reserva</h3>
                 <div>
                     <label for="text" id="Nombre" class="textoChico mb-1">Nombre y apellido</label>
                     <input type="text" placeholder="Ingresá tu nombre" id="Nombre"
@@ -84,11 +84,11 @@
 
                 <div>
                     <label for="Tipo de habitación" id="select" class="textoChico mb-1">Tipo de Habitación</label>
-                    <select name="select" class="mb-3">
-                        <option value="select" class="fuenteCajaFormulario">Seleccionar</option>
-                        <option value="Hab single" class="fuenteCajaFormulario">Habitación single</option>
-                        <option value="Hab twin" class="fuenteCajaFormulario">Habitación doble twin</option>
-                        <option value="Hab matrimonial" class="fuenteCajaFormulario">Habitación doble matrimonial
+                    <select name="select" class="mb-3 fuenteCajaFormulario">
+                        <option value="select">Seleccionar</option>
+                        <option value="Hab single">Habitación single</option>
+                        <option value="Hab twin" >Habitación doble twin</option>
+                        <option value="Hab matrimonial">Habitación doble matrimonial
                         </option>
                     </select>
 
@@ -99,10 +99,10 @@
                 </div>
 
 
-                <div>
-                    <label for="text" id="correo" class="textoChico mb-1">¿Querés subscribirte para recibir descuentros
+                <div class="radios">
+                    <label for="text" id="correo" class="textoChico">¿Querés subscribirte para recibir descuentros
                         exclusivos?</label>
-                    <div class="form-check form-check-inline mx-3">
+                    <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                             value="option1">
                         <label class="form-check-label fuenteCajaFormulario" for="inlineRadio1">Sí, quiero</label>

@@ -323,17 +323,22 @@ main {
     flex-direction: column;
     justify-self: center;
     align-self: center; }
-    #gridcontactanos .formulario .form, #gridcontactanos .formulario textarea, #gridcontactanos .formulario select {
+    #gridcontactanos .formulario textarea, #gridcontactanos .formulario .form, #gridcontactanos .formulario select {
       border: none;
       border-bottom: 2px solid #DBC9B8;
       background-color: #EFEEEA;
       width: 100%; }
-      #gridcontactanos .formulario .form:focus, #gridcontactanos .formulario textarea:focus, #gridcontactanos .formulario select:focus {
+      #gridcontactanos .formulario textarea:focus, #gridcontactanos .formulario .form:focus, #gridcontactanos .formulario select:focus {
         outline-color: #DBC9B8;
         border-radius: 0.3em; }
-    #gridcontactanos .formulario .form-check-input:checked {
-      background-color: #DBC9B8;
-      border-color: #DBC9B8; }
+    #gridcontactanos .formulario .form, #gridcontactanos .formulario select {
+      height: 3.5vh; }
+    #gridcontactanos .formulario .radios {
+      display: flex;
+      flex-direction: column; }
+      #gridcontactanos .formulario .radios .form-check-input:checked {
+        background-color: #DBC9B8;
+        border-color: #DBC9B8; }
   #gridcontactanos .datos {
     grid-area: datos;
     display: flex;
@@ -801,10 +806,10 @@ h4 {
   /*CONTACTANOS*/
   #gridcontactanos {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30vh 70vh 30vh;
+    grid-template-rows: 30vh 85vh 40vh;
     grid-template-areas: "banner banner" "formulario formulario" "datos mapa"; }
     #gridcontactanos .formulario {
-      margin-left: 2vh;
+      margin: 0 5vh;
       justify-items: start; }
   /*FOOTER*/
   footer {
@@ -963,8 +968,10 @@ h4 {
   /*CONTACTANOS*/
   #gridcontactanos {
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 70vh 25vh 40vh;
+    grid-template-rows: 20vh 80vh 25vh 40vh;
     grid-template-areas: "banner" "formulario" "datos" "mapa"; }
+    #gridcontactanos .formulario {
+      margin: 0 5vh; }
   /*FOOTER*/
   footer {
     height: 70vh;
