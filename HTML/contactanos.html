@@ -61,22 +61,59 @@
 
             <!--formulario-->
             <form class="formulario">
-                <h3>Consultanos</h3>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label textoChico">Nombre</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Ingresá tu nombre">
+                <h3>Solicitud de Reserva</h3>
+                <div>
+                    <label for="text" id="Nombre" class="textoChico mb-1">Nombre y apellido</label>
+                    <input type="text" placeholder="Ingresá tu nombre" id="Nombre"
+                        class="form fuenteCajaFormulario mb-3">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label textoChico">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Ingresá tu e-mail">
+                <div>
+                    <label for="text" id="correo" class="textoChico mb-1">Correo Electrónico</label>
+                    <input type="text" placeholder="ejemplo@ejemplo.com" id="correo"
+                        class="form fuenteCajaFormulario mb-3">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label textoChico">Escribinos tu
-                        consulta</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div>
+                    <label for="text" id="correo" class="textoChico mb-1">Check In</label>
+                    <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
                 </div>
+
+                <div>
+                    <label for="text" id="correo" class="textoChico mb-1">Check Out</label>
+                    <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
+                </div>
+
+                <div>
+                    <label for="Tipo de habitación" id="select" class="textoChico mb-1">Tipo de Habitación</label>
+                    <select name="select" class="mb-3">
+                        <option value="select" class="fuenteCajaFormulario">Seleccionar</option>
+                        <option value="Hab single" class="fuenteCajaFormulario">Habitación single</option>
+                        <option value="Hab twin" class="fuenteCajaFormulario">Habitación doble twin</option>
+                        <option value="Hab matrimonial" class="fuenteCajaFormulario">Habitación doble matrimonial
+                        </option>
+                    </select>
+
+                </div>
+                <div>
+                    <label for="exampleFormControlTextarea1" class="textoChico mb-1">Comentario</label>
+                    <textarea name="" id="" cols="70" rows="5" class="mb-3 fuenteCajaFormulario"></textarea>
+                </div>
+
+
+                <div>
+                    <label for="text" id="correo" class="textoChico mb-1">¿Querés subscribirte para recibir descuentros
+                        exclusivos?</label>
+                    <div class="form-check form-check-inline mx-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label fuenteCajaFormulario" for="inlineRadio1">Sí, quiero</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label fuenteCajaFormulario" for="inlineRadio2">En otro momento</label>
+                    </div>
+                </div>
+
                 <div>
                     <input type="submit" class="botonLink" class="form-label">
                 </div>
@@ -145,8 +182,8 @@
         <div class="divFooter3">
             <p class="textoFooter m-0">Suscribite para recibir descuentos exclusivos</p>
             <form action="susbribir">
-                <input type="text" placeholder="Ingresá tu e-mail" class="form fuenteCajaFormulario" class="cajaFormulario">
-                <input type="submit" class="fuenteCajaFormulario">
+                <input type="text" placeholder="Ingresá tu e-mail" class="formFooter cajaFormulario">
+                <input type="submit" class="botonFooter">
             </form>
             <div class="divLinealFooter2"></div>
             <p class="textoFooter m-0">Sigamos conectados</p>
