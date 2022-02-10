@@ -1,0 +1,31 @@
+$colorTextos: #2F2A26;
+$sombraImg: drop-shadow(0 0.2vh 0.3vh #2F2A26);
+$sombraTexto: #2F2A26 0.1em 0.1em 0.2em;
+$fuenteTitulos: 'Montserrat Alternates', sans-serif;
+$fuenteTextos: 'Poppins', sans-serif;
+
+
+@mixin banners($background){
+    grid-area: banner;
+    display: flex;
+    justify-content: center;
+    background-image: $background;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin divLineal ($ancho, $alto, $borderTop, $borderLeft, $margin){
+    width: $ancho;
+    height: $alto;
+    border-top: $borderTop;
+    border-left: $borderLeft;
+    border-bottom: 0;
+    border-right: 0;
+    margin: $margin;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-color: #DBC9B8;
+    border-style: solid;
+}
