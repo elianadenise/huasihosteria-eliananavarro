@@ -79,9 +79,8 @@ main{
     row-gap: 0vh;
     justify-content: space-around;
 
-
     .bannerindex{
-        @include banners(url(../IMG/capaindex.png));
+        @include banners (url(../IMG/capaindex.png));
     }
     
     .bienvenidaHuasi{
@@ -261,7 +260,7 @@ main{
         padding: 1vh;
         margin:2vh;
         border: 0.1vh solid #DBC9B8;
-        border-radius: 0.3em;
+        border-radius: $redondeado;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -296,6 +295,7 @@ main{
         justify-content: center;
         align-content: center;
         margin-bottom: 1vh;
+        border-radius: $redondeado;
     }
     
     .ulmainHabitacion{
@@ -317,7 +317,6 @@ main{
     row-gap: 0vh;
     justify-content: space-around;
 
-    
     .bannerserv{
         @include banners(url(../IMG/capaservicios.png));
     }
@@ -341,7 +340,7 @@ main{
 
         &:hover{
             border:0.1vh solid #DBC9B8;
-            border-radius: 0.3em;
+            border-radius: $redondeado;
         }
     }
 
@@ -371,7 +370,6 @@ main{
             @extend .servicioCaja1:hover;
         }
     }
-
     
     .textoServ1{
         grid-area: acc;
@@ -408,7 +406,6 @@ main{
         display: inline-block;
         filter: $sombraImg; 
     }
-
 }
 
 
@@ -438,14 +435,13 @@ main{
 
             &:focus{
                 outline-color: #DBC9B8;
-                border-radius: 0.3em;
+                border-radius: $redondeado;
             } 
         }
 
         .form, select{
             @extend textarea;
             height: 3.5vh;
-
 
             &:focus{
                 @extend textarea:focus;
@@ -517,8 +513,8 @@ footer{
             display: flex;
             flex-direction: column;
         }
-
     }
+
     .divFooter2{
         display: flex;
         flex-direction: column;
@@ -543,7 +539,7 @@ footer{
 
             .formFooter{
                 border: 2px solid #DBC9B8;
-                border-radius: 0.3em;
+                border-radius: $redondeado;
                 background-color: #2F2A26;
                 color: #DBC9B8;
                 width: 80%;
@@ -563,7 +559,7 @@ footer{
                 transition: 1s;
                 display: flex;
                 border: 0.2vh solid #DBC9B8;
-                border-radius: 0.3em;
+                border-radius: $redondeado;
                 justify-self: center;
                 align-self: center;
                 padding: 0 0.5vh;
@@ -598,7 +594,6 @@ h1{
     align-items: center;
     text-shadow: $sombraTexto;
     font-weight: 700;
-
 }
 
 h2{
@@ -661,7 +656,7 @@ h4{
     transition: 1s;
     display: flex;
     border: 0.1vh solid #C65425;
-    border-radius: 0.3em;
+    border-radius: $redondeado;
     justify-self: center;
     align-self: center;
 
@@ -705,7 +700,7 @@ header{
 
             &:hover{
                 border:0.1vh solid #DBC9B8;
-                border-radius: 0.3em;
+                border-radius: $redondeado;
             }
         }
 
@@ -713,7 +708,7 @@ header{
             background: #DBC9B8;
             border:0.1vh solid #DBC9B8;
             transition: 1s;
-            border-radius: 0.3em;
+            border-radius: $redondeado;
         
             &:hover{
                 background: #EFEEEA;
@@ -743,7 +738,6 @@ main{
                          "botonserv botonserv botonserv botonserv"
                          "l3 l3 l3 l3"
                          "lista lista mapa mapa";
-
 
                          .bienvenidaHuasi{
                             line-height: 1.5;
@@ -788,8 +782,6 @@ main{
                             justify-self: center;
                             align-self: center;
                         }
-
-
 }
 
 /*NOSOTROS*/
@@ -872,9 +864,7 @@ main{
                         
                         .logoServ{
                             height: 8vh;
-                        }
-                        
-
+                        }         
 }
 
 /*CONTACTANOS*/
@@ -890,8 +880,7 @@ main{
                         .formulario{
                             justify-items: start;
                             width: 60%;
-                        }
-                        
+                        }     
 }
 
 /*FOOTER*/
@@ -912,10 +901,8 @@ footer{
             display: flex;
             flex-direction: column;
         }
-        
     }
 
-    
     .divFooter2{
         display: flex;
         flex-direction: column;
@@ -931,7 +918,6 @@ footer{
         }
     }
 
-    
     .divFooter3{
         display: flex;
         flex-direction: column;
@@ -1019,7 +1005,6 @@ header{
             align-items: center;
             height: 15vh;
             line-height: 1em;
-    
             
             .linknav{
                 padding:0.5vh 0.5vh;
@@ -1158,8 +1143,7 @@ grid-template-areas: "banner banner"
                     
                     .textoServ4{
                         margin: 0 8vh;
-                    }
-                    
+                    }                    
 }
 
 
@@ -1357,7 +1341,6 @@ main{
                             justify-content: center;
                             align-items: center;
                         }
-
 }
 
 /*NOSOTROS*/
@@ -1380,14 +1363,13 @@ main{
                          "hab2"
                          "hab3";
 
-                         .descripcion{
+                        .descripcion{
                             margin: 0 3vh;
                         }
 
-                         .imagenHabitaciones{
+                        .imagenHabitaciones{
                             width: 30vw;
-                        }
-                        
+                        }                    
 }
 
 
@@ -1404,7 +1386,7 @@ main{
                          "serv1 serv2"
                          "serv3 serv4";
 
-                         .divLinealServ{
+                        .divLinealServ{
                             @include divLineal(90%, 0.1vh, 0.3vh, 0, auto)
                         }
                         
@@ -1447,10 +1429,7 @@ main{
 
                         .formulario{
                             margin: 0 5vh;
-                        }
-                        
-
-                        
+                        }                        
 }
 
 /*FOOTER*/
@@ -1471,7 +1450,6 @@ footer{
         .huasiLogoFooter{
             height: 5vh;
         }
-
         
         .divFooter1div1{
             justify-items: space-around;
@@ -1490,7 +1468,6 @@ footer{
             display: flex;
             margin: 0.9vh;
         } 
-
     }
 
     .divFooter3{

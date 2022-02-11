@@ -235,7 +235,8 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-bottom: 1vh; }
+    margin-bottom: 1vh;
+    border-radius: 0.3em; }
   #gridHabitaciones .ulmainHabitacion {
     list-style-type: circle;
     display: flex;
