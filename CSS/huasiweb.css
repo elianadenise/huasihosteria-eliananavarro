@@ -339,6 +339,8 @@ main {
       #gridcontactanos .formulario .radios .form-check-input:checked {
         background-color: #DBC9B8;
         border-color: #DBC9B8; }
+    #gridcontactanos .formulario .botonLink {
+      text-transform: uppercase; }
   #gridcontactanos .datos {
     grid-area: datos;
     display: flex;
@@ -425,7 +427,8 @@ footer {
         border-radius: 0.3em;
         justify-self: center;
         align-self: center;
-        padding: 0 0.5vh; }
+        padding: 0 0.5vh;
+        text-transform: uppercase; }
         footer .divFooter3 form .botonFooter:hover {
           background-color: transparent;
           color: #DBC9B8; }
@@ -650,7 +653,8 @@ h4 {
     grid-template-rows: 50vh 100vh 45vh;
     grid-template-areas: "banner banner" "formulario formulario" "datos mapa"; }
     #gridcontactanos .formulario {
-      justify-items: start; }
+      justify-items: start;
+      width: 60%; }
   /*FOOTER*/
   footer {
     height: 30vh;

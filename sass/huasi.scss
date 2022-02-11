@@ -461,6 +461,10 @@ main{
                 border-color: #DBC9B8;
             }
         } 
+
+        .botonLink{
+            text-transform:$mayuscula;
+        }
     }
     
     .datos{
@@ -563,6 +567,7 @@ footer{
                 justify-self: center;
                 align-self: center;
                 padding: 0 0.5vh;
+                text-transform:$mayuscula;
                 
                 &:hover{
                     background-color: transparent;
@@ -884,6 +889,7 @@ main{
 
                         .formulario{
                             justify-items: start;
+                            width: 60%;
                         }
                         
 }

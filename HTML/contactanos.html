@@ -71,44 +71,36 @@
             <!--formulario-->
             <form class="formulario">
                 <h3 class="mb-3">Solicitud de Reserva</h3>
-                <div>
-                    <label for="text" id="Nombre" class="textoChico mb-1">Nombre y apellido</label>
-                    <input type="text" placeholder="Ingresá tu nombre" id="Nombre"
-                        class="form fuenteCajaFormulario mb-3">
-                </div>
-                <div>
-                    <label for="text" id="correo" class="textoChico mb-1">Correo Electrónico</label>
-                    <input type="text" placeholder="ejemplo@ejemplo.com" id="correo"
-                        class="form fuenteCajaFormulario mb-3">
-                </div>
-                <div>
-                    <label for="text" id="correo" class="textoChico mb-1">Check In</label>
-                    <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
-                </div>
 
-                <div>
-                    <label for="text" id="correo" class="textoChico mb-1">Check Out</label>
-                    <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
-                </div>
+                <label for="text" id="Nombre" class="textoChico mb-1">Nombre y apellido</label>
+                <input type="text" placeholder="Ingresá tu nombre" id="Nombre" class="form fuenteCajaFormulario mb-3">
 
-                <div>
-                    <label for="Tipo de habitación" id="select" class="textoChico mb-1">Tipo de Habitación</label>
-                    <select name="select" class="mb-3 fuenteCajaFormulario">
-                        <option value="select">Seleccionar</option>
-                        <option value="Hab single">Habitación single</option>
-                        <option value="Hab twin">Habitación doble twin</option>
-                        <option value="Hab matrimonial">Habitación doble matrimonial
-                        </option>
-                    </select>
+                <label for="text" id="correo" class="textoChico mb-1">Correo Electrónico</label>
+                <input type="text" placeholder="ejemplo@ejemplo.com" id="correo" class="form fuenteCajaFormulario mb-3">
 
-                </div>
-                <div>
-                    <label for="exampleFormControlTextarea1" class="textoChico mb-1">Comentario</label>
-                    <textarea name="" id="" cols="70" rows="5" class="mb-3 fuenteCajaFormulario"></textarea>
-                </div>
+                <label for="text" id="correo" class="textoChico mb-1">Check In</label>
+                <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
 
+                <label for="text" id="correo" class="textoChico mb-1">Check Out</label>
+                <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
 
-                <div class="radios">
+                <label for="Numero de pasajeros" id="numero" class="textoChico">Cantidad de huéspedes</label>
+                <input type="number" id="numero" class="form fuenteCajaFormulario mb-3">
+
+                <label for="Tipo de habitación" id="select" class="textoChico mb-1">Tipo de Habitación</label>
+                <select name="select" class="mb-3 fuenteCajaFormulario">
+                    <option value="select">Seleccionar</option>
+                    <option value="Hab single">Habitación single</option>
+                    <option value="Hab twin">Habitación doble twin</option>
+                    <option value="Hab matrimonial">Habitación doble matrimonial</option>
+                    <option value="Hab twin">Habitación triple</option>
+                    <option value="Hab twin">Habitación cuádruple</option>
+                </select>
+
+                <label for="exampleFormControlTextarea1" class="textoChico mb-1">Comentario</label>
+                <textarea name="" id="" cols="70" rows="5" class="mb-3 fuenteCajaFormulario"></textarea>
+
+                <div class="radios mb-3">
                     <label for="text" id="correo" class="textoChico">¿Querés subscribirte para recibir descuentros
                         exclusivos?</label>
                     <div class="form-check form-check-inline">
@@ -123,9 +115,8 @@
                     </div>
                 </div>
 
-                <div>
-                    <input type="submit" class="botonLink">
-                </div>
+                <input type="submit" class="botonLink" style="text-transform:uppercase;" value="¡enviar!">
+
             </form>
 
             <!--mapa-->
@@ -192,7 +183,7 @@
             <p class="textoFooter m-0">Suscribite para recibir descuentos exclusivos</p>
             <form action="susbribir">
                 <input type="text" placeholder="Ingresá tu e-mail" class="formFooter cajaFormulario">
-                <input type="submit" class="botonFooter">
+                <input type="submit" class="botonFooter" value="¡Enviar!">
             </form>
             <div class="divLinealFooter2"></div>
             <p class="textoFooter m-0">Sigamos conectados</p>
