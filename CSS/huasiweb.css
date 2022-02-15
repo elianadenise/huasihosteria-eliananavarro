@@ -474,22 +474,22 @@ h4 {
   text-shadow: #2F2A26 0.1em 0.1em 0.2em;
   color: #EFEEEA; }
 
-.textoCentrado {
+.texto1 {
   font-family: "Poppins", sans-serif;
   color: #2F2A26;
   text-justify: center;
   text-align: center;
   line-height: 1.5; }
 
-.fuenteCajaFormulario {
-  font-family: "Poppins", sans-serif;
-  color: #2F2A26;
-  font-size: 0.8em; }
-
-.textoChico {
+.texto2 {
   font-family: "Poppins", sans-serif;
   color: #2F2A26;
   line-height: 1.5; }
+
+.texto3 {
+  font-family: "Poppins", sans-serif;
+  color: #2F2A26;
+  font-size: 0.8em; }
 
 .textoFooter {
   line-height: 1.6;
@@ -610,7 +610,7 @@ h4 {
       width: 10vw; }
   /*SERVICIOS*/
   #gridServicios {
-    grid-template-columns: 28% 2% 70%;
+    grid-template-columns: 20% 2% 78%;
     grid-template-rows: 50vh 23vh 23vh 23vh 23vh;
     grid-template-areas: "banner banner banner" "serv1 l acc" "serv2 l pets" "serv3 l sust" "serv4 l gast"; }
     #gridServicios .divLinealServ {
@@ -627,7 +627,7 @@ h4 {
       border-color: #DBC9B8;
       border-style: solid; }
     #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
-      margin: 0 6vh; }
+      margin: 0 15vh 0 6vh; }
     #gridServicios .textoServ2 {
       margin: 0 6vh; }
     #gridServicios .textoServ3 {
@@ -686,13 +686,9 @@ h4 {
     font-size: 2em; }
   h3, .h3Centrado {
     font-size: 1.4em; }
-  .textoCentrado {
+  .texto1 {
     font-size: 1.1em;
     line-height: 1.5; }
-  .textoChicoIndex {
-    font-size: 1.2em;
-    text-justify: center;
-    text-align: center; }
   .botonLink {
     font-size: 1em;
     margin-top: 2vh;
@@ -850,9 +846,9 @@ h4 {
     font-size: 1.5em; }
   h3, .h3Centrado {
     font-size: 1em; }
-  .textoCentrado {
+  .texto1 {
     font-size: 1.1em; }
-  .textoChico {
+  .texto2 {
     font-size: 0.9em; }
   .textoFooter {
     font-size: 0.9em; }
@@ -1014,9 +1010,9 @@ h4 {
     font-size: 1.2em; }
   h3, .h3Centrado {
     font-size: 0.9em; }
-  .textoCentrado {
+  .texto1 {
     font-size: 0.9em; }
-  .textoChico {
+  .texto2 {
     font-size: 0.8em; }
   .textoFooter {
     font-size: 0.8em;

@@ -612,7 +612,7 @@ h4{
     color: #EFEEEA;
 }
 
-.textoCentrado{
+.texto1{
     font-family: $fuenteTextos;
     color: $colorTextos;
     text-justify: center;
@@ -620,16 +620,16 @@ h4{
     line-height: 1.5;
 }
 
-.fuenteCajaFormulario{
-    font-family: $fuenteTextos;
-    color: $colorTextos;
-    font-size: 0.8em;
-}
-
-.textoChico{
+.texto2{
     font-family: $fuenteTextos;
     color: $colorTextos;
     line-height: 1.5;
+}
+
+.texto3{
+    font-family: $fuenteTextos;
+    color: $colorTextos;
+    font-size: 0.8em;
 }
 
 .textoFooter{
@@ -820,7 +820,7 @@ main{
 /*SERVICIOS*/
 
 #gridServicios{
-    grid-template-columns:28% 2% 70%;
+    grid-template-columns:20% 2% 78%;
     grid-template-rows: 50vh 23vh 23vh 23vh 23vh;
     grid-template-areas: "banner banner banner"
                          "serv1 l acc"
@@ -833,7 +833,7 @@ main{
                         }
                         
                         .textoServ1{
-                            margin: 0 6vh;
+                            margin: 0 15vh 0 6vh;
                         }
                         
                         .textoServ2{
@@ -943,15 +943,9 @@ h3{
     font-size: 1.4em;
 }
 
-.textoCentrado{
+.texto1{
     font-size: 1.1em;
     line-height: 1.5;
-}
-
-.textoChicoIndex{
-    font-size:1.2em;
-    text-justify: center;
-    text-align: center;
 }
 
 .botonLink{
@@ -1211,11 +1205,11 @@ h3{
     font-size: 1em;
 }
 
-.textoCentrado{
+.texto1{
     font-size: 1.1em;
 }
 
-.textoChico{
+.texto2{
     font-size: 0.9em;
 }
 
@@ -1483,11 +1477,11 @@ h3{
     font-size: 0.9em;
 }
 
-.textoCentrado{
+.texto1{
     font-size: 0.9em;
 }
 
-.textoChico{
+.texto2{
     font-size: 0.8em;
 }
 
