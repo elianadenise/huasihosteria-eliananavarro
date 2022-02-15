@@ -497,7 +497,7 @@ main{
 }
 
 /*FOOTER*/
-footer{
+.footerDiv{
     background-color: #2F2A26;
     width: 100%;
     display: flex;
@@ -531,56 +531,46 @@ footer{
         display: flex;
         flex-direction: column;
 
-        form{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-
-            .formFooter{
-                border: 2px solid #DBC9B8;
-                border-radius: $redondeado;
-                background-color: #2F2A26;
-                color: #DBC9B8;
-                width: 80%;
-                height: 2.5vh;
-    
-                &:focus{
-                    outline-color: #DBC9B8;
-                }
-            }
-    
-            .botonFooter{
-                text-decoration: none;
-                font-family: $fuenteTextos;
-                font-size: 0.9em;
-                color: #2F2A26;
-                background-color: #DBC9B8;
-                transition: 1s;
-                display: flex;
-                border: 0.2vh solid #DBC9B8;
-                border-radius: $redondeado;
-                justify-self: center;
-                align-self: center;
-                padding: 0 0.5vh;
-                text-transform:$mayuscula;
-                
-                &:hover{
-                    background-color: transparent;
-                    color: #DBC9B8;
-                }
-            }
-        }
-
-        .divLinealFooter2{
-            @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0 0 0)
-        }
         .redesSocialesLogo{
             height: 2vh;
         }
         .facebookLogo{
             margin: 0 1.5vw 0 1.5vw;
         }
+
+        .divLinealFooter2{
+            @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0 0 0)
+        }
+
+        .aFooter{
+            transition: 1s;
+            text-decoration: none;
+            &:hover{
+                color: #EFEEEA;
+            }
+        }
+    }
+}
+
+.credito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBC9B8;
+    
+    p{
+        text-align: center;
+        text-justify: center;
+        font-family: $fuenteTextos;
+        font-size: 0.8em;
+        color:#2F2A26;
+        margin: 1vh 0 0.5vh 0;
+    }
+
+    img{
+        height: 2vh;
+        margin: 0 1vh 1vh 1vh;
     }
 }
 
@@ -831,7 +821,7 @@ main{
 
 #gridServicios{
     grid-template-columns:28% 2% 70%;
-    grid-template-rows: 50vh 20vh 20vh 20vh 20vh;
+    grid-template-rows: 50vh 23vh 23vh 23vh 23vh;
     grid-template-areas: "banner banner banner"
                          "serv1 l acc"
                          "serv2 l pets"
@@ -884,7 +874,7 @@ main{
 }
 
 /*FOOTER*/
-footer{
+.footerDiv{
     height: 30vh;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1012,6 +1002,7 @@ header{
     
                 &:hover{
                     border:0.1vh solid #DBC9B8;
+                    border-radius: $redondeado;
                 }
             }
         }
@@ -1164,7 +1155,7 @@ grid-template-areas: "banner banner"
 
 /*FOOTER*/
 
-footer{
+.footerDiv{
     height: 50vh;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1279,6 +1270,7 @@ header{
 
                 &:hover{
                     border:0.1vh solid #DBC9B8;
+                    border-radius: $redondeado;
                 }
             }
             
@@ -1434,7 +1426,7 @@ main{
 
 /*FOOTER*/
 
-footer{
+.footerDiv{
     height:70vh;
     flex-direction: column;
     justify-content: space-evenly;

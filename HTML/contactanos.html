@@ -9,6 +9,8 @@
     <meta name="keywords"
         content="turismo cafayate alojamiento, cafayate salta, hosteria cafayate, alojamiento cafayate, Huasi Hosteria, hotel argentina, reservar habitaciones en cafayate, reservar habitaciones en Salta Argentina">
     <meta name="description" content="Contactanos y reservá habitaciones en Huasi Hostería, Cafayate, Argentina.">
+    <!--Icono de pestaña-->
+    <link rel="icon" href="../IMG/icono.svg">
     <!--animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script scr="js/wow.min.js"></script>
@@ -78,16 +80,16 @@
                 <label for="text" id="correo" class="textoChico mb-1">Correo Electrónico</label>
                 <input type="text" placeholder="ejemplo@ejemplo.com" id="correo" class="form fuenteCajaFormulario mb-3">
 
-                <label for="text" id="correo" class="textoChico mb-1">Check In</label>
+                <label for="text" id="checkIn" class="textoChico mb-1">Check In</label>
                 <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
 
-                <label for="text" id="correo" class="textoChico mb-1">Check Out</label>
+                <label for="text" id="checkOut" class="textoChico mb-1">Check Out</label>
                 <input type="date" name="fecha" class="form fuenteCajaFormulario mb-3">
 
-                <label for="Numero de pasajeros" id="numero" class="textoChico">Cantidad de huéspedes</label>
+                <label for="numerodepasajeros" id="numero" class="textoChico">Cantidad de huéspedes</label>
                 <input type="number" id="numero" class="form fuenteCajaFormulario mb-3">
 
-                <label for="Tipo de habitación" id="select" class="textoChico mb-1">Tipo de Habitación</label>
+                <label for="tipodehabitación" id="select" class="textoChico mb-1">Tipo de Habitación</label>
                 <select name="select" class="mb-3 fuenteCajaFormulario">
                     <option value="select">Seleccionar</option>
                     <option value="Hab single">Habitación single</option>
@@ -98,7 +100,7 @@
                 </select>
 
                 <label for="exampleFormControlTextarea1" class="textoChico mb-1">Comentario</label>
-                <textarea name="" id="" cols="70" rows="5" class="mb-3 fuenteCajaFormulario"></textarea>
+                <textarea cols="70" rows="5" class="mb-3 fuenteCajaFormulario"></textarea>
 
                 <div class="radios mb-3">
                     <label for="text" id="correo" class="textoChico">¿Querés subscribirte para recibir descuentros
@@ -153,10 +155,10 @@
     </main>
 
     <footer>
+        <div class="footerDiv">
         <!--seccion1-->
         <div class="divFooter1 m-0">
-            <a href="../index.html"><img src="../IMG/HuasiHosteriaLogoBeige.svg" alt="Huasi Hosteria" srcset=""
-                    class="huasiLogoFooter"></a>
+            <a href="../index.html"><img src="../IMG/HuasiHosteriaLogoBeige.svg" alt="Huasi Hosteria" class="huasiLogoFooter"></a>
             <p class="textoFooter m-0">Sentite mejor que en casa</p>
 
             <div class="divLinealFooter1"></div>
@@ -180,20 +182,29 @@
 
         <!--seccion3-->
         <div class="divFooter3">
-            <p class="textoFooter m-0">Suscribite para recibir descuentos exclusivos</p>
-            <form action="susbribir">
-                <input type="text" placeholder="Ingresá tu e-mail" class="formFooter cajaFormulario">
-                <input type="submit" class="botonFooter" value="¡Enviar!">
-            </form>
-            <div class="divLinealFooter2"></div>
             <p class="textoFooter m-0">Sigamos conectados</p>
             <div class="divFooter2div1">
                 <a href="https://www.instagram.com/"><img src="../IMG/instagram.svg" alt="Instagram"
-                        class="redesSocialesLogo"></a>
+                        class="redesSocialesLogo mb-2"></a>
                 <a href="https://www.facebook.com"><img src="../IMG/facebook.svg" alt="Facebook"
-                        class="redesSocialesLogo facebookLogo"></a>
+                        class="redesSocialesLogo facebookLogo mb-2"></a>
                 <a href="https://www.whatsapp.com/?lang=es"><img src="../IMG/whatsapp.svg" alt="Whatsapp"
-                        class="redesSocialesLogo"></a>
+                        class="redesSocialesLogo mb-2"></a>
+            </div>
+
+            <div class="divLinealFooter2"></div>
+
+            <a href="#" class="textoFooter aFooter mt-2">Términos y condiciones</a>
+            <p class="textoFooter m-0">© 2022 Huasi Hosteria. Todos los derechos reservados.</p>
+
+        </div>
+        </div>
+
+        <div class="credito">
+            <p>Desarrollado por Eliana Navarro</p>
+            <div>
+                <a href="https://www.linkedin.com/in/elianadnavarro/"><img src="../IMG/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/elianadenise"><img src="../IMG/github.svg" alt="GitHub"></a>
             </div>
         </div>
 

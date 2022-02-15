@@ -367,15 +367,15 @@ main {
     height: 80%; }
 
 /*FOOTER*/
-footer {
+.footerDiv {
   background-color: #2F2A26;
   width: 100%;
   display: flex;
   align-items: center; }
-  footer .divFooter1 {
+  .footerDiv .divFooter1 {
     display: flex;
     flex-direction: column; }
-    footer .divFooter1 .divLinealFooter1 {
+    .footerDiv .divFooter1 .divLinealFooter1 {
       width: 100%;
       height: 0;
       border-top: 0.1vh;
@@ -388,52 +388,25 @@ footer {
       justify-self: center;
       border-color: #DBC9B8;
       border-style: solid; }
-    footer .divFooter1 .divFooter1div1 {
+    .footerDiv .divFooter1 .divFooter1div1 {
       display: flex;
       flex-direction: column; }
-  footer .divFooter2 {
+  .footerDiv .divFooter2 {
     display: flex;
     flex-direction: column; }
-    footer .divFooter2 .aFooter {
+    .footerDiv .divFooter2 .aFooter {
       transition: 1s;
       text-decoration: none; }
-      footer .divFooter2 .aFooter:hover {
+      .footerDiv .divFooter2 .aFooter:hover {
         color: #EFEEEA; }
-  footer .divFooter3 {
+  .footerDiv .divFooter3 {
     display: flex;
     flex-direction: column; }
-    footer .divFooter3 form {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between; }
-      footer .divFooter3 form .formFooter {
-        border: 2px solid #DBC9B8;
-        border-radius: 0.3em;
-        background-color: #2F2A26;
-        color: #DBC9B8;
-        width: 80%;
-        height: 2.5vh; }
-        footer .divFooter3 form .formFooter:focus {
-          outline-color: #DBC9B8; }
-      footer .divFooter3 form .botonFooter {
-        text-decoration: none;
-        font-family: "Poppins", sans-serif;
-        font-size: 0.9em;
-        color: #2F2A26;
-        background-color: #DBC9B8;
-        transition: 1s;
-        display: flex;
-        border: 0.2vh solid #DBC9B8;
-        border-radius: 0.3em;
-        justify-self: center;
-        align-self: center;
-        padding: 0 0.5vh;
-        text-transform: uppercase; }
-        footer .divFooter3 form .botonFooter:hover {
-          background-color: transparent;
-          color: #DBC9B8; }
-    footer .divFooter3 .divLinealFooter2 {
+    .footerDiv .divFooter3 .redesSocialesLogo {
+      height: 2vh; }
+    .footerDiv .divFooter3 .facebookLogo {
+      margin: 0 1.5vw 0 1.5vw; }
+    .footerDiv .divFooter3 .divLinealFooter2 {
       width: 100%;
       height: 0;
       border-top: 0.1vh;
@@ -446,10 +419,28 @@ footer {
       justify-self: center;
       border-color: #DBC9B8;
       border-style: solid; }
-    footer .divFooter3 .redesSocialesLogo {
-      height: 2vh; }
-    footer .divFooter3 .facebookLogo {
-      margin: 0 1.5vw 0 1.5vw; }
+    .footerDiv .divFooter3 .aFooter {
+      transition: 1s;
+      text-decoration: none; }
+      .footerDiv .divFooter3 .aFooter:hover {
+        color: #EFEEEA; }
+
+.credito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #DBC9B8; }
+  .credito p {
+    text-align: center;
+    text-justify: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8em;
+    color: #2F2A26;
+    margin: 1vh 0 0.5vh 0; }
+  .credito img {
+    height: 2vh;
+    margin: 0 1vh 1vh 1vh; }
 
 /*FUENTES*/
 h1 {
@@ -620,7 +611,7 @@ h4 {
   /*SERVICIOS*/
   #gridServicios {
     grid-template-columns: 28% 2% 70%;
-    grid-template-rows: 50vh 20vh 20vh 20vh 20vh;
+    grid-template-rows: 50vh 23vh 23vh 23vh 23vh;
     grid-template-areas: "banner banner banner" "serv1 l acc" "serv2 l pets" "serv3 l sust" "serv4 l gast"; }
     #gridServicios .divLinealServ {
       width: 0.1vw;
@@ -657,36 +648,36 @@ h4 {
       justify-items: start;
       width: 60%; }
   /*FOOTER*/
-  footer {
+  .footerDiv {
     height: 30vh;
     flex-direction: row;
     justify-content: space-evenly; }
-    footer .divFooter1 {
+    .footerDiv .divFooter1 {
       flex-direction: column;
       justify-items: start; }
-      footer .divFooter1 .huasiLogoFooter {
+      .footerDiv .divFooter1 .huasiLogoFooter {
         height: 5vh; }
-      footer .divFooter1 .divFooter1div1 {
+      .footerDiv .divFooter1 .divFooter1div1 {
         display: flex;
         flex-direction: column; }
-    footer .divFooter2 {
+    .footerDiv .divFooter2 {
       display: flex;
       flex-direction: column; }
-      footer .divFooter2 .aFooter {
+      .footerDiv .divFooter2 .aFooter {
         transition: 1s;
         text-decoration: none; }
-        footer .divFooter2 .aFooter:hover {
+        .footerDiv .divFooter2 .aFooter:hover {
           color: #EFEEEA; }
-    footer .divFooter3 {
+    .footerDiv .divFooter3 {
       display: flex;
       flex-direction: column; }
-      footer .divFooter3 .divFooter3div1 {
+      .footerDiv .divFooter3 .divFooter3div1 {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap; }
-        footer .divFooter3 .divFooter3div1 .redesSocialesLogo {
+        .footerDiv .divFooter3 .divFooter3div1 .redesSocialesLogo {
           height: 2vh; }
-        footer .divFooter3 .divFooter3div1 #facebookLogo {
+        .footerDiv .divFooter3 .divFooter3div1 #facebookLogo {
           margin: 0 1.5vh 0 1.5vh; }
   /*FUENTES*/
   h1 {
@@ -735,7 +726,8 @@ h4 {
           padding: 0.5vh 0.5vh;
           font-size: 1em; }
           header .navbar ul .linknav:hover {
-            border: 0.1vh solid #DBC9B8; }
+            border: 0.1vh solid #DBC9B8;
+            border-radius: 0.3em; }
   /*MAIN*/
   main {
     padding-top: 0vh; }
@@ -824,30 +816,30 @@ h4 {
       margin: 0 5vh;
       justify-items: start; }
   /*FOOTER*/
-  footer {
+  .footerDiv {
     height: 50vh;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     justify-content: center; }
-    footer .divFooter1 {
+    .footerDiv .divFooter1 {
       justify-items: space-around;
       flex-direction: column;
       justify-items: center;
       align-items: center;
       padding: 0 3%; }
-      footer .divFooter1 .huasiLogoFooter {
+      .footerDiv .divFooter1 .huasiLogoFooter {
         height: 6vh; }
-      footer .divFooter1 .divFooter1div1 {
+      .footerDiv .divFooter1 .divFooter1div1 {
         justify-items: center;
         align-items: center; }
-    footer .div2footer {
+    .footerDiv .div2footer {
       padding: 0 3%;
       flex-direction: column;
       flex-wrap: wrap; }
-      footer .div2footer .afooter {
+      .footerDiv .div2footer .afooter {
         margin: 0.5vw; }
-    footer .divFooter3 {
+    .footerDiv .divFooter3 {
       justify-items: center;
       align-items: center;
       padding: 0 3%; }
@@ -895,7 +887,8 @@ h4 {
           font-size: 1em;
           padding: 0 0.3vh; }
           header .navbar ul .linknav:hover {
-            border: 0.1vh solid #DBC9B8; }
+            border: 0.1vh solid #DBC9B8;
+            border-radius: 0.3em; }
   /*MAIN*/
   main {
     padding-top: 0vh; }
@@ -985,32 +978,32 @@ h4 {
     #gridcontactanos .formulario {
       margin: 0 5vh; }
   /*FOOTER*/
-  footer {
+  .footerDiv {
     height: 70vh;
     flex-direction: column;
     justify-content: space-evenly;
     justify-items: center;
     padding: 3vh 0; }
-    footer .divFooter1 {
+    .footerDiv .divFooter1 {
       flex-direction: column;
       justify-items: space-between;
       justify-items: center;
       align-items: center; }
-      footer .divFooter1 .huasiLogoFooter {
+      .footerDiv .divFooter1 .huasiLogoFooter {
         height: 5vh; }
-      footer .divFooter1 .divFooter1div1 {
+      .footerDiv .divFooter1 .divFooter1div1 {
         justify-items: space-around;
         flex-direction: column;
         justify-items: center;
         align-items: center; }
-    footer .divFooter2 {
+    .footerDiv .divFooter2 {
       justify-items: center;
       align-items: center;
       flex-direction: column; }
-      footer .divFooter2 .afooter {
+      .footerDiv .divFooter2 .afooter {
         display: flex;
         margin: 0.9vh; }
-    footer .divFooter3 {
+    .footerDiv .divFooter3 {
       justify-items: center;
       align-items: center;
       justify-items: space-between; }
