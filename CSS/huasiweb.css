@@ -601,11 +601,14 @@ h4 {
     #gridHabitaciones .descripcion {
       margin: 0 10vh; }
     #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
-      padding: 3vh; }
+      padding: 3vh;
+      margin-bottom: 5vh; }
     #gridHabitaciones .habitacion2 {
-      padding: 3vh; }
+      padding: 3vh;
+      margin-bottom: 5vh; }
     #gridHabitaciones .habitacion3 {
-      padding: 3vh; }
+      padding: 3vh;
+      margin-bottom: 5vh; }
     #gridHabitaciones .imagenHabitaciones {
       width: 10vw; }
   /*SERVICIOS*/
