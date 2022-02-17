@@ -153,7 +153,8 @@ main {
       display: flex;
       flex-direction: column;
       justify-items: center;
-      align-items: center; }
+      align-items: center;
+      padding-left: 0; }
   #gridIndex .mapaIndex {
     grid-area: mapa;
     justify-self: center;
@@ -483,8 +484,7 @@ h4 {
 
 .texto2 {
   font-family: "Poppins", sans-serif;
-  color: #2F2A26;
-  line-height: 1.5; }
+  color: #2F2A26; }
 
 .texto3 {
   font-family: "Poppins", sans-serif;

@@ -179,6 +179,7 @@ main{
             flex-direction: column;
             justify-items: center;
             align-items: center;
+            padding-left: 0;
         }
     }
     
@@ -623,7 +624,7 @@ h4{
 .texto2{
     font-family: $fuenteTextos;
     color: $colorTextos;
-    line-height: 1.5;
+
 }
 
 .texto3{
