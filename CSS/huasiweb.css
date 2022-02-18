@@ -19,7 +19,8 @@ header {
     width: 100%; }
     header .navbar img {
       display: flex;
-      padding-left: 7vw; }
+      padding-left: 7vw;
+      height: 5vh; }
     header .navbar .collapse {
       flex-grow: 0; }
     header .navbar ul {
@@ -163,10 +164,7 @@ main {
     height: 80%;
     background-color: transparent; }
   #gridIndex .h3Index {
-    margin: 0 0 1vh 0;
-    display: flex;
-    justify-self: center;
-    align-self: center; }
+    margin: 0 0 1vh 0; }
 
 /*NOSOTROS*/
 .bannerNosotros {
@@ -184,9 +182,6 @@ main {
   align-items: center; }
 
 .galeriaNosotros {
-  display: flex;
-  align-self: center;
-  justify-self: center;
   margin-bottom: 3rem;
   transition: 1s; }
   .galeriaNosotros:hover {
@@ -288,8 +283,7 @@ main {
     grid-area: acc;
     display: flex;
     flex-direction: row;
-    align-self: center;
-    justify-items: center; }
+    align-self: center; }
   #gridServicios .textoServ2 {
     grid-area: pets; }
   #gridServicios .textoServ3 {
@@ -300,8 +294,6 @@ main {
     display: inline-block;
     filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
   #gridServicios .logoServ {
-    justify-self: center;
-    align-self: center;
     margin-right: 2vw;
     display: inline-block;
     filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
@@ -433,11 +425,6 @@ main {
   align-items: center;
   background-color: #DBC9B8; }
   .credito p {
-    text-align: center;
-    text-justify: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.8em;
-    color: #2F2A26;
     margin: 1vh 0 0.5vh 0; }
   .credito img {
     height: 2vh;
@@ -526,9 +513,6 @@ h4 {
     flex-direction: row; }
     header .navbar {
       width: 100%; }
-      header .navbar img {
-        height: 5vh;
-        justify-content: flex-start; }
       header .navbar .linknav {
         padding: 0.5vh 0.5vh;
         font-size: 1em; }
@@ -600,13 +584,7 @@ h4 {
     grid-template-areas: "banner banner banner" "descripcion descripcion descripcion" "hab1 hab2 hab3"; }
     #gridHabitaciones .descripcion {
       margin: 0 10vh; }
-    #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
-      padding: 3vh;
-      margin-bottom: 5vh; }
-    #gridHabitaciones .habitacion2 {
-      padding: 3vh;
-      margin-bottom: 5vh; }
-    #gridHabitaciones .habitacion3 {
+    #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
       padding: 3vh;
       margin-bottom: 5vh; }
     #gridHabitaciones .imagenHabitaciones {
@@ -631,15 +609,9 @@ h4 {
       border-style: solid; }
     #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
       margin: 0 15vh 0 6vh; }
-    #gridServicios .textoServ2 {
+    #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
       margin: 0 6vh; }
-    #gridServicios .textoServ3 {
-      margin: 0 6vh; }
-    #gridServicios .textoServ4 {
-      margin: 0 6vh; }
-    #gridServicios .servs {
-      height: 8vh; }
-    #gridServicios .logoServ {
+    #gridServicios .servs, #gridServicios .logoServ {
       height: 8vh; }
   /*CONTACTANOS*/
   #gridcontactanos {
@@ -680,7 +652,7 @@ h4 {
         flex-wrap: nowrap; }
         .footerDiv .divFooter3 .divFooter3div1 .redesSocialesLogo {
           height: 2vh; }
-        .footerDiv .divFooter3 .divFooter3div1 #facebookLogo {
+        .footerDiv .divFooter3 .divFooter3div1 .facebookLogo {
           margin: 0 1.5vh 0 1.5vh; }
   /*FUENTES*/
   h1 {
@@ -690,8 +662,7 @@ h4 {
   h3, .h3Centrado {
     font-size: 1.4em; }
   .texto1 {
-    font-size: 1.1em;
-    line-height: 1.5; }
+    font-size: 1.1em; }
   .botonLink {
     font-size: 1em;
     margin-top: 2vh;
@@ -713,7 +684,6 @@ h4 {
     header .navbar {
       width: 100%; }
       header .navbar img {
-        height: 5vh;
         justify-content: center;
         margin: 0.1vh 0; }
       header .navbar ul {
@@ -798,13 +768,7 @@ h4 {
       margin-bottom: 1vh; }
     #gridServicios .logoServ {
       height: 5vh; }
-    #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
-      margin: 0 8vh; }
-    #gridServicios .textoServ2 {
-      margin: 0 8vh; }
-    #gridServicios .textoServ3 {
-      margin: 0 8vh; }
-    #gridServicios .textoServ4 {
+    #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
       margin: 0 8vh; }
   /*CONTACTANOS*/
   #gridcontactanos {
@@ -875,7 +839,6 @@ h4 {
     header .navbar {
       width: 100%; }
       header .navbar img {
-        height: 5vh;
         justify-content: center; }
       header .navbar ul {
         flex-direction: column;
@@ -961,13 +924,7 @@ h4 {
       margin-bottom: 1vh; }
     #gridServicios .logoServ {
       height: 5vh; }
-    #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
-      margin: 0 5vh; }
-    #gridServicios .textoServ2 {
-      margin: 0 5vh; }
-    #gridServicios .textoServ3 {
-      margin: 0 5vh; }
-    #gridServicios .textoServ4 {
+    #gridServicios .textoServ1, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4, #gridServicios .textoServ2, #gridServicios .textoServ3, #gridServicios .textoServ4 {
       margin: 0 5vh; }
   /*CONTACTANOS*/
   #gridcontactanos {

@@ -27,6 +27,7 @@ header{
         img{
             display: flex;
             padding-left: 7vw;
+            height: 5vh;
         }        
 
         .collapse{
@@ -195,11 +196,7 @@ main{
     
     .h3Index{
         margin: 0 0 1vh 0;
-        display: flex;
-        justify-self: center;
-        align-self: center;
     }
-    
 }
 
 
@@ -222,9 +219,6 @@ main{
 }
 
 .galeriaNosotros{
-    display: flex;
-    align-self: center;
-    justify-self: center;
     margin-bottom: 3rem;
     transition: 1s;
 
@@ -377,7 +371,6 @@ main{
         display: flex;
         flex-direction: row;
         align-self: center;
-        justify-items: center;
     }
 
     .textoServ2{
@@ -401,8 +394,6 @@ main{
     }
     
     .logoServ{
-        justify-self: center;
-        align-self: center;
         margin-right: 2vw;
         display: inline-block;
         filter: $sombraImg; 
@@ -503,6 +494,7 @@ main{
     width: 100%;
     display: flex;
     align-items: center;
+
     .divFooter1{
         display: flex;
         flex-direction: column;
@@ -510,6 +502,7 @@ main{
         .divLinealFooter1{
             @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0);
         }
+
         .divFooter1div1{
             display: flex;
             flex-direction: column;
@@ -519,9 +512,11 @@ main{
     .divFooter2{
         display: flex;
         flex-direction: column;
+
         .aFooter{
             transition: 1s;
             text-decoration: none;
+
             &:hover{
                 color: #EFEEEA;
             }
@@ -535,6 +530,7 @@ main{
         .redesSocialesLogo{
             height: 2vh;
         }
+
         .facebookLogo{
             margin: 0 1.5vw 0 1.5vw;
         }
@@ -546,6 +542,7 @@ main{
         .aFooter{
             transition: 1s;
             text-decoration: none;
+
             &:hover{
                 color: #EFEEEA;
             }
@@ -561,11 +558,6 @@ main{
     background-color: #DBC9B8;
     
     p{
-        text-align: center;
-        text-justify: center;
-        font-family: $fuenteTextos;
-        font-size: 0.8em;
-        color:#2F2A26;
         margin: 1vh 0 0.5vh 0;
     }
 
@@ -676,14 +668,8 @@ header{
     position: fixed;
     flex-direction: row;
 
-    
     .navbar{
         width: 100%;
-
-        img{
-            height: 5vh;
-            justify-content: flex-start;
-        }
         
         .linknav{
             padding:0.5vh 0.5vh;
@@ -799,17 +785,7 @@ main{
                             margin: 0 10vh;
                         }
                          
-                         .habitacion1{
-                            padding: 3vh;
-                            margin-bottom: 5vh;
-                        }
-
-                        .habitacion2{
-                            padding: 3vh;
-                            margin-bottom: 5vh;
-                        }
-                        
-                        .habitacion3{
+                         .habitacion1, .habitacion2, .habitacion3{
                             padding: 3vh;
                             margin-bottom: 5vh;
                         }
@@ -840,25 +816,13 @@ main{
                             margin: 0 15vh 0 6vh;
                         }
                         
-                        .textoServ2{
+                        .textoServ2, .textoServ3, .textoServ4{
                             margin: 0 6vh;
                         }
                         
-                        .textoServ3{
-                            margin: 0 6vh;
-                        }
-                        
-                        .textoServ4{
-                            margin: 0 6vh;
-                        }
-                        
-                        .servs{
+                        .servs, .logoServ{
                             height: 8vh;
-                        }
-                        
-                        .logoServ{
-                            height: 8vh;
-                        }         
+                        }       
 }
 
 /*CONTACTANOS*/
@@ -900,7 +864,6 @@ main{
     .divFooter2{
         display: flex;
         flex-direction: column;
-
         
         .aFooter{
             transition: 1s;
@@ -925,7 +888,7 @@ main{
                 height: 2vh;
             }
             
-            #facebookLogo{
+            .facebookLogo{
                 margin: 0 1.5vh 0 1.5vh;
             }
         }
@@ -949,7 +912,6 @@ h3{
 
 .texto1{
     font-size: 1.1em;
-    line-height: 1.5;
 }
 
 .botonLink{
@@ -983,7 +945,6 @@ header{
         width:100%;
 
         img{
-            height: 5vh;
             justify-content: center;
             margin: 0.1vh 0;
         }
@@ -1118,21 +1079,9 @@ grid-template-areas: "banner banner"
                         height: 5vh;
                     }
                     
-                    .textoServ1{
+                    .textoServ1, .textoServ2, .textoServ3, .textoServ4{
                         margin: 0 8vh;
-                    }
-                    
-                    .textoServ2{
-                        margin: 0 8vh;
-                    }
-                    
-                    .textoServ3{
-                        margin: 0 8vh;
-                    }
-                    
-                    .textoServ4{
-                        margin: 0 8vh;
-                    }                    
+                    }                  
 }
 
 
@@ -1252,7 +1201,6 @@ header{
         width: 100%;
 
         img{
-            height: 5vh;
             justify-content: center;
         }
 
@@ -1389,19 +1337,7 @@ main{
                             height: 5vh;
                         }
                         
-                        .textoServ1{
-                            margin: 0 5vh;
-                        }
-                        
-                        .textoServ2{
-                            margin: 0 5vh;
-                        }
-                        
-                        .textoServ3{
-                            margin: 0 5vh;
-                        }
-                        
-                        .textoServ4{
+                        .textoServ1, .textoServ2, .textoServ3, .textoServ4{
                             margin: 0 5vh;
                         }
 }
