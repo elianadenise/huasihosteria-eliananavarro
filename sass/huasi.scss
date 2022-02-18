@@ -173,6 +173,7 @@ main{
         justify-content: center;
         align-content: center;
         background-color: transparent;
+        text-align: center;
 
         ul{
             list-style-type:circle;
@@ -705,7 +706,7 @@ main{
 /*INDEX*/
 #gridIndex{
     grid-template-columns: 40% 10% 10% 40%;
-    grid-template-rows:50vh 50vh 50vh 10vh 15vh 15vh 10vh 4vh 40vh;
+    grid-template-rows:30rem 30rem 30rem 5rem 10rem 10rem 5rem 2rem 30rem;
     grid-template-areas: "banner banner banner banner"
                          "bienvenida bienvenida bienvenida bienvenida"
                          "desc desc hab hab"
@@ -764,11 +765,11 @@ main{
 /*NOSOTROS*/
 
 .bannerNosotros{
-    height: 50vh;
+    height: 30rem;
 }
 
 .container-sm{
-    height: 50vh;
+    height: 30rem;
 }
 
 /*HABITACIONES*/
@@ -776,7 +777,7 @@ main{
 #gridHabitaciones{
     background-color: #EFEEEA;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50vh 30vh 70vh;
+    grid-template-rows: 5fr 3fr 7fr;
     grid-template-areas: "banner banner banner"
                          "descripcion descripcion descripcion"
                          "hab1 hab2 hab3";
@@ -801,7 +802,7 @@ main{
 
 #gridServicios{
     grid-template-columns:20% 2% 78%;
-    grid-template-rows: 50vh 23vh 23vh 23vh 23vh;
+    grid-template-rows: 12fr 5fr 5fr 5fr 5fr;
     grid-template-areas: "banner banner banner"
                          "serv1 l acc"
                          "serv2 l pets"
@@ -830,7 +831,7 @@ main{
 #gridcontactanos{
     background-color: #EFEEEA;
     grid-template-columns: 50% 50%;
-    grid-template-rows:50vh 100vh 45vh;
+    grid-template-rows: 6fr 15fr 8fr;
     grid-template-areas: "banner banner"
                          "formulario formulario"
                          "datos mapa";
@@ -838,6 +839,7 @@ main{
                         .formulario{
                             justify-items: start;
                             width: 60%;
+                            margin: 5vw 0;
                         }     
 }
 
@@ -1088,7 +1090,7 @@ grid-template-areas: "banner banner"
 /*CONTACTANOS*/
 #gridcontactanos{
     grid-template-columns: 50% 50%;
-    grid-template-rows:30vh 85vh 40vh;
+    grid-template-rows:30rem 80rem 40rem;
     grid-template-areas: "banner banner"
                          "formulario formulario"
                          "datos mapa";
