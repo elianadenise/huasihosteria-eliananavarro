@@ -775,7 +775,7 @@ h4 {
   /*CONTACTANOS*/
   #gridcontactanos {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30rem 80rem 40rem;
+    grid-template-rows: 3fr 8fr 4fr;
     grid-template-areas: "banner banner" "formulario formulario" "datos mapa"; }
     #gridcontactanos .formulario {
       margin: 0 5vh;
