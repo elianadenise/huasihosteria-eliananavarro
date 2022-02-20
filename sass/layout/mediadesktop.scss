@@ -1,0 +1,272 @@
+@media screen and (min-width: 769px){
+    
+    /*HEADER + NAV*/
+    
+    header{
+        height: 10vh; 
+        position: fixed;
+        flex-direction: row;
+    
+        .navbar{
+            width: 100%;
+            
+            .linknav{
+                padding:0.5vh 0.5vh;
+                font-size: 1em;
+    
+                &:hover{
+                    border:0.1vh solid #DBC9B8;
+                    border-radius: $redondeado;
+                }
+            }
+    
+            .botonContactanos{
+                background: #DBC9B8;
+                border:0.1vh solid #DBC9B8;
+                transition: 1s;
+                border-radius: $redondeado;
+            
+                &:hover{
+                    background: #EFEEEA;
+                }
+                
+            }
+        }
+    }
+    
+    
+    /*MAIN*/
+    
+    main{
+        padding-top: 10vh;
+    }
+    
+    /*INDEX*/
+    #gridIndex{
+        grid-template-columns: 40% 10% 10% 40%;
+        grid-template-rows: 25vw auto auto auto auto auto auto auto 30vw;
+        grid-template-areas: "banner banner banner banner"
+                             "bienvenida bienvenida bienvenida bienvenida"
+                             "desc desc hab hab"
+                             "l1 l1 l1 l1"
+                             "fotoacc l2 l2 fotopet"
+                             "accesible l2 l2 pet"
+                             "botonserv botonserv botonserv botonserv"
+                             "l3 l3 l3 l3"
+                             "lista lista mapa mapa";
+    
+                            .bienvenidaHuasi{
+                                line-height: 1.5;
+                                margin: 3vw 20vw;
+    
+                                .flecha{
+                                    width: 5vh;
+                                    margin-top: 3vh;
+                                }                        
+                            }                        
+    
+                            .galeriaHabs{
+                                width: 40vw;
+    
+                                &:hover{
+                                    filter: $sombraImg;
+                                }
+                            }
+                            
+                            .fotoacc{
+                                margin: 5vh 0 3vh 7vh;
+                                height: 12vh;
+                            }
+    
+                            .accesibilidad{
+                                margin-left: 7vh;
+                            }
+    
+                            .divLineal2{
+                                @include divLineal(0.1vw, 90%, 0, 0.3vh, 0)
+                            }
+                            
+                            .fotopet{
+                                margin: 5vh 7vh 3vh 0;
+                                height: 12vh
+                            }
+    
+                            .petFriendly{
+                                margin-right: 7vh;
+                            }
+    
+                            .botonServ{
+                                margin: 5vh 0;
+                            }
+                            
+                            .h3Index{
+                                margin: 0 0 1vh 0;
+                                display: flex;
+                                justify-self: center;
+                                align-self: center;
+                            }
+    }
+    
+    
+    /*HABITACIONES*/
+    
+    #gridHabitaciones{
+        background-color: #EFEEEA;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 25vw auto auto;
+        grid-template-areas: "banner banner banner"
+                             "descripcion descripcion descripcion"
+                             "hab1 hab2 hab3";
+    
+                            .descripcion{
+                                margin: 6vw 10vw;
+                            }
+                             
+                             .habitacion1, .habitacion2, .habitacion3{
+                                padding: 3vh;
+                                margin-bottom: 5vh;
+                            }
+                            
+                            .imagenHabitaciones{
+                                width: 10vw;
+                            }
+    }
+    
+    
+    
+    /*SERVICIOS*/
+    
+    #gridServicios{
+        grid-template-columns:20% 2% 78%;
+        grid-template-rows: 25vw auto auto auto auto;
+        grid-template-areas: "banner banner banner"
+                             "serv1 l acc"
+                             "serv2 l pets"
+                             "serv3 l sust"
+                             "serv4 l gast";
+    
+                            .divLinealServ{
+                                @include divLineal(0.1vw, 90%, 0, 0.3vh, auto);
+                            }
+                            
+                            .textoServ1{
+                                margin: 0 15vh 0 6vh;
+                            }
+                            
+                            .textoServ2, .textoServ3, .textoServ4{
+                                margin: 0 6vh;
+                            }
+                            
+                            .servs, .logoServ{
+                                height: 8vh;
+                            }       
+    }
+    
+    /*CONTACTANOS*/
+    
+    #gridcontactanos{
+        background-color: #EFEEEA;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25vw auto 30vw;
+        grid-template-areas: "banner banner"
+                             "formulario formulario"
+                             "datos mapa";
+    
+                            .formulario{
+                                justify-items: start;
+                                width: 60%;
+                                margin: 6vw 0;
+                            }     
+    }
+    
+    /*FOOTER*/
+    .footerDiv{
+        height: auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+        .divFooter1{
+            flex-direction: column;
+            justify-items: start;
+    
+            .huasiLogoFooter{
+                height: 5vh;
+                margin-top: 5vw;
+            }
+    
+            .divFooter1div1{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5vw;
+            }
+        }
+    
+        .divFooter2{
+            display: flex;
+            flex-direction: column;
+            
+            .aFooter{
+                transition: 1s;
+                text-decoration: none;
+    
+                &:hover{
+                    color: #EFEEEA;
+                }
+            }
+        }
+    
+        .divFooter3{
+            display: flex;
+            flex-direction: column;
+    
+            .divFooter3div1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+    
+                .redesSocialesLogo{
+                    height: 2vh;
+                }
+                
+                .facebookLogo{
+                    margin: 0 1.5vh 0 1.5vh;
+                }
+            }
+        }
+    }
+
+    //COMPONENTES 
+    
+    /*BOTON*/
+    .botonLink{
+        font-size: 1em;
+        margin-top: 2vh;
+        padding: 0.6vh;
+    }   
+
+    /*RESERVA*/
+    #reservaAhora{
+        right: 3vh;
+        bottom: 18vh;
+        height: 8vh;
+    }
+
+    /*TEXTOS*/
+    h1{
+        font-size: 3em;
+    }
+    
+    h2{
+        font-size: 2em;
+    }
+    
+    h3{
+        font-size: 1.4em;
+    }
+    
+    .texto1{
+        font-size: 1.1em;
+    }
+    
+}
+    

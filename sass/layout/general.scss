@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EFEEEA;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #EFEEEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    box-shadow: 0 0 0.7vh 0;
+    box-shadow: #2F2A26/20%;
+    z-index: 10;
+
+    .navbar{
+        width: 100%;
+
+        img{
+            display: flex;
+            padding-left: 7vw;
+            height: 5vh;
+        }        
+
+        .collapse{
+            flex-grow:0;
+        }
+
+        ul{
+            list-style-type: none;
+            font-family: 'Poppins', sans-serif;
+            height: 8vh;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-right: 7vw;
+
+            li{
+                display: flex;
+                text-decoration: none;
+
+                a{
+                    color: #C65425;
+                    text-decoration: none;
+                    background-color: transparent;
+                    border:0.1vh solid transparent;
+                    transition: 1s;
+                    &:hover{
+                        border: #DBC9B8;
+                        color: #C65425;
+                    
+                    }
+                } 
+            }
+        }
+    }
+}
+
+/*MAIN*/
+
+main{
+    background-color: #EFEEEA;
+}
+
+/*INDEX*/
+#gridIndex{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+    row-gap: 0vh;
+    justify-content: space-around;
+
+    .bannerindex{
+        @include banners (url(../IMG/capaindex.png));
+    }
+    
+    .bienvenidaHuasi{
+        grid-area: bienvenida;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc{
+        grid-area: desc;
+        display: flex;
+        flex-direction: column;
+        text-justify: center;
+        text-align: center;
+        align-self: center;
+        margin: 5vh;
+    }
+
+    .galeriaHabs{
+        grid-area: hab;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 3rem;
+        transition: 1s;
+    }
+
+    .divLineal1{
+        grid-area: l1;
+        @include divLineal(90%,0.1vh, 0.3vh, 0, auto);
+    }
+
+    .fotoacc{
+        grid-area: fotoacc;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        display: inline-block;
+        filter: $sombraImg;
+    }
+    
+    .accesibilidad{
+        grid-area: accesible;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    
+    .divLineal2{
+        grid-area: l2;
+    }
+    
+
+    .fotopet{
+        grid-area: fotopet;
+        @extend .fotoacc;
+    }
+    
+    .petFriendly{
+        grid-area: pet;
+        @extend .accesibilidad;
+    }
+    
+    .botonServ{
+        grid-area: botonserv;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .divLineal3{
+        grid-area: l3;
+        @include divLineal(90%,0.1vh, 0.3vh, 0, auto);
+    }
+    
+    .lista{
+        grid-area: lista;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: transparent;
+        text-align: center;
+
+        ul{
+            list-style-type:circle;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-left: 0;
+        }
+    }
+    
+    
+    .mapaIndex{
+        grid-area: mapa;
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+        height: 80%;
+        background-color: transparent;
+    }
+    
+    .h3Index{
+        margin: 0 0 1vh 0;
+    }
+}
+
+
+/*NOSOTROS*/
+
+.bannerNosotros{
+    display: flex;
+    justify-content: center;
+    background-image: url(../IMG/capanosotros.png);                  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25vw;
+    margin-bottom: 6vw;
+}
+
+.textoNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriaNosotros{
+    margin-bottom: 3rem;
+    margin-top: 6vw;
+    transition: 1s;
+
+    &:hover{
+        filter: $sombraImg;
+    }
+}
+
+.container-sm{
+    height: auto;
+}
+
+/*HABITACIONES*/
+
+#gridHabitaciones{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+    row-gap: 0vh;
+    justify-content: space-around;
+
+    .bannerHabitaciones{
+        @include banners(url(../IMG/capahabitaciones.png));
+    }
+
+    .descripcion{
+        grid-area: descripcion;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habitacion1{
+        grid-area: hab1;
+        background-color: #EFEEEA;
+        padding: 1vh;
+        margin:2vh;
+        border: 0.1vh solid #DBC9B8;
+        border-radius: $redondeado;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+
+        &:hover{
+            filter: $sombraImg;
+        }
+    }
+
+    .habitacion2{
+        grid-area: hab2;
+        @extend .habitacion1;
+
+        &:hover{
+            @extend .habitacion1.habitacion1:hover;
+        }
+    }
+
+    .habitacion3{
+        grid-area: hab3;
+        @extend .habitacion1;
+
+        &:hover{
+            @extend .habitacion1.habitacion1:hover;
+        }
+    }
+
+    .imagenHabitaciones{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 1vh;
+        border-radius: $redondeado;
+    }
+    
+    .ulmainHabitacion{
+        list-style-type:circle;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: flex-start;
+    }
+
+}
+
+/*SERVICIOS*/
+#gridServicios{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+    row-gap: 0vh;
+    justify-content: space-around;
+
+    .bannerserv{
+        @include banners(url(../IMG/capaservicios.png));
+    }
+
+    .divLinealServ{
+        grid-area: l;
+    }
+
+    .servicioCaja1{
+        grid-area: serv1;
+        display:flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2vh;
+        margin: 1vh;
+        background-color: transparent;
+        border:0.1vh solid transparent;
+        transition: 1s;
+
+        &:hover{
+            border:0.1vh solid #DBC9B8;
+            border-radius: $redondeado;
+        }
+    }
+
+    .servicioCaja2{
+        grid-area: serv2;
+        @extend .servicioCaja1;
+
+        &:hover{
+            @extend .servicioCaja1:hover;
+        }
+    }
+
+    .servicioCaja3{
+        grid-area: serv3;
+        @extend .servicioCaja1;
+
+        &:hover{
+            @extend .servicioCaja1:hover;
+        }
+    }
+
+    .servicioCaja4{
+        grid-area: serv4;
+        @extend .servicioCaja1;
+
+        &:hover{
+            @extend .servicioCaja1:hover;
+        }
+    }
+    
+    .textoServ1{
+        grid-area: acc;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+
+    .textoServ2{
+        grid-area: pets;
+        @extend .textoServ1;
+    }
+
+    .textoServ3{
+        grid-area: sust;
+        @extend .textoServ1;
+    }
+
+    .textoServ4{
+        grid-area:gast;
+        @extend .textoServ1;
+    }
+
+    .servs{
+        display: inline-block;
+        filter: $sombraImg;
+    }
+    
+    .logoServ{
+        margin-right: 2vw;
+        display: inline-block;
+        filter: $sombraImg; 
+    }
+}
+
+
+/*CONTACTO*/
+
+#gridcontactanos{
+    display: grid;
+    height: 100%;
+    width: 100%;
+
+    .bannerContactanos{
+        @include banners(url(../IMG/capacontactanos.png));
+    }
+
+    .formulario{
+        grid-area: formulario;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+
+        textarea{
+            border: none;
+            border-bottom: 2px solid #DBC9B8;
+            background-color: #EFEEEA;
+            width: 100%;
+
+            &:focus{
+                outline-color: #DBC9B8;
+                border-radius: $redondeado;
+            } 
+        }
+
+        .form, select{
+            @extend textarea;
+            height: 3.5vh;
+
+            &:focus{
+                @extend textarea:focus;
+            } 
+        }
+
+        .radios{
+            display: flex;
+            flex-direction: column;
+
+            .form-check-input:checked {
+                background-color: #DBC9B8;
+                border-color: #DBC9B8;
+            }
+        } 
+
+        .botonLink{
+            text-transform:$mayuscula;
+        }
+    }
+    
+    .datos{
+        grid-area: datos;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            text-justify: center;
+            text-align: center;
+
+            img{
+                margin-right: 1vh;
+                height: 1.7vh;
+            }
+        }
+    }
+
+    .mapa{
+        grid-area: mapa;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+
+/*FOOTER*/
+.footerDiv{
+    background-color: #2F2A26;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .divFooter1{
+        display: flex;
+        flex-direction: column;
+
+        .divLinealFooter1{
+            @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0);
+        }
+
+        .divFooter1div1{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .divFooter2{
+        display: flex;
+        flex-direction: column;
+
+        .aFooter{
+            transition: 1s;
+            text-decoration: none;
+
+            &:hover{
+                color: #EFEEEA;
+            }
+        }
+    }
+
+    .divFooter3{
+        display: flex;
+        flex-direction: column;
+
+        .redesSocialesLogo{
+            height: 2vh;
+        }
+
+        .facebookLogo{
+            margin: 0 1.5vw 0 1.5vw;
+        }
+
+        .divLinealFooter2{
+            @include divLineal(100%, 0, 0.1vh, 0, 0.5vh 0 0 0)
+        }
+
+        .aFooter{
+            transition: 1s;
+            text-decoration: none;
+
+            &:hover{
+                color: #EFEEEA;
+            }
+        }
+    }
+}
+
+.credito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBC9B8;
+    
+    p{
+        margin: 1vh 0 0.5vh 0;
+    }
+
+    img{
+        height: 2vh;
+        margin: 0 1vh 1vh 1vh;
+    }
+}
+
+//COMPONENTES
+
+/*BOTON*/
+.botonLink{
+    text-decoration: none;
+    font-family: $fuenteTextos;
+    color: #EFEEEA;
+    background-color: #C65425 ;
+    transition: 1s;
+    display: flex;
+    border: 0.1vh solid #C65425;
+    border-radius: $redondeado;
+    justify-self: center;
+    align-self: center;
+
+    &:hover{
+        background-color: transparent;
+        color: #2F2A26;
+    }
+}
+
+/*RESERVA*/
+#reservaAhora{
+    position: fixed;
+    display: inline-block;
+    filter: $sombraImg; 
+}
+
+/*TEXTOS*/
+h1{
+    font-family: $fuenteTitulos;
+    color: #EFEEEA;
+    line-height: 1,5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: $sombraTexto;
+    font-weight: 700;
+}
+
+h2{
+    font-family: $fuenteTitulos;
+    color: $colorTextos;
+    line-height: 1,5;
+    margin-bottom: 1vh;
+    font-weight: 700;
+    font-size: 10vh;
+}
+
+h3{
+    font-family: $fuenteTitulos; 
+    color: $colorTextos;
+    font-weight: 700;
+}
+
+.h3Centrado{
+    @extend h3;
+    text-align: center;
+}
+
+h4{
+    font-family: $fuenteTitulos;
+    text-shadow: $sombraTexto;
+    color: #EFEEEA;
+}
+
+.texto1{
+    font-family: $fuenteTextos;
+    color: $colorTextos;
+    text-justify: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.texto2{
+    font-family: $fuenteTextos;
+    color: $colorTextos;
+}
+
+.texto3{
+    font-family: $fuenteTextos;
+    color: $colorTextos;
+    font-size: 0.8em;
+}
+
+.textoFooter{
+    line-height: 1.6;
+    font-family: $fuenteTextos;
+    color: #C8B6A5; 
+}
