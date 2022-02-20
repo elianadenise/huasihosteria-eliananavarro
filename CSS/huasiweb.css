@@ -93,7 +93,7 @@ main {
     border-left: 0;
     border-bottom: 0;
     border-right: 0;
-    margin: auto;
+    margin: 2vh;
     display: flex;
     align-self: center;
     justify-self: center;

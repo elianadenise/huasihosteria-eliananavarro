@@ -110,7 +110,7 @@ main{
 
     .divLineal1{
         grid-area: l1;
-        @include divLineal(90%,0.1vh, 0.3vh, 0, auto);
+        @include divLineal(90%,0.1vh, 0.3vh, 0, 2vh);
     }
 
     .fotoacc{
