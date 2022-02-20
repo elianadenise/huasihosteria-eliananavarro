@@ -1,0 +1,141 @@
+h1{
+    font-family: $fuenteTitulos;
+    color: #EFEEEA;
+    line-height: 1,5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: $sombraTexto;
+    font-weight: 700;
+}
+
+h2{
+    font-family: $fuenteTitulos;
+    color: $colorTextos;
+    line-height: 1,5;
+    margin-bottom: 1vh;
+    font-weight: 700;
+    font-size: 10vh;
+}
+
+h3{
+    font-family: $fuenteTitulos; 
+    color: $colorTextos;
+    font-weight: 700;
+}
+
+.h3Centrado{
+    @extend h3;
+    text-align: center;
+}
+
+h4{
+    font-family: $fuenteTitulos;
+    text-shadow: $sombraTexto;
+    color: #EFEEEA;
+}
+
+.texto1{
+    font-family: $fuenteTextos;
+    color: $colorTextos;
+    text-justify: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.texto2{
+    font-family: $fuenteTextos;
+    color: $colorTextos;
+}
+
+.texto3{
+    font-family: $fuenteTextos;
+    color: $colorTextos;
+    font-size: 0.8em;
+}
+
+.textoFooter{
+    line-height: 1.6;
+    font-family: $fuenteTextos;
+    color: #C8B6A5; 
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 769px){
+    h1{
+        font-size: 3em;
+    }
+    
+    h2{
+        font-size: 2em;
+    }
+    
+    h3{
+        font-size: 1.4em;
+    }
+    
+    .texto1{
+        font-size: 1.1em;
+    }
+}
+
+/*TABLETS*/
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    h1{
+        font-size: 2.4em;
+    }
+    
+    h2{
+        font-size: 1.5em;
+    }
+    
+    h3{
+        font-size: 1em;
+    }
+    
+    .texto1{
+        font-size: 1em;
+    }
+    
+    .texto2{
+        font-size: 0.9em;
+    }
+    
+    .textoFooter{
+        font-size: 0.9em;
+    }
+}
+
+
+
+/*MOBILE*/
+
+@media screen and (min-width: 0px) and (max-width: 599px){
+    h1{
+        font-size: 1.6em;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    h3{
+        font-size: 0.9em;
+    }
+
+    .texto1{
+        font-size: 0.9em;
+    }
+
+    .texto2{
+        font-size: 0.8em;
+    }
+
+    .textoFooter{
+        font-size: 0.8em;
+        text-justify: center;
+        text-align: center;
+    }
+}
