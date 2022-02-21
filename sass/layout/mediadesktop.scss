@@ -176,10 +176,6 @@
                              "serv2 l pets"
                              "serv3 l sust"
                              "serv4 l gast";
-
-                            .bannerserv{
-                                grid-area: banner;
-                            }
     
                             .divLinealServ{
                                 @include divLineal(0.1vw, 90%, 0, 0.3vh, auto);

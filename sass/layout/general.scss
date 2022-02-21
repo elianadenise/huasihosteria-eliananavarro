@@ -283,6 +283,7 @@ main{
 
     .bannerserv{
         @include banners(url(../IMG/capaservicios.png));
+        grid-area: banner;
     }
 
     .divLinealServ{

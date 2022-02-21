@@ -248,7 +248,8 @@ main {
     background-image: url(../IMG/capaservicios.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    grid-area: banner; }
   #gridServicios .divLinealServ {
     grid-area: l; }
   #gridServicios .servicioCaja1, #gridServicios .servicioCaja2, #gridServicios .servicioCaja3, #gridServicios .servicioCaja4 {
@@ -632,8 +633,6 @@ img::selection {
     grid-template-columns: 20% 2% 78%;
     grid-template-rows: 25vw auto auto auto auto;
     grid-template-areas: "banner banner banner" "serv1 l acc" "serv2 l pets" "serv3 l sust" "serv4 l gast"; }
-    #gridServicios .bannerserv {
-      grid-area: banner; }
     #gridServicios .divLinealServ {
       width: 0.1vw;
       height: 90%;
@@ -795,8 +794,6 @@ img::selection {
     grid-template-columns: 50% 50%;
     grid-template-rows: 25vw auto auto auto auto auto auto auto;
     grid-template-areas: "banner banner" "acc acc" "pets pets" "sust sust" "gast gast" "l l" "serv1 serv2" "serv3 serv4"; }
-    #gridServicios .bannerserv {
-      grid-area: banner; }
     #gridServicios .divLinealServ {
       width: 90%;
       height: 0.1vh;
