@@ -55,7 +55,10 @@ header{
                     &:hover{
                         border: #DBC9B8;
                         color: #C65425;
-                    
+                    }
+
+                    &::selection{
+                    background-color: #DBC9B8;
                     }
                 } 
             }
@@ -197,13 +200,7 @@ main{
 /*NOSOTROS*/
 
 .bannerNosotros{
-    display: flex;
-    justify-content: center;
-    background-image: url(../IMG/capanosotros.png);                  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 25vw;
+    @include banners(url(../IMG/capanosotros.png));
     margin-bottom: 6vw;
 }
 
@@ -230,79 +227,50 @@ main{
 
 /*HABITACIONES*/
 
-#gridHabitaciones{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    background-color: #EFEEEA;
-    row-gap: 0vh;
-    justify-content: space-around;
-
-    .bannerHabitaciones{
-        @include banners(url(../IMG/capahabitaciones.png));
-    }
-
-    .descripcion{
-        grid-area: descripcion;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .habitacion1{
-        grid-area: hab1;
-        background-color: #EFEEEA;
-        padding: 1vh;
-        margin:2vh;
-        border: 0.1vh solid #DBC9B8;
-        border-radius: $redondeado;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 1s;
-
-        &:hover{
-            filter: $sombraImg;
-        }
-    }
-
-    .habitacion2{
-        grid-area: hab2;
-        @extend .habitacion1;
-
-        &:hover{
-            @extend .habitacion1.habitacion1:hover;
-        }
-    }
-
-    .habitacion3{
-        grid-area: hab3;
-        @extend .habitacion1;
-
-        &:hover{
-            @extend .habitacion1.habitacion1:hover;
-        }
-    }
-
-    .imagenHabitaciones{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 1vh;
-        border-radius: $redondeado;
-    }
-    
-    .ulmainHabitacion{
-        list-style-type:circle;
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        align-items: flex-start;
-    }
-
+.bannerHabitaciones{
+     @include banners(url(../IMG/capahabitaciones.png));
 }
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habitacion1, .habitacion2, .habitacion3{
+    background-color: #EFEEEA;
+    padding: 1vh;
+    margin:2vh;
+    border: 0.1vh solid #DBC9B8;
+    border-radius: $redondeado;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+    &:hover{
+        filter: $sombraImg;
+    }
+}
+
+.imagenHabitaciones{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1vh;
+    border-radius: $redondeado;
+}
+    
+.ulmainHabitacion{
+    list-style-type:circle;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+}
+
 
 /*SERVICIOS*/
 #gridServicios{
@@ -411,6 +379,7 @@ main{
 
     .bannerContactanos{
         @include banners(url(../IMG/capacontactanos.png));
+        grid-area: banner;
     }
 
     .formulario{
@@ -587,6 +556,10 @@ main{
         background-color: transparent;
         color: #2F2A26;
     }
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 /*RESERVA*/
@@ -606,6 +579,10 @@ h1{
     align-items: center;
     text-shadow: $sombraTexto;
     font-weight: 700;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 h2{
@@ -615,23 +592,39 @@ h2{
     margin-bottom: 1vh;
     font-weight: 700;
     font-size: 10vh;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 h3{
     font-family: $fuenteTitulos; 
     color: $colorTextos;
     font-weight: 700;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 .h3Centrado{
     @extend h3;
     text-align: center;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 h4{
     font-family: $fuenteTitulos;
     text-shadow: $sombraTexto;
     color: #EFEEEA;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 .texto1{
@@ -640,21 +633,43 @@ h4{
     text-justify: center;
     text-align: center;
     line-height: 1.5;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 .texto2{
     font-family: $fuenteTextos;
     color: $colorTextos;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 .texto3{
     font-family: $fuenteTextos;
     color: $colorTextos;
     font-size: 0.8em;
+
+    &::selection{
+        background-color: #DBC9B8;
+    }
 }
 
 .textoFooter{
     line-height: 1.6;
     font-family: $fuenteTextos;
     color: #C8B6A5; 
+    
+    &::selection{
+        background-color: #DBC9B8;
+        color:#2F2A26;
+    }
 }
+
+img::selection{
+    background-color: #DBC9B8;
+}
+

@@ -98,29 +98,28 @@
                                 margin-top: 3vw;
                             }
     }
-    
+
+    /*NOSOTROS*/
+    .bannerNosotros{
+        height: 25vw;
+    }
     
     /*HABITACIONES*/
-    #gridHabitaciones{
-        grid-template-columns: 100%;
-        grid-template-rows: 25vw auto auto auto auto;
-        grid-template-areas: "banner"
-                             "descripcion"
-                             "hab1"
-                             "hab2"
-                             "hab3";
+
+    .bannerHabitaciones{
+        height: 25vw;
+    }
     
-                            .descripcion{
-                                margin: 5vw;
-                            }
+    .descripcion{
+        margin: 5vw;
+    }
     
-                            .habitacion1, .habitacion2, .habitacion3{
-                                padding: 5vw 0;
+    .habitacion1, .habitacion2, .habitacion3{
+        padding: 5vw 0;
     
-                                .imagenHabitaciones{
-                                    width: 30vw;
-                                }
-                            }
+        .imagenHabitaciones{
+            width: 30vw;
+        }
     }
     
     /*SERVICIOS*/
@@ -135,6 +134,10 @@
                          "l l"
                          "serv1 serv2"
                          "serv3 serv4";
+
+                        .bannerserv{
+                            grid-area: banner;
+                        }
     
                         .divLinealServ{
                             @include divLineal(90%, 0.1vh, 0.3vh, 0, auto)
@@ -165,7 +168,6 @@
     
                             .formulario{
                                 margin: 6vw 5vh;
-                                justify-items: start;
                             }
     }
     

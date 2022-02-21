@@ -44,6 +44,8 @@ header {
           header .navbar ul li a:hover {
             border: #DBC9B8;
             color: #C65425; }
+          header .navbar ul li a::selection {
+            background-color: #DBC9B8; }
 
 /*MAIN*/
 main {
@@ -58,7 +60,6 @@ main {
   row-gap: 0vh;
   justify-content: space-around; }
   #gridIndex .bannerindex {
-    grid-area: banner;
     display: flex;
     justify-content: center;
     background-image: url(../IMG/capaindex.png);
@@ -172,7 +173,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 25vw;
   margin-bottom: 6vw; }
 
 .textoNosotros {
@@ -192,57 +192,47 @@ main {
   height: auto; }
 
 /*HABITACIONES*/
-#gridHabitaciones {
-  display: grid;
-  height: 100%;
-  width: 100%;
+.bannerHabitaciones {
+  display: flex;
+  justify-content: center;
+  background-image: url(../IMG/capahabitaciones.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.habitacion1, .habitacion2, .habitacion3 {
   background-color: #EFEEEA;
-  row-gap: 0vh;
-  justify-content: space-around; }
-  #gridHabitaciones .bannerHabitaciones {
-    grid-area: banner;
-    display: flex;
-    justify-content: center;
-    background-image: url(../IMG/capahabitaciones.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-  #gridHabitaciones .descripcion {
-    grid-area: descripcion;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
-    grid-area: hab1;
-    background-color: #EFEEEA;
-    padding: 1vh;
-    margin: 2vh;
-    border: 0.1vh solid #DBC9B8;
-    border-radius: 0.3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 1s; }
-    #gridHabitaciones .habitacion1:hover, #gridHabitaciones .habitacion2:hover, #gridHabitaciones .habitacion3:hover {
-      filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
-  #gridHabitaciones .habitacion2 {
-    grid-area: hab2; }
-  #gridHabitaciones .habitacion3 {
-    grid-area: hab3; }
-  #gridHabitaciones .imagenHabitaciones {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 1vh;
-    border-radius: 0.3em; }
-  #gridHabitaciones .ulmainHabitacion {
-    list-style-type: circle;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: flex-start; }
+  padding: 1vh;
+  margin: 2vh;
+  border: 0.1vh solid #DBC9B8;
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s; }
+  .habitacion1:hover, .habitacion2:hover, .habitacion3:hover {
+    filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
+
+.imagenHabitaciones {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 1vh;
+  border-radius: 0.3em; }
+
+.ulmainHabitacion {
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: flex-start; }
 
 /*SERVICIOS*/
 #gridServicios {
@@ -253,7 +243,6 @@ main {
   row-gap: 0vh;
   justify-content: space-around; }
   #gridServicios .bannerserv {
-    grid-area: banner;
     display: flex;
     justify-content: center;
     background-image: url(../IMG/capaservicios.png);
@@ -308,13 +297,13 @@ main {
   height: 100%;
   width: 100%; }
   #gridcontactanos .bannerContactanos {
-    grid-area: banner;
     display: flex;
     justify-content: center;
     background-image: url(../IMG/capacontactanos.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    grid-area: banner; }
   #gridcontactanos .formulario {
     grid-area: formulario;
     display: flex;
@@ -449,6 +438,8 @@ main {
   .botonLink:hover {
     background-color: transparent;
     color: #2F2A26; }
+  .botonLink::selection {
+    background-color: #DBC9B8; }
 
 /*RESERVA*/
 #reservaAhora {
@@ -466,6 +457,8 @@ h1 {
   align-items: center;
   text-shadow: #2F2A26 0.1em 0.1em 0.2em;
   font-weight: 700; }
+  h1::selection {
+    background-color: #DBC9B8; }
 
 h2 {
   font-family: "Montserrat Alternates", sans-serif;
@@ -474,19 +467,27 @@ h2 {
   margin-bottom: 1vh;
   font-weight: 700;
   font-size: 10vh; }
+  h2::selection {
+    background-color: #DBC9B8; }
 
 h3, .h3Centrado {
   font-family: "Montserrat Alternates", sans-serif;
   color: #2F2A26;
   font-weight: 700; }
+  h3::selection, .h3Centrado::selection {
+    background-color: #DBC9B8; }
 
 .h3Centrado {
   text-align: center; }
+  .h3Centrado::selection {
+    background-color: #DBC9B8; }
 
 h4 {
   font-family: "Montserrat Alternates", sans-serif;
   text-shadow: #2F2A26 0.1em 0.1em 0.2em;
   color: #EFEEEA; }
+  h4::selection {
+    background-color: #DBC9B8; }
 
 .texto1 {
   font-family: "Poppins", sans-serif;
@@ -494,20 +495,32 @@ h4 {
   text-justify: center;
   text-align: center;
   line-height: 1.5; }
+  .texto1::selection {
+    background-color: #DBC9B8; }
 
 .texto2 {
   font-family: "Poppins", sans-serif;
   color: #2F2A26; }
+  .texto2::selection {
+    background-color: #DBC9B8; }
 
 .texto3 {
   font-family: "Poppins", sans-serif;
   color: #2F2A26;
   font-size: 0.8em; }
+  .texto3::selection {
+    background-color: #DBC9B8; }
 
 .textoFooter {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   color: #C8B6A5; }
+  .textoFooter::selection {
+    background-color: #DBC9B8;
+    color: #2F2A26; }
+
+img::selection {
+  background-color: #DBC9B8; }
 
 @media screen and (min-width: 769px) {
   /*HEADER + NAV*/
@@ -537,15 +550,9 @@ h4 {
   #gridIndex {
     grid-template-columns: 40% 10% 10% 40%;
     grid-template-rows: 25vw auto auto auto auto auto auto auto 30vw;
-    grid-template-areas: "banner banner banner banner"
- "bienvenida bienvenida bienvenida bienvenida"
- "desc desc hab hab"
- "l1 l1 l1 l1"
- "fotoacc l2 l2 fotopet"
- "accesible l2 l2 pet"
- "botonserv botonserv botonserv botonserv"
- "l3 l3 l3 l3"
- "lista lista mapa mapa"; }
+    grid-template-areas: "banner banner banner banner" "bienvenida bienvenida bienvenida bienvenida" "desc desc hab hab" "l1 l1 l1 l1" "fotoacc l2 l2 fotopet" "accesible l2 l2 pet" "botonserv botonserv botonserv botonserv" "l3 l3 l3 l3" "lista lista mapa mapa"; }
+    #gridIndex .bannerindex {
+      grid-area: banner; }
     #gridIndex .bienvenidaHuasi {
       line-height: 1.5;
       margin: 3vw 20vw; }
@@ -556,10 +563,10 @@ h4 {
       width: 40vw; }
       #gridIndex .galeriaHabs:hover {
         filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
-    #gridIndex .fotoacc {
+    #gridIndex .fotoacc, #gridIndex .fotopet {
       margin: 5vh 0 3vh 7vh;
       height: 12vh; }
-    #gridIndex .accesibilidad {
+    #gridIndex .accesibilidad, #gridIndex .petFriendly {
       margin-left: 7vh; }
     #gridIndex .divLineal2 {
       width: 0.1vw;
@@ -586,17 +593,36 @@ h4 {
       display: flex;
       justify-self: center;
       align-self: center; }
+  /*NOSOTROS*/
+  .bannerNosotros {
+    height: 25vw; }
   /*HABITACIONES*/
   #gridHabitaciones {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+    row-gap: 0vh;
+    justify-content: space-around;
     background-color: #EFEEEA;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 25vw auto auto;
-    grid-template-areas: "banner banner banner"
- "descripcion descripcion descripcion"
- "hab1 hab2 hab3"; }
+    grid-template-areas: "banner banner banner" "descripcion descripcion descripcion" "hab1 hab2 hab3"; }
+    #gridHabitaciones .bannerHabitaciones {
+      grid-area: banner; }
     #gridHabitaciones .descripcion {
+      grid-area: descripcion;
       margin: 6vw 10vw; }
-    #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
+    #gridHabitaciones .habitacion1 {
+      grid-area: hab1;
+      padding: 3vh;
+      margin-bottom: 5vh; }
+    #gridHabitaciones .habitacion2 {
+      grid-area: hab2;
+      padding: 3vh;
+      margin-bottom: 5vh; }
+    #gridHabitaciones .habitacion3 {
+      grid-area: hab3;
       padding: 3vh;
       margin-bottom: 5vh; }
     #gridHabitaciones .imagenHabitaciones {
@@ -605,11 +631,9 @@ h4 {
   #gridServicios {
     grid-template-columns: 20% 2% 78%;
     grid-template-rows: 25vw auto auto auto auto;
-    grid-template-areas: "banner banner banner"
- "serv1 l acc"
- "serv2 l pets"
- "serv3 l sust"
- "serv4 l gast"; }
+    grid-template-areas: "banner banner banner" "serv1 l acc" "serv2 l pets" "serv3 l sust" "serv4 l gast"; }
+    #gridServicios .bannerserv {
+      grid-area: banner; }
     #gridServicios .divLinealServ {
       width: 0.1vw;
       height: 90%;
@@ -634,11 +658,8 @@ h4 {
     background-color: #EFEEEA;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25vw auto 30vw;
-    grid-template-areas: "banner banner"
- "formulario formulario"
- "datos mapa"; }
+    grid-template-areas: "banner banner" "formulario formulario" "datos mapa"; }
     #gridcontactanos .formulario {
-      justify-items: start;
       width: 60%;
       margin: 6vw 0; }
   /*FOOTER*/
@@ -725,20 +746,7 @@ h4 {
   #gridIndex {
     grid-template-columns: 100%;
     grid-template-rows: 25vw auto auto auto auto auto auto auto auto auto auto auto auto 40vw;
-    grid-template-areas: "banner"
- "bienvenida"
- "l1"
- "desc"
- "hab"
- "l2"
- "fotoacc"
- "accesible"
- "fotopet"
- "pet"
- "botonserv"
- "l3"
- "lista"
- "mapa"; }
+    grid-template-areas: "banner" "bienvenida" "l1" "desc" "hab" "l2" "fotoacc" "accesible" "fotopet" "pet" "botonserv" "l3" "lista" "mapa"; }
     #gridIndex .bienvenidaHuasi {
       margin: 3vw 5vw 0 5vw; }
       #gridIndex .bienvenidaHuasi .flecha {
@@ -770,33 +778,25 @@ h4 {
       margin: 3vw 0; }
     #gridIndex .lista {
       margin-top: 3vw; }
+  /*NOSOTROS*/
+  .bannerNosotros {
+    height: 25vw; }
   /*HABITACIONES*/
-  #gridHabitaciones {
-    grid-template-columns: 100%;
-    grid-template-rows: 25vw auto auto auto auto;
-    grid-template-areas: "banner"
- "descripcion"
- "hab1"
- "hab2"
- "hab3"; }
-    #gridHabitaciones .descripcion {
-      margin: 5vw; }
-    #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
-      padding: 5vw 0; }
-      #gridHabitaciones .habitacion1 .imagenHabitaciones, #gridHabitaciones .habitacion2 .imagenHabitaciones, #gridHabitaciones .habitacion3 .imagenHabitaciones, #gridHabitaciones .habitacion2 .imagenHabitaciones, #gridHabitaciones .habitacion3 .imagenHabitaciones {
-        width: 30vw; }
+  .bannerHabitaciones {
+    height: 25vw; }
+  .descripcion {
+    margin: 5vw; }
+  .habitacion1, .habitacion2, .habitacion3 {
+    padding: 5vw 0; }
+    .habitacion1 .imagenHabitaciones, .habitacion2 .imagenHabitaciones, .habitacion3 .imagenHabitaciones {
+      width: 30vw; }
   /*SERVICIOS*/
   #gridServicios {
     grid-template-columns: 50% 50%;
     grid-template-rows: 25vw auto auto auto auto auto auto auto;
-    grid-template-areas: "banner banner"
- "acc acc"
- "pets pets"
- "sust sust"
- "gast gast"
- "l l"
- "serv1 serv2"
- "serv3 serv4"; }
+    grid-template-areas: "banner banner" "acc acc" "pets pets" "sust sust" "gast gast" "l l" "serv1 serv2" "serv3 serv4"; }
+    #gridServicios .bannerserv {
+      grid-area: banner; }
     #gridServicios .divLinealServ {
       width: 90%;
       height: 0.1vh;
@@ -821,12 +821,9 @@ h4 {
   #gridcontactanos {
     grid-template-columns: 50% 50%;
     grid-template-rows: 25vw auto 40vw;
-    grid-template-areas: "banner banner"
- "formulario formulario"
- "datos mapa"; }
+    grid-template-areas: "banner banner" "formulario formulario" "datos mapa"; }
     #gridcontactanos .formulario {
-      margin: 6vw 5vh;
-      justify-items: start; }
+      margin: 6vw 5vh; }
   /*FOOTER*/
   .footerDiv {
     height: 60vw;
@@ -907,20 +904,7 @@ h4 {
   #gridIndex {
     grid-template-columns: 100%;
     grid-template-rows: 30vw auto auto auto auto auto auto auto auto auto auto auto auto 40vw;
-    grid-template-areas: "banner"
- "bienvenida"
- "l1"
- "desc"
- "hab"
- "l2"
- "fotoacc"
- "accesible"
- "fotopet"
- "pet"
- "botonserv"
- "l3"
- "lista"
- "mapa"; }
+    grid-template-areas: "banner" "bienvenida" "l1" "desc" "hab" "l2" "fotoacc" "accesible" "fotopet" "pet" "botonserv" "l3" "lista" "mapa"; }
     #gridIndex .bienvenidaHuasi {
       justify-content: center;
       margin: 5vw 5vw 0 5vw; }
@@ -951,36 +935,26 @@ h4 {
       justify-content: center;
       align-items: center; }
     #gridIndex .botonServ {
-      margin: 3vw 0; }
+      margin: 5vw 0; }
     #gridIndex .lista {
-      margin-top: 3vw; }
+      margin-top: 5vw; }
+  /*NOSOTROS*/
+  .bannerNosotros {
+    height: 30vw; }
   /*HABITACIONES*/
-  #gridHabitaciones {
-    grid-template-columns: 100%;
-    grid-template-rows: 30vw auto auto auto;
-    grid-template-areas: "banner"
- "descripcion"
- "hab1"
- "hab2"
- "hab3"; }
-    #gridHabitaciones .descripcion {
-      margin: 5vw; }
-    #gridHabitaciones .habitacion1, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3, #gridHabitaciones .habitacion2, #gridHabitaciones .habitacion3 {
-      padding: 5vw 0; }
-      #gridHabitaciones .habitacion1 .imagenHabitaciones, #gridHabitaciones .habitacion2 .imagenHabitaciones, #gridHabitaciones .habitacion3 .imagenHabitaciones, #gridHabitaciones .habitacion2 .imagenHabitaciones, #gridHabitaciones .habitacion3 .imagenHabitaciones {
-        width: 30vw; }
+  .bannerHabitaciones {
+    height: 30vw; }
+  .descripcion {
+    margin: 5vw; }
+  .habitacion1, .habitacion2, .habitacion3 {
+    padding: 5vw 0; }
+    .habitacion1 .imagenHabitaciones, .habitacion2 .imagenHabitaciones, .habitacion3 .imagenHabitaciones {
+      width: 30vw; }
   /*SERVICIOS*/
   #gridServicios {
     grid-template-columns: 50% 50%;
     grid-template-rows: 30vw auto auto auto auto auto auto auto;
-    grid-template-areas: "banner banner"
- "acc acc"
- "pets pets"
- "sust sust"
- "gast gast"
- "l l"
- "serv1 serv2"
- "serv3 serv4"; }
+    grid-template-areas: "banner banner" "acc acc" "pets pets" "sust sust" "gast gast" "l l" "serv1 serv2" "serv3 serv4"; }
     #gridServicios .divLinealServ {
       width: 90%;
       height: 0.1vh;
@@ -1004,15 +978,12 @@ h4 {
   /*CONTACTANOS*/
   #gridcontactanos {
     grid-template-columns: 100%;
-    grid-template-rows: 30vw auto auto 40vw;
-    grid-template-areas: "banner"
- "formulario"
- "datos"
- "mapa"; }
+    grid-template-rows: 30vw auto auto 50vw;
+    grid-template-areas: "banner" "formulario" "datos" "mapa"; }
     #gridcontactanos .formulario {
       margin: 6vw 5vh; }
     #gridcontactanos .datos {
-      margin: 4vw 0; }
+      margin: 6vw 0; }
   /*FOOTER*/
   .footerDiv {
     height: 150vw;

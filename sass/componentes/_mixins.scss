@@ -1,5 +1,4 @@
 @mixin banners($background){
-    grid-area: banner;
     display: flex;
     justify-content: center;
     background-image: $background;

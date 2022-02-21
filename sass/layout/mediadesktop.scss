@@ -54,6 +54,10 @@
                              "botonserv botonserv botonserv botonserv"
                              "l3 l3 l3 l3"
                              "lista lista mapa mapa";
+
+                            .bannerindex{
+                                grid-area: banner;
+                            }
     
                             .bienvenidaHuasi{
                                 line-height: 1.5;
@@ -107,22 +111,50 @@
                             }
     }
     
+    /*NOSOTROS*/
+    .bannerNosotros{
+        height: 25vw;
+    }
     
     /*HABITACIONES*/
     
     #gridHabitaciones{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        background-color: #EFEEEA;
+        row-gap: 0vh;
+        justify-content: space-around;
         background-color: #EFEEEA;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 25vw auto auto;
         grid-template-areas: "banner banner banner"
                              "descripcion descripcion descripcion"
                              "hab1 hab2 hab3";
+
+                            .bannerHabitaciones{
+                                grid-area: banner;
+                            }
     
                             .descripcion{
+                                grid-area: descripcion;
                                 margin: 6vw 10vw;
                             }
                              
-                             .habitacion1, .habitacion2, .habitacion3{
+                            .habitacion1{
+                                grid-area: hab1;
+                                padding: 3vh;
+                                margin-bottom: 5vh;
+                            } 
+
+                            .habitacion2{
+                                grid-area: hab2;
+                                padding: 3vh;
+                                margin-bottom: 5vh;
+                            }
+
+                            .habitacion3{
+                                grid-area: hab3;
                                 padding: 3vh;
                                 margin-bottom: 5vh;
                             }
@@ -144,6 +176,10 @@
                              "serv2 l pets"
                              "serv3 l sust"
                              "serv4 l gast";
+
+                            .bannerserv{
+                                grid-area: banner;
+                            }
     
                             .divLinealServ{
                                 @include divLineal(0.1vw, 90%, 0, 0.3vh, auto);
@@ -173,7 +209,7 @@
                              "datos mapa";
     
                             .formulario{
-                                justify-items: start;
+                                
                                 width: 60%;
                                 margin: 6vw 0;
                             }     

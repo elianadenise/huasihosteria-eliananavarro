@@ -95,37 +95,38 @@
                             }
     
                             .botonServ{
-                                margin: 3vw 0;
+                                margin: 5vw 0;
                             }
                             
                             .lista{
-                                margin-top: 3vw;
+                                margin-top: 5vw;
                             }
     }
+
+    /*NOSOTROS*/
+    .bannerNosotros{
+        height: 30vw;
+    }
     
-    
+
     /*HABITACIONES*/
-    #gridHabitaciones{
-        grid-template-columns: 100%;
-        grid-template-rows: 30vw auto auto auto;
-        grid-template-areas: "banner"
-                             "descripcion"
-                             "hab1"
-                             "hab2"
-                             "hab3";
-    
-                            .descripcion{
-                                margin: 5vw;
-                            }
-    
-                            .habitacion1, .habitacion2, .habitacion3{
-                                padding: 5vw 0;
-    
-                                .imagenHabitaciones{
-                                    width: 30vw;
-                                }  
-                            }                  
+
+    .bannerHabitaciones{
+        height: 30vw;
     }
+
+    .descripcion{
+        margin: 5vw;
+    }
+    
+    .habitacion1, .habitacion2, .habitacion3{
+        padding: 5vw 0;
+    
+        .imagenHabitaciones{
+            width: 30vw;
+        }  
+    }                  
+
     
     
     /*SERVICIOS*/
@@ -161,10 +162,10 @@
     
     
     /*CONTACTANOS*/
-    
+
     #gridcontactanos{
         grid-template-columns: 100%;
-        grid-template-rows:30vw auto auto 40vw;
+        grid-template-rows:30vw auto auto 50vw;
         grid-template-areas: "banner"
                              "formulario"
                              "datos"
@@ -175,9 +176,10 @@
                             }
                             
                             .datos{
-                                margin: 4vw 0;
+                                margin: 6vw 0;
                             }
     }
+    
     
     /*FOOTER*/
     
