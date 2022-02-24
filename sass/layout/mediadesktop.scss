@@ -1,3 +1,4 @@
+/*MEDIA QUERY - DESKTOP*/
 @media screen and (min-width: 769px){
     
     /*HEADER + NAV*/
@@ -33,8 +34,7 @@
             }
         }
     }
-    
-    
+      
     /*MAIN*/
     
     main{
@@ -84,6 +84,7 @@
     
                             .accesibilidad{
                                 margin-left: 7vh;
+                                padding: 0 2vh;
                             }
     
                             .divLineal2{
@@ -144,19 +145,19 @@
                             .habitacion1{
                                 grid-area: hab1;
                                 padding: 3vh;
-                                margin-bottom: 5vh;
+                                margin-bottom: 10vh;
                             } 
 
                             .habitacion2{
                                 grid-area: hab2;
                                 padding: 3vh;
-                                margin-bottom: 5vh;
+                                margin-bottom: 10vh;
                             }
 
                             .habitacion3{
                                 grid-area: hab3;
                                 padding: 3vh;
-                                margin-bottom: 5vh;
+                                margin-bottom: 10vh;
                             }
                             
                             .imagenHabitaciones{
@@ -205,13 +206,13 @@
                              "datos mapa";
     
                             .formulario{
-                                
                                 width: 60%;
                                 margin: 6vw 0;
                             }     
     }
     
     /*FOOTER*/
+
     .footerDiv{
         height: auto;
         flex-direction: row;
@@ -267,7 +268,7 @@
         }
     }
 
-    //COMPONENTES 
+    /*COMPONENTES*/ 
     
     /*BOTON*/
     .botonLink{

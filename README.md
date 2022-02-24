@@ -1,5 +1,5 @@
 # Huasi Hosteria
-> Huasi Hosteria es un proyecto turístico ficticio creado con el fin de aplicar los conceptos adquiridos en el curso «Desarrollo web» dictado por Coderhouse.
+> Huasi Hosteria es un proyecto turístico ficticio creado con el fin de aplicar los conocimientos adquiridos en el curso «Desarrollo web» dictado por Coderhouse.
 
 ## Datos
 

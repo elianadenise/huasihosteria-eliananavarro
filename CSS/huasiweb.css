@@ -1,3 +1,4 @@
+/*GENERAL*/
 * {
   margin: 0;
   padding: 0; }
@@ -100,14 +101,14 @@ main {
     justify-self: center;
     border-color: #DBC9B8;
     border-style: solid; }
-  #gridIndex .fotoacc, #gridIndex .fotopet {
+  #gridIndex .fotoacc {
     grid-area: fotoacc;
     display: flex;
     align-self: center;
     justify-self: center;
     display: inline-block;
     filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
-  #gridIndex .accesibilidad, #gridIndex .petFriendly {
+  #gridIndex .accesibilidad {
     grid-area: accesible;
     display: flex;
     flex-direction: column;
@@ -117,9 +118,19 @@ main {
   #gridIndex .divLineal2 {
     grid-area: l2; }
   #gridIndex .fotopet {
-    grid-area: fotopet; }
+    grid-area: fotopet;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    display: inline-block;
+    filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
   #gridIndex .petFriendly {
-    grid-area: pet; }
+    grid-area: pet;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2vh; }
   #gridIndex .botonServ {
     grid-area: botonserv;
     display: flex;
@@ -146,7 +157,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: transparent;
     text-align: center; }
     #gridIndex .lista ul {
       list-style-type: circle;
@@ -160,8 +170,7 @@ main {
     justify-self: center;
     align-self: center;
     width: 80%;
-    height: 80%;
-    background-color: transparent; }
+    height: 80%; }
   #gridIndex .h3Index {
     margin: 0 0 1vh 0; }
 
@@ -201,10 +210,8 @@ main {
   background-size: cover; }
 
 .descripcion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  text-align: center;
+  text-justify: center; }
 
 .habitacion1, .habitacion2, .habitacion3 {
   background-color: #EFEEEA;
@@ -219,20 +226,18 @@ main {
   transition: 1s; }
   .habitacion1:hover, .habitacion2:hover, .habitacion3:hover {
     filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
-
-.imagenHabitaciones {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 1vh;
-  border-radius: 0.3em; }
-
-.ulmainHabitacion {
-  list-style-type: circle;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: flex-start; }
+  .habitacion1 .imagenHabitaciones, .habitacion2 .imagenHabitaciones, .habitacion3 .imagenHabitaciones {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1vh;
+    border-radius: 0.3em; }
+  .habitacion1 .ulmainHabitacion, .habitacion2 .ulmainHabitacion, .habitacion3 .ulmainHabitacion {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start; }
 
 /*SERVICIOS*/
 #gridServicios {
@@ -286,6 +291,7 @@ main {
     grid-area: gast; }
   #gridServicios .servs {
     display: inline-block;
+    margin-bottom: 1vh;
     filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
   #gridServicios .logoServ {
     margin-right: 2vw;
@@ -334,8 +340,8 @@ main {
     display: flex;
     flex-direction: column;
     align-self: center;
-    justify-self: center;
-    align-items: center; }
+    align-items: center;
+    justify-self: center; }
     #gridcontactanos .datos div {
       display: flex;
       flex-direction: row;
@@ -424,6 +430,7 @@ main {
     height: 2vh;
     margin: 0 1vh 1vh 1vh; }
 
+/*COMPONENTES*/
 /*BOTON*/
 .botonLink {
   text-decoration: none;
@@ -457,7 +464,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-shadow: #2F2A26 0.1em 0.1em 0.2em;
-  font-weight: 700; }
+  font-weight: 700;
+  text-justify: center;
+  text-align: center; }
   h1::selection {
     background-color: #DBC9B8; }
 
@@ -467,7 +476,9 @@ h2 {
   line-height: 1,5;
   margin-bottom: 1vh;
   font-weight: 700;
-  font-size: 10vh; }
+  font-size: 10vh;
+  text-justify: center;
+  text-align: center; }
   h2::selection {
     background-color: #DBC9B8; }
 
@@ -508,7 +519,8 @@ h4 {
 .texto3 {
   font-family: "Poppins", sans-serif;
   color: #2F2A26;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  padding-left: 1vh; }
   .texto3::selection {
     background-color: #DBC9B8; }
 
@@ -523,6 +535,7 @@ h4 {
 img::selection {
   background-color: #DBC9B8; }
 
+/*MEDIA QUERY - DESKTOP*/
 @media screen and (min-width: 769px) {
   /*HEADER + NAV*/
   header {
@@ -564,11 +577,12 @@ img::selection {
       width: 40vw; }
       #gridIndex .galeriaHabs:hover {
         filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
-    #gridIndex .fotoacc, #gridIndex .fotopet {
+    #gridIndex .fotoacc {
       margin: 5vh 0 3vh 7vh;
       height: 12vh; }
-    #gridIndex .accesibilidad, #gridIndex .petFriendly {
-      margin-left: 7vh; }
+    #gridIndex .accesibilidad {
+      margin-left: 7vh;
+      padding: 0 2vh; }
     #gridIndex .divLineal2 {
       width: 0.1vw;
       height: 90%;
@@ -617,15 +631,15 @@ img::selection {
     #gridHabitaciones .habitacion1 {
       grid-area: hab1;
       padding: 3vh;
-      margin-bottom: 5vh; }
+      margin-bottom: 10vh; }
     #gridHabitaciones .habitacion2 {
       grid-area: hab2;
       padding: 3vh;
-      margin-bottom: 5vh; }
+      margin-bottom: 10vh; }
     #gridHabitaciones .habitacion3 {
       grid-area: hab3;
       padding: 3vh;
-      margin-bottom: 5vh; }
+      margin-bottom: 10vh; }
     #gridHabitaciones .imagenHabitaciones {
       width: 10vw; }
   /*SERVICIOS*/
@@ -695,6 +709,7 @@ img::selection {
           height: 2vh; }
         .footerDiv .divFooter3 .divFooter3div1 .facebookLogo {
           margin: 0 1.5vh 0 1.5vh; }
+  /*COMPONENTES*/
   /*BOTON*/
   .botonLink {
     font-size: 1em;
@@ -767,10 +782,10 @@ img::selection {
       justify-self: center;
       border-color: #DBC9B8;
       border-style: solid; }
-    #gridIndex .fotoacc, #gridIndex .fotopet, #gridIndex .fotopet {
+    #gridIndex .fotoacc, #gridIndex .fotopet {
       height: 10vh;
       margin: 5vw 0; }
-    #gridIndex .accesibilidad, #gridIndex .petFriendly {
+    #gridIndex .accesibilidad {
       margin: 0 5vh;
       justify-content: center; }
     #gridIndex .botonServ {
@@ -873,6 +888,7 @@ img::selection {
   .textoFooter {
     font-size: 0.9em; } }
 
+/*MEDIA QUERY - MOBILE*/
 @media screen and (min-width: 0px) and (max-width: 599px) {
   /*HEADER + NAV*/
   header {
@@ -924,10 +940,10 @@ img::selection {
       justify-self: center;
       border-color: #DBC9B8;
       border-style: solid; }
-    #gridIndex .fotoacc, #gridIndex .fotopet, #gridIndex .fotopet {
+    #gridIndex .fotoacc, #gridIndex .fotopet {
       height: 10vh;
       margin: 5vw 0; }
-    #gridIndex .accesibilidad, #gridIndex .petFriendly, #gridIndex .petFriendly {
+    #gridIndex .accesibilidad, #gridIndex .petFriendly {
       margin: 0 5vh;
       justify-content: center;
       align-items: center; }
@@ -1011,6 +1027,7 @@ img::selection {
       justify-items: center;
       align-items: center;
       justify-items: space-between; }
+  /*COMPONENTES*/
   /*BOTON*/
   .botonLink {
     font-size: 0.8em;
