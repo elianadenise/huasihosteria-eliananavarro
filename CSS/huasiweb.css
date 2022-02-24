@@ -681,23 +681,12 @@ img::selection {
     flex-direction: row;
     justify-content: space-evenly; }
     .footerDiv .divFooter1 {
-      flex-direction: column;
       justify-items: start; }
       .footerDiv .divFooter1 .huasiLogoFooter {
         height: 5vh;
         margin-top: 5vw; }
       .footerDiv .divFooter1 .divFooter1div1 {
-        display: flex;
-        flex-direction: column;
         margin-bottom: 5vw; }
-    .footerDiv .divFooter2 {
-      display: flex;
-      flex-direction: column; }
-      .footerDiv .divFooter2 .aFooter {
-        transition: 1s;
-        text-decoration: none; }
-        .footerDiv .divFooter2 .aFooter:hover {
-          color: #EFEEEA; }
     .footerDiv .divFooter3 {
       display: flex;
       flex-direction: column; }
@@ -705,10 +694,6 @@ img::selection {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap; }
-        .footerDiv .divFooter3 .divFooter3div1 .redesSocialesLogo {
-          height: 2vh; }
-        .footerDiv .divFooter3 .divFooter3div1 .facebookLogo {
-          margin: 0 1.5vh 0 1.5vh; }
   /*COMPONENTES*/
   /*BOTON*/
   .botonLink {
@@ -845,7 +830,6 @@ img::selection {
     justify-content: center; }
     .footerDiv .divFooter1 {
       justify-items: space-around;
-      flex-direction: column;
       justify-items: center;
       align-items: center;
       padding: 0 3%; }
@@ -856,7 +840,6 @@ img::selection {
         align-items: center; }
     .footerDiv .div2footer {
       padding: 0 3%;
-      flex-direction: column;
       flex-wrap: wrap; }
       .footerDiv .div2footer .afooter {
         margin: 0.5vw; }
